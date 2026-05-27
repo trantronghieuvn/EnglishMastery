@@ -1,0 +1,86 @@
+PHẦN 1: ĐẶC TẢ KỸ THUẬT (PRODUCT REQUIREMENTS DOCUMENT - PRD)
+Tên dự án: IPA Master Studio - AI Pronunciation Coach Phiên bản: 2.0 (Dựa trên nền tảng Prototype v1) Mục tiêu: Ứng dụng web luyện phát âm tiếng Anh chuyên sâu, sử dụng IPA, mô phỏng khẩu hình 3D (2D giả lập) và AI để sửa lỗi chi tiết cho người dùng Việt Nam.
+
+1. Stack Công Nghệ (Tech Stack)
+Frontend Framework: React (Hiện tại là dạng CDN, đề xuất chuyển sang Vite + React hoặc Next.js để quản lý gói tốt hơn).
+
+Ngôn ngữ: JavaScript (ES6+) hoặc TypeScript (đề xuất cho giai đoạn tiếp theo).
+
+Styling: Tailwind CSS.
+
+Speech Services:
+
+TTS (Text-to-Speech): Web Speech API (SpeechSynthesisUtterance).
+
+STT (Speech-to-Text): Web Speech API (webkitSpeechRecognition).
+
+AI Integration: Google Gemini API (Model: gemini-2.0-flash hoặc pro) để tư vấn ngôn ngữ tự nhiên.
+
+External Data: Free Dictionary API (api.dictionaryapi.dev).
+
+2. Các Phân Hệ Chức Năng (Modules)
+2.1. Phân hệ Xử lý Dữ liệu Âm vị (Phoneme Engine)
+Hệ thống cần một cơ sở dữ liệu (Database) cứng về âm vị học tiếng Anh (44 âm IPA).
+
+Cấu trúc dữ liệu âm vị:
+
+char: Ký tự IPA (ví dụ: /iː/, /tʃ/).
+
+type: Loại âm (Vowel, Consonant, Diphthong).
+
+voice: Hữu thanh (voiced) / Vô thanh (unvoiced).
+
+tongue: Tọa độ lưỡi [x, y] (để điều khiển hình ảnh).
+
+jaw: Độ mở hàm (0.0 - 1.0).
+
+lips: Hình dáng môi (spread, neutral, rounded, tuck).
+
+desc: Mô tả kỹ thuật bằng tiếng Việt (Ví dụ: "Lưỡi đưa cao...").
+
+Thuật toán tách âm (Syllabification):
+
+Input: Chuỗi IPA thô.
+
+Logic: Greedy matching (khớp chuỗi dài nhất trước) dựa trên DB âm vị.
+
+Output: Mảng các object âm vị kèm thông tin trọng âm (primary, secondary, none).
+
+2.2. Phân hệ Trực quan hóa (Visualizers)
+Mouth Visualizer (Mô phỏng khẩu hình):
+
+Sử dụng SVG động.
+
+Nhận tham số từ Phoneme Engine (tongue, jaw, lips) để render hình dạng lưỡi, hàm và môi theo thời gian thực khi phát âm.
+
+Hiệu ứng chuyển động mượt mà (transition) giữa các âm.
+
+Waveform (Biểu đồ sóng):
+
+Target Waveform: Vẽ biểu đồ tĩnh dựa trên độ dài dự kiến của các âm tiết trong từ mẫu.
+
+User Waveform: Vẽ biểu đồ động (Real-time Audio Visualization) từ microphone người dùng sử dụng Canvas API và AnalyserNode.
+
+2.3. Phân hệ So sánh & Chấm điểm (Comparison Logic)
+Thuật toán căn chỉnh (Sequence Alignment):
+
+Sử dụng quy hoạch động (Dynamic Programming) - biến thể của thuật toán Needleman-Wunsch.
+
+So sánh chuỗi IPA mục tiêu (Target) và chuỗi IPA người dùng nói (Spoken).
+
+Phát hiện lỗi:
+
+Substitution (Sai âm): Nói /e/ thành /æ/.
+
+Omission (Thiếu âm): Bỏ quên ending sound (ví dụ: /t/, /s/).
+
+Insertion (Thừa âm): Thêm âm thừa.
+
+Cơ chế dừng thông minh: Tự động tắt mic khi phát hiện người dùng đã nói xong từ khóa mục tiêu (keyword spotting).
+
+2.4. Phân hệ AI Coach (Gemini Integration)
+Input: Từ vựng hiện tại, lỗi sai của người dùng.
+
+System Prompt: Yêu cầu AI đóng vai huấn luyện viên ngữ âm cho người Việt.
+
+Output: Văn bản hướng dẫn ngắn gọn, mẹo "Việt hóa" cách đọc (ví dụ: "PRE" đọc lái là "p-re"), giải thích quy tắc nối âm.

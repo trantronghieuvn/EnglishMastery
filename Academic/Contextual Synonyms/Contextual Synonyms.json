@@ -1,0 +1,2928 @@
+[
+  {
+    "id": "1-1",
+    "familyId": "1",
+    "word": "compulsory",
+    "sentence": "In Australia, primary and secondary education is ____ for all children aged 6 to 16.",
+    "correct": "compulsory",
+    "distractors": [
+      "comprehensive",
+      "compulsive",
+      "customary"
+    ],
+    "translation": "Tại Úc, giáo dục tiểu học và trung học là bắt buộc đối với tất cả trẻ em từ 6 đến 16 tuổi.",
+    "analysis": "Compulsory (bắt buộc theo luật) đi với education. Comprehensive là toàn diện, Compulsive là thuộc về bản năng/khó kiểm soát, Customary là theo phong tục."
+  },
+  {
+    "id": "1-2",
+    "familyId": "1",
+    "word": "compulsorily",
+    "sentence": "Employees who refuse to undergo the mandated safety training will be ____ dismissed from their positions.",
+    "correct": "compulsorily",
+    "distractors": [
+      "customarily",
+      "compulsively",
+      "comprehensively"
+    ],
+    "translation": "Nhân viên từ chối tham gia khóa đào tạo an toàn bắt buộc sẽ bị sa thải một cách bắt buộc.",
+    "analysis": "Compulsorily (một cách bắt buộc) là trạng từ chỉ hành động bị ép buộc. Customarily là theo thông lệ, Comprehensively là toàn diện."
+  },
+  {
+    "id": "1-3",
+    "familyId": "1",
+    "word": "compulsory education",
+    "sentence": "Most developed countries have enacted laws that make ____ a legal requirement for children up to a certain age.",
+    "correct": "compulsory education",
+    "distractors": [
+      "higher education",
+      "distance learning",
+      "vocational training"
+    ],
+    "translation": "Hầu hết các nước phát triển đã ban hành luật coi giáo dục bắt buộc là yêu cầu pháp lý đối với trẻ em đến một độ tuổi nhất định.",
+    "analysis": "Compulsory education là cụm từ cố định chỉ giáo dục bắt buộc. Higher education là giáo dục đại học, Distance learning là học từ xa, Vocational training là đào tạo nghề."
+  },
+  {
+    "id": "1-4",
+    "familyId": "1",
+    "word": "compulsory military service",
+    "sentence": "While many countries have abolished ____, others like South Korea still require young men to serve in the armed forces.",
+    "correct": "compulsory military service",
+    "distractors": [
+      "short-term military enlistment",
+      "professional army training",
+      "mandatory civic duty"
+    ],
+    "translation": "Trong khi nhiều quốc gia đã bãi bỏ nghĩa vụ quân sự bắt buộc, những nước khác như Hàn Quốc vẫn yêu cầu thanh niên phục vụ trong quân đội.",
+    "analysis": "Compulsory military service là nghĩa vụ quân sự bắt buộc. Các lựa chọn khác mô tả các hình thức huấn luyện hoặc nghĩa vụ khác không phải là nghĩa vụ quân sự chuẩn mực trong ngữ cảnh này."
+  },
+  {
+    "id": "1-5",
+    "familyId": "1",
+    "word": "compulsory purchase",
+    "sentence": "The government exercised its right of ____ to acquire the land needed for the new highway construction project.",
+    "correct": "compulsory purchase",
+    "distractors": [
+      "commercial acquisition",
+      "private negotiation",
+      "market transaction"
+    ],
+    "translation": "Chính phủ đã thực hiện quyền mua bắt buộc để có được mảnh đất cần thiết cho dự án xây dựng đường cao tốc mới.",
+    "analysis": "Compulsory purchase là cụm từ pháp lý chỉ việc trưng dụng đất bắt buộc của chính phủ. Commercial acquisition, Private negotiation, Market transaction đều là các giao dịch thương mại hoặc thỏa thuận thông thường."
+  },
+  {
+    "id": "1-6",
+    "familyId": "1",
+    "word": "compulsorily acquired",
+    "sentence": "The ____ land was compensated at market value, as required by the Land Acquisition Act.",
+    "correct": "compulsorily acquired",
+    "distractors": [
+      "commercially procured",
+      "privately purchased",
+      "legally leased"
+    ],
+    "translation": "Mảnh đất bị cưỡng chế thu hồi đã được đền bù theo giá thị trường, theo yêu cầu của Đạo luật Thu hồi Đất đai.",
+    "analysis": "Compulsorily acquired là cụm từ chỉ tài sản bị chính phủ cưỡng chế thu hồi. Commercially procured và Privately purchased là các giao dịch mua bán tư nhân/thương mại bình thường."
+  },
+  {
+    "id": "2-1",
+    "familyId": "2",
+    "word": "voluntary",
+    "sentence": "Unlike paid employment, ____ work often relies on the goodwill and unpaid time of community members.",
+    "correct": "voluntary",
+    "distractors": [
+      "vocational",
+      "honorary",
+      "temporary"
+    ],
+    "translation": "Không giống như việc làm được trả lương, công việc tình nguyện thường dựa vào thiện chí và thời gian không được trả công của các thành viên cộng đồng.",
+    "analysis": "'Voluntary work' là công việc tình nguyện. Vocational (thuộc về nghề nghiệp), Honorary (danh dự), Temporary (tạm thời) đều là các tính từ bẫy hình thái và ngữ cảnh."
+  },
+  {
+    "id": "2-2",
+    "familyId": "2",
+    "word": "voluntarily",
+    "sentence": "The employee decided to ____ leave the company to pursue further academic studies, rather than waiting for a redundancy package.",
+    "correct": "voluntarily",
+    "distractors": [
+      "hesitantly",
+      "reluctantly",
+      "spontaneously"
+    ],
+    "translation": "Nhân viên đó quyết định tự nguyện nghỉ việc để theo đuổi học tập thêm, thay vì chờ gói thôi việc.",
+    "analysis": "Voluntarily leave nhấn mạnh hành động tự nguyện. Hesitantly (do dự) và Reluctantly (miễn cưỡng) mang sắc thái trái ngược với sự chủ động, Spontaneously (bộc phát) không hợp ngữ cảnh nghỉ việc có tính toán."
+  },
+  {
+    "id": "2-3",
+    "familyId": "2",
+    "word": "voluntary work",
+    "sentence": "Many students engage in ____ during their gap year to gain valuable experience and give back to the community.",
+    "correct": "voluntary work",
+    "distractors": [
+      "vocational training",
+      "paid employment",
+      "corporate internship"
+    ],
+    "translation": "Nhiều sinh viên tham gia công việc tình nguyện trong năm nghỉ học để có được kinh nghiệm quý báu và đóng góp cho cộng đồng.",
+    "analysis": "Voluntary work là công việc tình nguyện. Vocational training là đào tạo nghề, Paid employment là việc làm có lương, Corporate internship là thực tập doanh nghiệp."
+  },
+  {
+    "id": "2-4",
+    "familyId": "2",
+    "word": "voluntary organization",
+    "sentence": "The Red Cross is a well-known ____ that relies heavily on donations and the efforts of unpaid helpers.",
+    "correct": "voluntary organization",
+    "distractors": [
+      "government agency",
+      "private corporation",
+      "multinational company"
+    ],
+    "translation": "Hội Chữ thập đỏ là một tổ chức tình nguyện nổi tiếng, phụ thuộc nhiều vào các khoản đóng góp và nỗ lực của những người giúp việc không công.",
+    "analysis": "Voluntary organization là tổ chức tình nguyện, phi lợi nhuận. Government agency là cơ quan chính phủ, Private corporation là công ty tư nhân."
+  },
+  {
+    "id": "2-5",
+    "familyId": "2",
+    "word": "voluntary contribution",
+    "sentence": "The museum relies on ____ from visitors rather than charging a fixed admission fee to ensure accessibility for all.",
+    "correct": "voluntary contribution",
+    "distractors": [
+      "standard admission",
+      "corporate sponsorship",
+      "fixed charge"
+    ],
+    "translation": "Bảo tàng dựa vào các khoản đóng góp tự nguyện từ du khách thay vì thu phí vào cửa cố định để đảm bảo khả năng tiếp cận cho tất cả mọi người.",
+    "analysis": "Voluntary contribution là đóng góp tự nguyện. Standard admission là vé vào cửa tiêu chuẩn, Fixed charge là phí cố định, Corporate sponsorship là tài trợ doanh nghiệp."
+  },
+  {
+    "id": "2-6",
+    "familyId": "2",
+    "word": "voluntarily leave",
+    "sentence": "Employees who ____ are not eligible for severance pay, which is reserved for those who are laid off.",
+    "correct": "voluntarily leave",
+    "distractors": [
+      "unexpectedly resign",
+      "mutually separate",
+      "prematurely depart"
+    ],
+    "translation": "Nhân viên tự nguyện nghỉ việc không đủ điều kiện nhận trợ cấp thôi việc, khoản trợ cấp này dành cho những người bị sa thải.",
+    "analysis": "Voluntarily leave là tự nguyện nghỉ việc (adv + verb). Unexpectedly resign là từ chức bất ngờ, Mutually separate là chia tay có thỏa thuận, Prematurely depart là rời đi sớm."
+  },
+  {
+    "id": "3-1",
+    "familyId": "3",
+    "word": "optional",
+    "sentence": "The final essay is ____, meaning students can choose to complete it for extra credit or skip it without penalty.",
+    "correct": "optional",
+    "distractors": [
+      "optimal",
+      "operational",
+      "conditional"
+    ],
+    "translation": "Bài luận cuối cùng là tùy chọn, nghĩa là sinh viên có thể chọn làm để được điểm cộng hoặc bỏ qua mà không bị phạt.",
+    "analysis": "Optional diễn tả sự tùy chọn, không bắt buộc. Optimal (tối ưu), Operational (thuộc hoạt động), Conditional (có điều kiện) là các bẫy hình thái."
+  },
+  {
+    "id": "3-2",
+    "familyId": "3",
+    "word": "optionally",
+    "sentence": "The software allows users to ____ enable advanced features, which are not required for basic operation.",
+    "correct": "optionally",
+    "distractors": [
+      "optimally",
+      "operationally",
+      "occasionally"
+    ],
+    "translation": "Phần mềm cho phép người dùng tùy chọn bật các tính năng nâng cao, những tính năng không cần thiết cho hoạt động cơ bản.",
+    "analysis": "Optionally (một cách tùy chọn) phù hợp với các tính năng có thể bật/tắt. Optimally (một cách tối ưu), Operationally (về mặt vận hành), Occasionally (thỉnh thoảng) là bẫy hình thái và ngữ cảnh."
+  },
+  {
+    "id": "3-3",
+    "familyId": "3",
+    "word": "optional course",
+    "sentence": "To fulfill the humanities requirement, she decided to take an ____ in creative writing rather than the standard history module.",
+    "correct": "optional course",
+    "distractors": [
+      "optimal course",
+      "vocational course",
+      "introductory course"
+    ],
+    "translation": "Để đáp ứng yêu cầu về nhân văn, cô ấy quyết định chọn một khóa học tùy chọn về viết sáng tạo thay vì học phần lịch sử tiêu chuẩn.",
+    "analysis": "Optional course là khóa học tùy chọn. Optimal course (khóa học tối ưu) là bẫy hình thái. Vocational (học nghề), Introductory (nhập môn) là bẫy ngữ cảnh."
+  },
+  {
+    "id": "3-4",
+    "familyId": "3",
+    "word": "optional extra",
+    "sentence": "The base price of the car includes standard features, but leather seats and a sunroof are ____ that cost an additional fee.",
+    "correct": "optional extras",
+    "distractors": [
+      "standard inclusions",
+      "optimal upgrades",
+      "premium features"
+    ],
+    "translation": "Giá cơ bản của xe đã bao gồm các tính năng tiêu chuẩn, nhưng ghế da và cửa sổ trời là phần bổ sung tùy chọn và phải trả thêm phí.",
+    "analysis": "Optional extras là các phần bổ sung tùy chọn (phải trả thêm phí). Standard inclusions là các tính năng tiêu chuẩn đã bao gồm, Optimal upgrades là bẫy hình thái."
+  },
+  {
+    "id": "3-5",
+    "familyId": "3",
+    "word": "optional feature",
+    "sentence": "Voice control is an ____ on this smartphone model; you can use it if you want, but it's not essential for the phone to work.",
+    "correct": "optional feature",
+    "distractors": [
+      "optimal function",
+      "experimental component",
+      "essential element"
+    ],
+    "translation": "Điều khiển bằng giọng nói là một tính năng tùy chọn trên mẫu điện thoại thông minh này; bạn có thể sử dụng nó nếu muốn, nhưng nó không cần thiết cho điện thoại hoạt động.",
+    "analysis": "Optional feature là tính năng tùy chọn. Essential element là yếu tố thiết yếu (trái ngược ngữ cảnh 'not essential'). Optimal function là bẫy hình thái."
+  },
+  {
+    "id": "3-6",
+    "familyId": "3",
+    "word": "optionally available",
+    "sentence": "Extended warranty coverage is ____ at an additional cost for customers who want extra protection beyond the standard guarantee.",
+    "correct": "optionally available",
+    "distractors": [
+      "exclusively provided",
+      "temporarily offered",
+      "automatically assigned"
+    ],
+    "translation": "Bảo hành mở rộng được cung cấp dưới dạng tùy chọn với chi phí bổ sung cho khách hàng muốn bảo vệ thêm ngoài bảo hành tiêu chuẩn.",
+    "analysis": "Optionally available là có sẵn dưới dạng tùy chọn (khách hàng chọn mua thêm). Exclusively provided là cung cấp độc quyền, Automatically assigned là được chỉ định tự động."
+  },
+  {
+    "id": "4-1",
+    "familyId": "4",
+    "word": "elective",
+    "sentence": "Undergraduate students must complete a certain number of ____ units outside their major to broaden their knowledge base.",
+    "correct": "elective",
+    "distractors": [
+      "electrical",
+      "selective",
+      "elusive"
+    ],
+    "translation": "Sinh viên đại học phải hoàn thành một số tín chỉ tự chọn ngoài chuyên ngành chính để mở rộng kiến thức nền tảng.",
+    "analysis": "Elective trong giáo dục có nghĩa là môn tự chọn. Electrical (thuộc điện), Selective (có tính chọn lọc), Elusive (khó nắm bắt) là các tính từ bẫy hình thái."
+  },
+  {
+    "id": "4-2",
+    "familyId": "4",
+    "word": "electively",
+    "sentence": "Patients can ____ choose to undergo this procedure, as it is not considered medically necessary.",
+    "correct": "electively",
+    "distractors": [
+      "selectively",
+      "effectively",
+      "urgently"
+    ],
+    "translation": "Bệnh nhân có thể chọn thực hiện thủ thuật này một cách tự chọn, vì nó không được coi là cần thiết về mặt y tế.",
+    "analysis": "Electively (một cách tự chọn) chỉ việc thực hiện không do yêu cầu y tế khẩn cấp. Selectively (một cách có chọn lọc), Effectively (hiệu quả) là bẫy hình thái. Urgently (khẩn cấp) là bẫy ngữ cảnh."
+  },
+  {
+    "id": "4-3",
+    "familyId": "4",
+    "word": "elective surgery",
+    "sentence": "During the COVID-19 crisis, hospitals postponed all non-urgent procedures, including ____, to free up resources for critical patients.",
+    "correct": "elective surgery",
+    "distractors": [
+      "exploratory surgery",
+      "selective surgery",
+      "corrective surgery"
+    ],
+    "translation": "Trong cuộc khủng hoảng COVID-19, các bệnh viện đã hoãn tất cả các ca phẫu thuật không khẩn cấp, bao gồm cả phẫu thuật tự chọn, để dồn nguồn lực cho bệnh nhân nguy kịch.",
+    "analysis": "Elective surgery là phẫu thuật không khẩn cấp, có thể lên lịch trước. Selective surgery là bẫy hình thái. Exploratory/Corrective là các loại phẫu thuật khác."
+  },
+  {
+    "id": "4-4",
+    "familyId": "4",
+    "word": "elective course",
+    "sentence": "In the final year of the law degree, students can choose ____ such as International Trade Law or Environmental Law based on their career interests.",
+    "correct": "elective course",
+    "distractors": [
+      "selective course",
+      "intensive module",
+      "introductory class"
+    ],
+    "translation": "Trong năm cuối của bằng luật, sinh viên có thể chọn các khóa học tự chọn như Luật Thương mại Quốc tế hoặc Luật Môi trường dựa trên sở thích nghề nghiệp của mình.",
+    "analysis": "Elective course là khóa học tự chọn. Selective course là bẫy hình thái. Intensive module và Introductory class là các loại lớp học khác."
+  },
+  {
+    "id": "4-5",
+    "familyId": "4",
+    "word": "elective office",
+    "sentence": "To run for ____, candidates must meet specific eligibility requirements, including age, residency, and citizenship criteria.",
+    "correct": "elective office",
+    "distractors": [
+      "appointed position",
+      "hereditary title",
+      "temporary role"
+    ],
+    "translation": "Để tranh cử chức vụ dân cử, các ứng cử viên phải đáp ứng các yêu cầu về tư cách cụ thể, bao gồm tiêu chí về độ tuổi, nơi cư trú và quyền công dân.",
+    "analysis": "Elective office là chức vụ dân cử (do bầu cử). Appointed position là vị trí được bổ nhiệm, Hereditary title là tước vị cha truyền con nối."
+  },
+  {
+    "id": "4-6",
+    "familyId": "4",
+    "word": "electively taken",
+    "sentence": "The medication was ____, not prescribed by a doctor, which explained why the patient did not report it on his medical history form.",
+    "correct": "electively taken",
+    "distractors": [
+      "selectively prescribed",
+      "accidentally ingested",
+      "automatically dispensed"
+    ],
+    "translation": "Thuốc đã được uống một cách tự chọn, không phải do bác sĩ kê đơn, điều này giải thích tại sao bệnh nhân không khai báo nó trong mẫu tiền sử bệnh.",
+    "analysis": "Electively taken là được uống theo chủ ý cá nhân (không do bác sĩ kê). Selectively prescribed (được kê đơn có chọn lọc), Accidentally ingested (uống nhầm) là bẫy ngữ cảnh và hình thái."
+  }
+]
+[
+  {
+    "id": "5-1",
+    "familyId": "5",
+    "word": "selective",
+    "sentence": "The university is highly ____, admitting only the top 10% of applicants based on their academic records and entrance exam scores.",
+    "correct": "selective",
+    "distractors": [
+      "secretive",
+      "sensitive",
+      "sedative"
+    ],
+    "translation": "Trường đại học này có tính chọn lọc cao, chỉ nhận 10% ứng viên hàng đầu dựa trên học bạ và điểm thi đầu vào.",
+    "analysis": "'Selective' là tính từ chỉ tính chất 'có chọn lọc'. 'Secretive' (kín đáo), 'Sensitive' (nhạy cảm) và 'Sedative' (giảm đau/an thần) là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "5-2",
+    "familyId": "5",
+    "word": "selectively",
+    "sentence": "The camera automatically focuses ____ on the subject's face while blurring the background to create a professional portrait effect.",
+    "correct": "selectively",
+    "distractors": [
+      "successively",
+      "secretively",
+      "sensitively"
+    ],
+    "translation": "Máy ảnh tự động lấy nét một cách có chọn lọc vào khuôn mặt của đối tượng trong khi làm mờ hậu cảnh để tạo hiệu ứng chân dung chuyên nghiệp.",
+    "analysis": "'Selectively' (một cách có chọn lọc) phù hợp với hành động lấy nét chính xác. 'Successively' (liên tiếp), 'Secretively' (một cách bí mật), 'Sensitively' (một cách nhạy cảm) là bẫy hình thái."
+  },
+  {
+    "id": "5-3",
+    "familyId": "5",
+    "word": "selective memory",
+    "sentence": "The witness's testimony was unreliable because he seemed to have a ____, recalling details that favored his friend while forgetting inconvenient facts.",
+    "correct": "selective memory",
+    "distractors": [
+      "photographic memory",
+      "short-term memory",
+      "false memory"
+    ],
+    "translation": "Lời khai của nhân chứng không đáng tin cậy vì anh ta dường như có trí nhớ có chọn lọc, nhớ lại những chi tiết có lợi cho bạn mình trong khi quên những sự thật bất lợi.",
+    "analysis": "'Selective memory' là trí nhớ có chọn lọc (chỉ nhớ những gì mình muốn). 'Photographic memory' là trí nhớ siêu phàm, 'Short-term memory' là trí nhớ ngắn hạn."
+  },
+  {
+    "id": "5-4",
+    "familyId": "5",
+    "word": "selective breeding",
+    "sentence": "Through ____, farmers have dramatically increased milk production in dairy cows by choosing only the highest-yielding animals to reproduce.",
+    "correct": "selective breeding",
+    "distractors": [
+      "random mating",
+      "genetic modification",
+      "natural selection"
+    ],
+    "translation": "Thông qua lai tạo có chọn lọc, nông dân đã tăng đáng kể sản lượng sữa ở bò sữa bằng cách chỉ chọn những con có năng suất cao nhất để sinh sản.",
+    "analysis": "'Selective breeding' là lai tạo có chọn lọc do con người thực hiện. 'Random mating' là giao phối ngẫu nhiên, 'Genetic modification' là biến đổi gen."
+  },
+  {
+    "id": "5-5",
+    "familyId": "5",
+    "word": "selective attention",
+    "sentence": "In a noisy environment, the brain uses ____ to focus on a single conversation while filtering out background noise, a phenomenon known as the 'cocktail party effect'.",
+    "correct": "selective attention",
+    "distractors": [
+      "divided attention",
+      "sustained attention",
+      "visual attention"
+    ],
+    "translation": "Trong một môi trường ồn ào, não sử dụng sự chú ý có chọn lọc để tập trung vào một cuộc trò chuyện duy nhất trong khi lọc bỏ tiếng ồn xung quanh, một hiện tượng được gọi là 'hiệu ứng bữa tiệc cocktail'.",
+    "analysis": "'Selective attention' là sự chú ý có chọn lọc, phù hợp với hiệu ứng bữa tiệc cocktail. 'Divided attention' là chú ý phân chia, 'Sustained attention' là chú ý duy trì."
+  },
+  {
+    "id": "5-6",
+    "familyId": "5",
+    "word": "selectively permeable",
+    "sentence": "The cell membrane is ____, allowing small molecules like oxygen and carbon dioxide to pass through while blocking larger molecules and ions.",
+    "correct": "selectively permeable",
+    "distractors": [
+      "fully impermeable",
+      "completely porous",
+      "randomly absorbent"
+    ],
+    "translation": "Màng tế bào có tính thấm chọn lọc, cho phép các phân tử nhỏ như oxy và carbon dioxide đi qua trong khi chặn các phân tử và ion lớn hơn.",
+    "analysis": "'Selectively permeable' là có tính thấm chọn lọc, thuật ngữ chính xác trong sinh học. 'Fully impermeable' là không thấm, 'Completely porous' là xốp hoàn toàn."
+  },
+  {
+    "id": "6-1",
+    "familyId": "6",
+    "word": "exclusive",
+    "sentence": "The newspaper secured an ____ interview with the Prime Minister, which was not shared with any other media outlet.",
+    "correct": "exclusive",
+    "distractors": [
+      "elusive",
+      "explosive",
+      "excessive"
+    ],
+    "translation": "Tờ báo đã có được một cuộc phỏng vấn độc quyền với Thủ tướng, không được chia sẻ với bất kỳ cơ quan truyền thông nào khác.",
+    "analysis": "'Exclusive interview' là phỏng vấn độc quyền. 'Elusive' (khó nắm bắt), 'Explosive' (bùng nổ), 'Excessive' (quá mức) là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "6-2",
+    "familyId": "6",
+    "word": "exclusively",
+    "sentence": "This research facility is used ____ for studying infectious diseases, and unauthorized personnel are strictly prohibited from entering.",
+    "correct": "exclusively",
+    "distractors": [
+      "elusively",
+      "excessively",
+      "explosively"
+    ],
+    "translation": "Cơ sở nghiên cứu này được sử dụng một cách độc quyền cho việc nghiên cứu các bệnh truyền nhiễm, và nghiêm cấm nhân viên trái phép vào.",
+    "analysis": "'Exclusively' (một cách độc quyền) nhấn mạnh sự dành riêng. 'Elusively' (một cách khó nắm bắt), 'Excessively' (một cách thái quá), 'Explosively' (một cách bùng nổ) là bẫy hình thái."
+  },
+  {
+    "id": "6-3",
+    "familyId": "6",
+    "word": "exclusive rights",
+    "sentence": "The pharmaceutical company was granted ____ to manufacture and sell the new drug for a period of 20 years after its patent was approved.",
+    "correct": "exclusive rights",
+    "distractors": [
+      "equal rights",
+      "human rights",
+      "civil rights"
+    ],
+    "translation": "Công ty dược phẩm đã được cấp quyền độc quyền sản xuất và bán loại thuốc mới trong thời hạn 20 năm sau khi bằng sáng chế được phê duyệt.",
+    "analysis": "'Exclusive rights' là quyền độc quyền, phù hợp với ngữ cảnh về bằng sáng chế. 'Equal/Human/Civil rights' thuộc lĩnh vực quyền công dân."
+  },
+  {
+    "id": "6-4",
+    "familyId": "6",
+    "word": "exclusive interview",
+    "sentence": "Millions of viewers tuned in to watch the ____ with the former president, who had not spoken to the press in over a decade.",
+    "correct": "exclusive interview",
+    "distractors": [
+      "public debate",
+      "press conference",
+      "panel discussion"
+    ],
+    "translation": "Hàng triệu người xem đã theo dõi cuộc phỏng vấn độc quyền với cựu tổng thống, người đã không nói chuyện với báo chí trong hơn một thập kỷ.",
+    "analysis": "'Exclusive interview' là cuộc phỏng vấn độc quyền. 'Public debate' là tranh luận công khai, 'Press conference' là họp báo."
+  },
+  {
+    "id": "6-5",
+    "familyId": "6",
+    "word": "exclusive club",
+    "sentence": "Membership in that ____ is limited to billionaires and requires a substantial annual fee, making it inaccessible to the general public.",
+    "correct": "exclusive club",
+    "distractors": [
+      "public library",
+      "community center",
+      "open forum"
+    ],
+    "translation": "Tư cách thành viên của câu lạc bộ độc quyền đó chỉ dành cho các tỷ phú và yêu cầu một khoản phí hàng năm đáng kể, khiến nó không thể tiếp cận được với công chúng.",
+    "analysis": "'Exclusive club' là câu lạc bộ độc quyền (kín). 'Public library' là thư viện công cộng, 'Community center' là trung tâm cộng đồng."
+  },
+  {
+    "id": "6-6",
+    "familyId": "6",
+    "word": "exclusively available",
+    "sentence": "This limited edition watch is ____ through our online store and will not be sold in physical retail locations.",
+    "correct": "exclusively available",
+    "distractors": [
+      "commonly found",
+      "widely distributed",
+      "publicly accessible"
+    ],
+    "translation": "Đồng hồ phiên bản giới hạn này chỉ có sẵn ở đây thông qua cửa hàng trực tuyến của chúng tôi và sẽ không được bán tại các địa điểm bán lẻ vật lý.",
+    "analysis": "'Exclusively available' là chỉ có sẵn ở một nơi. 'Commonly found' là thường thấy ở nhiều nơi, 'Widely distributed' là phân phối rộng rãi."
+  },
+  {
+    "id": "7-1",
+    "familyId": "7",
+    "word": "inclusive",
+    "sentence": "The school's ____ education policy ensures that students with disabilities learn alongside their peers in mainstream classrooms whenever possible.",
+    "correct": "inclusive",
+    "distractors": [
+      "incisive",
+      "intrusive",
+      "conclusive"
+    ],
+    "translation": "Chính sách giáo dục hòa nhập của nhà trường đảm bảo rằng học sinh khuyết tật được học cùng các bạn trong lớp học chính thống bất cứ khi nào có thể.",
+    "analysis": "'Inclusive education' là giáo dục hòa nhập. 'Incisive' (sâu sắc), 'Intrusive' (xâm phạm), 'Conclusive' (mang tính kết luận) là bẫy hình thái."
+  },
+  {
+    "id": "7-2",
+    "familyId": "7",
+    "word": "inclusively",
+    "sentence": "The community center was designed ____, with ramps for wheelchairs, braille signage, and quiet rooms for individuals with sensory sensitivities.",
+    "correct": "inclusively",
+    "distractors": [
+      "incisively",
+      "intrusively",
+      "conclusively"
+    ],
+    "translation": "Trung tâm cộng đồng được thiết kế một cách bao gồm, với đường dốc cho xe lăn, biển báo chữ nổi và phòng yên tĩnh cho những người có sự nhạy cảm về giác quan.",
+    "analysis": "'Inclusively' (một cách bao gồm) nhấn mạnh sự tiếp cận cho mọi đối tượng. 'Incisively' (một cách sâu sắc), 'Intrusively' (một cách xâm phạm), 'Conclusively' (một cách thuyết phục) là bẫy hình thái."
+  },
+  {
+    "id": "7-3",
+    "familyId": "7",
+    "word": "inclusive education",
+    "sentence": "Many countries have adopted policies promoting ____, which has led to a significant increase in the number of special needs students attending regular schools.",
+    "correct": "inclusive education",
+    "distractors": [
+      "segregated schooling",
+      "vocational training",
+      "distance learning"
+    ],
+    "translation": "Nhiều quốc gia đã áp dụng các chính sách thúc đẩy giáo dục hòa nhập, điều này đã dẫn đến sự gia tăng đáng kể số lượng học sinh có nhu cầu đặc biệt theo học tại các trường thông thường.",
+    "analysis": "'Inclusive education' là giáo dục hòa nhập. 'Segregated schooling' là giáo dục tách biệt, 'Vocational training' là đào tạo nghề, 'Distance learning' là học từ xa."
+  },
+  {
+    "id": "7-4",
+    "familyId": "7",
+    "word": "inclusive language",
+    "sentence": "The university's style guide recommends using ____, such as 'chairperson' instead of 'chairman' and 'they' as a singular pronoun, to avoid gender bias.",
+    "correct": "inclusive language",
+    "distractors": [
+      "technical jargon",
+      "colloquial speech",
+      "formal rhetoric"
+    ],
+    "translation": "Sách hướng dẫn văn phong của trường đại học khuyến nghị sử dụng ngôn ngữ bao gồm (không phân biệt), chẳng hạn như 'chairperson' thay vì 'chairman' và 'they' như một đại từ số ít, để tránh thiên vị giới tính.",
+    "analysis": "'Inclusive language' là ngôn ngữ bao gồm (không phân biệt đối xử). 'Technical jargon' là biệt ngữ kỹ thuật, 'Colloquial speech' là khẩu ngữ."
+  },
+  {
+    "id": "7-5",
+    "familyId": "7",
+    "word": "inclusive price",
+    "sentence": "The tour package is offered at an ____ of $2000, which covers airfare, accommodation, meals, and all entrance fees.",
+    "correct": "inclusive price",
+    "distractors": [
+      "exclusive fee",
+      "separate charge",
+      "additional cost"
+    ],
+    "translation": "Gói du lịch được cung cấp với giá trọn gói 2000 đô la, bao gồm vé máy bay, chỗ ở, ăn uống và tất cả phí tham quan.",
+    "analysis": "'Inclusive price' là giá trọn gói, bao gồm tất cả. 'Exclusive fee' là phí độc quyền, 'Separate charge' và 'Additional cost' là các khoản phí riêng."
+  },
+  {
+    "id": "7-6",
+    "familyId": "7",
+    "word": "inclusively designed",
+    "sentence": "The new public playground is ____, featuring equipment that can be used by children of all abilities, including those who use wheelchairs.",
+    "correct": "inclusively designed",
+    "distractors": [
+      "expensively constructed",
+      "hastily built",
+      "traditionally styled"
+    ],
+    "translation": "Sân chơi công cộng mới được thiết kế mang tính bao gồm, có các thiết bị có thể được sử dụng bởi trẻ em ở mọi khả năng, bao gồm cả những em sử dụng xe lăn.",
+    "analysis": "'Inclusively designed' là được thiết kế mang tính bao gồm, phù hợp với mọi đối tượng. 'Expensively constructed' là xây dựng đắt tiền, 'Traditionally styled' là phong cách truyền thống."
+  },
+  {
+    "id": "8-1",
+    "familyId": "8",
+    "word": "comprehensive",
+    "sentence": "The report provides a ____ overview of the Australian economy, covering everything from inflation rates to employment trends.",
+    "correct": "comprehensive",
+    "distractors": [
+      "comprehensible",
+      "competitive",
+      "compensatory"
+    ],
+    "translation": "Báo cáo cung cấp một cái nhìn tổng quan toàn diện về nền kinh tế Úc, bao gồm mọi thứ từ tỷ lệ lạm phát đến xu hướng việc làm.",
+    "analysis": "'Comprehensive' có nghĩa là toàn diện, bao quát. 'Comprehensible' (dễ hiểu), 'Competitive' (cạnh tranh), 'Compensatory' (bù đắp)."
+  },
+  {
+    "id": "8-2",
+    "familyId": "8",
+    "word": "comprehensively",
+    "sentence": "The research paper ____ analyzes the long-term effects of climate change on coastal communities, considering environmental, economic, and social factors.",
+    "correct": "comprehensively",
+    "distractors": [
+      "comprehensibly",
+      "compulsively",
+      "comparatively"
+    ],
+    "translation": "Bài nghiên cứu phân tích một cách toàn diện các tác động lâu dài của biến đổi khí hậu đến các cộng đồng ven biển, xem xét các yếu tố môi trường, kinh tế và xã hội.",
+    "analysis": "'Comprehensively' (một cách toàn diện) phù hợp với việc xem xét nhiều yếu tố. 'Comprehensibly' (có thể hiểu được), 'Compulsively' (một cách ép buộc), 'Comparatively' (một cách tương đối) là bẫy hình thái."
+  },
+  {
+    "id": "8-3",
+    "familyId": "8",
+    "word": "comprehensive review",
+    "sentence": "Before making a final decision, the board requested a ____ of all previous research on the topic, including studies that supported and contradicted the proposed theory.",
+    "correct": "comprehensive review",
+    "distractors": [
+      "brief summary",
+      "casual glance",
+      "partial update"
+    ],
+    "translation": "Trước khi đưa ra quyết định cuối cùng, hội đồng đã yêu cầu một bài đánh giá toàn diện về tất cả các nghiên cứu trước đây về chủ đề này, bao gồm cả các nghiên cứu ủng hộ và mâu thuẫn với lý thuyết được đề xuất.",
+    "analysis": "'Comprehensive review' là bài đánh giá toàn diện. 'Brief summary' là tóm tắt ngắn gọn, 'Casual glance' là nhìn qua loa, 'Partial update' là cập nhật một phần."
+  },
+  {
+    "id": "8-4",
+    "familyId": "8",
+    "word": "comprehensive insurance",
+    "sentence": "While third-party coverage is cheaper, opting for ____ is advisable for new cars as it covers damage to your own vehicle as well.",
+    "correct": "comprehensive insurance",
+    "distractors": [
+      "compulsory insurance",
+      "life insurance",
+      "health insurance"
+    ],
+    "translation": "Mặc dù bảo hiểm bên thứ ba rẻ hơn, nhưng chọn bảo hiểm toàn diện được khuyến nghị cho xe mới vì nó cũng bảo vệ thiệt hại cho chính xe của bạn.",
+    "analysis": "'Comprehensive insurance' là bảo hiểm toàn diện, bao gồm cả thiệt hại cho xe của mình. 'Compulsory/Life/Health insurance' không phù hợp."
+  },
+  {
+    "id": "8-5",
+    "familyId": "8",
+    "word": "comprehensive school",
+    "sentence": "In the UK education system, a ____ is a secondary school that does not select its pupils based on academic ability, unlike a grammar school.",
+    "correct": "comprehensive school",
+    "distractors": [
+      "grammar school",
+      "private academy",
+      "vocational college"
+    ],
+    "translation": "Trong hệ thống giáo dục của Anh, trường phổ thông hỗn hợp là trường trung học không chọn lọc học sinh dựa trên năng lực học tập, không giống như trường trung học chuyên nghiệp.",
+    "analysis": "'Comprehensive school' là trường phổ thông hỗn hợp (hệ thống giáo dục Anh). 'Grammar school' là trường chuyên nghiệp, 'Private academy' là học viện tư."
+  },
+  {
+    "id": "8-6",
+    "familyId": "8",
+    "word": "comprehensively defeated",
+    "sentence": "The incumbent party was ____ in the general election, winning only 15% of the seats in parliament.",
+    "correct": "comprehensively defeated",
+    "distractors": [
+      "narrowly beaten",
+      "slightly challenged",
+      "partially opposed"
+    ],
+    "translation": "Đảng cầm quyền đã bị đánh bại hoàn toàn trong cuộc tổng tuyển cử, chỉ giành được 15% số ghế trong quốc hội.",
+    "analysis": "'Comprehensively defeated' là bị đánh bại hoàn toàn, phù hợp với kết quả chỉ 15% số ghế. 'Narrowly beaten' là bị đánh bại sít sao, 'Slightly challenged' là bị thách thức nhẹ."
+  },
+  {
+    "id": "11-1",
+    "familyId": "11",
+    "word": "detailed",
+    "sentence": "The architect provided a ____ analysis of the building's structural integrity, noting every potential weakness in the design.",
+    "correct": "detailed",
+    "distractors": [
+      "descriptive",
+      "deliberate",
+      "definite"
+    ],
+    "translation": "Kiến trúc sư đã cung cấp một phân tích chi tiết về tính toàn vẹn cấu trúc của tòa nhà, ghi nhận mọi điểm yếu tiềm ẩn trong thiết kế.",
+    "analysis": "Từ cần điền là tính từ bổ nghĩa cho 'analysis'. 'Detailed' là 'chi tiết'. 'Descriptive' (miêu tả), 'Deliberate' (có chủ ý), 'Definite' (rõ ràng) là bẫy hình thái."
+  },
+  {
+    "id": "11-2",
+    "familyId": "11",
+    "word": "detailed analysis",
+    "sentence": "The consultant's ____ of the market revealed several opportunities that the company had previously overlooked.",
+    "correct": "detailed analysis",
+    "distractors": [
+      "cursory glance",
+      "superficial review",
+      "vague overview"
+    ],
+    "translation": "Phân tích chi tiết của chuyên gia tư vấn về thị trường đã tiết lộ một số cơ hội mà công ty đã bỏ qua trước đây.",
+    "analysis": "'Detailed analysis' là phân tích chi tiết, phù hợp với việc tiết lộ các cơ hội. 'Cursory glance' là liếc qua, 'Superficial review' là xem xét hời hợt."
+  },
+  {
+    "id": "11-3",
+    "familyId": "11",
+    "word": "detailed report",
+    "sentence": "The committee requested a ____ on the incident, specifying that it must include a timeline of events and a list of all witnesses.",
+    "correct": "detailed report",
+    "distractors": [
+      "vague summary",
+      "oral account",
+      "brief note"
+    ],
+    "translation": "Ủy ban yêu cầu một báo cáo chi tiết về vụ việc, yêu cầu cụ thể rằng nó phải bao gồm một dòng thời gian của các sự kiện và danh sách tất cả các nhân chứng.",
+    "analysis": "'Detailed report' là báo cáo chi tiết, phù hợp với yêu cầu cụ thể. 'Vague summary' là tóm tắt mơ hồ, 'Oral account' là kể miệng."
+  },
+  {
+    "id": "11-4",
+    "familyId": "11",
+    "word": "detailed instructions",
+    "sentence": "The software manual provides ____ on how to install and configure the program, including screenshots for each step.",
+    "correct": "detailed instructions",
+    "distractors": [
+      "vague guidelines",
+      "simple hints",
+      "verbal suggestions"
+    ],
+    "translation": "Sách hướng dẫn phần mềm cung cấp hướng dẫn chi tiết về cách cài đặt và cấu hình chương trình, bao gồm ảnh chụp màn hình cho từng bước.",
+    "analysis": "'Detailed instructions' là hướng dẫn chi tiết, phù hợp với việc có cả ảnh chụp màn hình. 'Vague guidelines' là hướng dẫn mơ hồ, 'Simple hints' là gợi ý đơn giản."
+  },
+  {
+    "id": "15-1",
+    "familyId": "15",
+    "word": "exact",
+    "sentence": "In scientific experiments, it is crucial to measure the ____ amount of each chemical to ensure the reaction is consistent and reliable.",
+    "correct": "exact",
+    "distractors": [
+      "exacting",
+      "exalted",
+      "extracted"
+    ],
+    "translation": "Trong các thí nghiệm khoa học, việc đo lường chính xác lượng mỗi hóa chất là rất quan trọng để đảm bảo phản ứng diễn ra nhất quán và đáng tin cậy.",
+    "analysis": "Từ cần điền là tính từ. 'Exact' là chính xác. 'Exacting' (đòi hỏi khắt khe), 'Exalted' (được tán dương), 'Extracted' (được chiết xuất) là bẫy hình thái."
+  },
+  {
+    "id": "15-2",
+    "familyId": "15",
+    "word": "exactly",
+    "sentence": "The two samples should behave ____ the same way under controlled conditions if the hypothesis is correct.",
+    "correct": "exactly",
+    "distractors": [
+      "exceedingly",
+      "explicitly",
+      "extensively"
+    ],
+    "translation": "Hai mẫu sẽ hoạt động một cách chính xác giống nhau dưới các điều kiện có kiểm soát nếu giả thuyết là đúng.",
+    "analysis": "'Exactly' (một cách chính xác) nhấn mạnh sự giống hệt. 'Exceedingly' (cực kỳ), 'Explicitly' (rõ ràng), 'Extensively' (rộng rãi) là bẫy hình thái."
+  },
+  {
+    "id": "15-3",
+    "familyId": "15",
+    "word": "exact words",
+    "sentence": "The witness could not recall the ____ of the suspect, but she remembered the general meaning of the threat.",
+    "correct": "exact words",
+    "distractors": [
+      "approximate phrases",
+      "similar sentences",
+      "related terms"
+    ],
+    "translation": "Nhân chứng không thể nhớ chính xác từ ngữ của nghi phạm, nhưng cô ấy nhớ ý nghĩa chung của lời đe dọa.",
+    "analysis": "'Exact words' là nguyên văn từ ngữ. 'Approximate phrases' là các cụm từ xấp xỉ, 'Similar sentences' là các câu tương tự."
+  },
+  {
+    "id": "15-4",
+    "familyId": "15",
+    "word": "exact time",
+    "sentence": "The witness could not recall the ____ of the accident but remembered that it happened shortly after sunset.",
+    "correct": "exact time",
+    "distractors": [
+      "approximate timeframe",
+      "estimated duration",
+      "general period"
+    ],
+    "translation": "Nhân chứng không thể nhớ chính xác thời gian xảy ra tai nạn nhưng nhớ rằng nó xảy ra ngay sau khi mặt trời lặn.",
+    "analysis": "'Exact time' là thời gian chính xác (cụm từ). Các lựa chọn 'approximate timeframe' (khung thời gian xấp xỉ), 'estimated duration' (khoảng thời gian ước tính), 'general period' (giai đoạn chung) đều là cụm từ để gây nhiễu."
+  },
+  {
+    "id": "15-5",
+    "familyId": "15",
+    "word": "exact amount",
+    "sentence": "The thief confessed to stealing the money but could not remember the ____ he had taken from the safe.",
+    "correct": "exact amount",
+    "distractors": [
+      "approximate sum",
+      "estimated value",
+      "rounded figure"
+    ],
+    "translation": "Tên trộm thừa nhận đã lấy trộm tiền nhưng không thể nhớ chính xác số tiền đã lấy từ két sắt.",
+    "analysis": "'Exact amount' là số tiền chính xác. 'Approximate sum' là tổng xấp xỉ, 'Estimated value' là giá trị ước tính, 'Rounded figure' là con số làm tròn."
+  },
+  {
+    "id": "15-6",
+    "familyId": "15",
+    "word": "exactly right",
+    "sentence": "After several failed attempts, the researcher finally adjusted the temperature to a level that felt ____ for the chemical reaction to proceed.",
+    "correct": "exactly right",
+    "distractors": [
+      "roughly wrong",
+      "approximately incorrect",
+      "partially off"
+    ],
+    "translation": "Sau nhiều lần thử thất bại, nhà nghiên cứu cuối cùng đã điều chỉnh nhiệt độ đến một mức cảm thấy hoàn toàn chính xác để phản ứng hóa học diễn ra.",
+    "analysis": "'Exactly right' là hoàn toàn chính xác, phù hợp sau nhiều lần thất bại. 'Roughly wrong' và 'Approximately incorrect' là sai, 'Partially off' là lệch một phần."
+  },
+  {
+    "id": "16-1",
+    "familyId": "16",
+    "word": "accurate",
+    "sentence": "For the census data to be useful for policy-making, it must be as ____ and up-to-date as possible.",
+    "correct": "accurate",
+    "distractors": [
+      "acute",
+      "adequate",
+      "articulate"
+    ],
+    "translation": "Để dữ liệu điều tra dân số hữu ích cho việc hoạch định chính sách, nó phải chính xác và cập nhật nhất có thể.",
+    "analysis": "Cần tính từ. 'Accurate' là chính xác. 'Acute' (nhạy bén), 'Adequate' (đầy đủ), 'Articulate' (lưu loát) là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "16-2",
+    "familyId": "16",
+    "word": "accurately",
+    "sentence": "The survey must be conducted ____ to ensure that the results truly represent the opinions of the entire population.",
+    "correct": "accurately",
+    "distractors": [
+      "acutely",
+      "adequately",
+      "articulately"
+    ],
+    "translation": "Cuộc khảo sát phải được thực hiện một cách chính xác để đảm bảo rằng kết quả thực sự đại diện cho ý kiến của toàn bộ dân số.",
+    "analysis": "'Accurately' (một cách chính xác) phù hợp với yêu cầu về tính đại diện. 'Acutely' (một cách sâu sắc), 'Adequately' (một cách đầy đủ), 'Articulately' (một cách lưu loát) là bẫy hình thái."
+  },
+  {
+    "id": "16-3",
+    "familyId": "16",
+    "word": "accurate information",
+    "sentence": "During an emergency, it is vital that authorities provide the public with ____ to prevent panic and ensure safety.",
+    "correct": "accurate information",
+    "distractors": [
+      "fake news",
+      "biased opinion",
+      "approximate data"
+    ],
+    "translation": "Trong trường hợp khẩn cấp, điều quan trọng là chính quyền phải cung cấp thông tin chính xác cho công chúng để ngăn chặn hoảng loạn và đảm bảo an toàn.",
+    "analysis": "'Accurate information' là thông tin chính xác. 'Fake news' là tin giả, 'Biased opinion' là ý kiến thiên vị, 'Approximate data' là dữ liệu xấp xỉ."
+  },
+  {
+    "id": "16-4",
+    "familyId": "16",
+    "word": "accurate description",
+    "sentence": "The police asked the witness to provide an ____ of the attacker, including details about his height, weight, and clothing.",
+    "correct": "accurate description",
+    "distractors": [
+      "vague impression",
+      "general idea",
+      "rough sketch"
+    ],
+    "translation": "Cảnh sát yêu cầu nhân chứng cung cấp một mô tả chính xác về kẻ tấn công, bao gồm chi tiết về chiều cao, cân nặng và quần áo.",
+    "analysis": "'Accurate description' là mô tả chính xác, phù hợp với yêu cầu chi tiết. 'Vague impression' là ấn tượng mơ hồ, 'General idea' là ý tưởng chung."
+  },
+  {
+    "id": "16-5",
+    "familyId": "16",
+    "word": "accurate prediction",
+    "sentence": "Making an ____ of stock market movements is extremely difficult due to the large number of unpredictable variables involved.",
+    "correct": "accurate prediction",
+    "distractors": [
+      "wild guess",
+      "random speculation",
+      "uninformed estimate"
+    ],
+    "translation": "Việc đưa ra một dự đoán chính xác về biến động thị trường chứng khoán là vô cùng khó khăn do có quá nhiều biến số không thể dự đoán.",
+    "analysis": "'Accurate prediction' là dự đoán chính xác. 'Wild guess' là đoán bừa, 'Random speculation' là suy đoán ngẫu nhiên, 'Uninformed estimate' là ước tính không có cơ sở."
+  },
+  {
+    "id": "16-6",
+    "familyId": "16",
+    "word": "accurately measured",
+    "sentence": "For the clinical trial results to be valid, the participants' blood pressure and heart rate must be ____ at regular intervals.",
+    "correct": "accurately measured",
+    "distractors": [
+      "roughly estimated",
+      "casually observed",
+      "subjectively felt"
+    ],
+    "translation": "Để kết quả thử nghiệm lâm sàng có giá trị, huyết áp và nhịp tim của người tham gia phải được đo lường chính xác trong các khoảng thời gian đều đặn.",
+    "analysis": "'Accurately measured' là được đo lường chính xác, phù hợp với yêu cầu về tính hợp lệ. 'Roughly estimated' là ước lượng thô, 'Casually observed' là quan sát qua loa."
+  }
+]
+[
+  {
+    "id": "17-1",
+    "familyId": "17",
+    "word": "correct",
+    "sentence": "Students are expected to submit the ____ version of their thesis after incorporating all the feedback from their supervisors.",
+    "correct": "corrected",
+    "distractors": [
+      "corrective",
+      "correlative",
+      "collective"
+    ],
+    "translation": "Sinh viên có trách nhiệm nộp phiên bản đã được sửa chữa của luận án sau khi tích hợp tất cả các phản hồi từ giảng viên hướng dẫn.",
+    "analysis": "'Corrected' là quá khứ phân từ đóng vai trò tính từ. 'Corrective', 'Correlative', 'Collective' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "17-2",
+    "familyId": "17",
+    "word": "correctly",
+    "sentence": "To pass the driving test, you must ____ demonstrate all the required maneuvers, including parallel parking and three-point turns.",
+    "correct": "correctly",
+    "distractors": [
+      "corruptly",
+      "currently",
+      "collectively"
+    ],
+    "translation": "Để vượt qua bài kiểm tra lái xe, bạn phải thực hiện một cách chính xác tất cả các thao tác được yêu cầu, bao gồm đỗ xe song song và quay đầu ba điểm.",
+    "analysis": "'Correctly' là trạng từ chỉ cách thức thực hiện đúng. 'Corruptly', 'Currently', 'Collectively' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "17-3",
+    "familyId": "17",
+    "word": "correct answer",
+    "sentence": "For multiple-choice questions, the ____ is worth one mark, but no marks are deducted for incorrect responses.",
+    "correct": "correct answer",
+    "distractors": [
+      "model answer",
+      "partial answer",
+      "direct answer"
+    ],
+    "translation": "Đối với câu hỏi trắc nghiệm, câu trả lời đúng có giá trị một điểm, nhưng không bị trừ điểm cho câu trả lời sai.",
+    "analysis": "'Correct answer' là câu trả lời đúng. 'Model answer', 'Partial answer', 'Direct answer' là các bẫy ngữ cảnh."
+  },
+  {
+    "id": "17-4",
+    "familyId": "17",
+    "word": "correct procedure",
+    "sentence": "In the event of a chemical spill, laboratory staff must follow the ____ for containment and cleanup, which is posted on the wall.",
+    "correct": "correct procedure",
+    "distractors": [
+      "current procedure",
+      "corrupt procedure",
+      "covert procedure"
+    ],
+    "translation": "Trong trường hợp xảy ra sự cố tràn hóa chất, nhân viên phòng thí nghiệm phải tuân theo quy trình đúng chuẩn để ngăn chặn và làm sạch, được dán trên tường.",
+    "analysis": "'Correct procedure' là quy trình đúng chuẩn. 'Current/Corrupt/Covert procedure' là bẫy hình thái."
+  },
+  {
+    "id": "17-5",
+    "familyId": "17",
+    "word": "correct decision",
+    "sentence": "Looking back, the board realized that hiring a diverse leadership team was the ____ they could have made.",
+    "correct": "correct decision",
+    "distractors": [
+      "current decision",
+      "collective decision",
+      "concrete decision"
+    ],
+    "translation": "Nhìn lại, hội đồng quản trị nhận ra rằng việc thuê một đội ngũ lãnh đạo đa dạng là quyết định đúng đắn nhất mà họ có thể đưa ra.",
+    "analysis": "'Correct decision' là quyết định đúng đắn. 'Current/Collective/Concrete decision' là bẫy hình thái."
+  },
+  {
+    "id": "17-6",
+    "familyId": "17",
+    "word": "correctly identified",
+    "sentence": "The suspect was ____ by three independent witnesses in a police lineup, leading to his arrest.",
+    "correct": "correctly identified",
+    "distractors": [
+      "corruptly identified",
+      "currently identified",
+      "commonly identified"
+    ],
+    "translation": "Nghi phạm đã được xác định chính xác bởi ba nhân chứng độc lập trong một đội hình nhận dạng của cảnh sát, dẫn đến việc bắt giữ anh ta.",
+    "analysis": "'Correctly identified' là được xác định chính xác. 'Corruptly/Currently/Commonly identified' là bẫy hình thái."
+  },
+  {
+    "id": "18-1",
+    "familyId": "18",
+    "word": "incorrect",
+    "sentence": "The theory was rejected because it was based on several ____ assumptions about consumer behavior in a digital economy.",
+    "correct": "incorrect",
+    "distractors": [
+      "indirect",
+      "indiscreet",
+      "incoherent"
+    ],
+    "translation": "Lý thuyết đã bị bác bỏ vì nó dựa trên một số giả định không chính xác về hành vi của người tiêu dùng trong nền kinh tế kỹ thuật số.",
+    "analysis": "'Incorrect' là không đúng. 'Indirect', 'Indiscreet', 'Incoherent' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "18-2",
+    "familyId": "18",
+    "word": "incorrectly",
+    "sentence": "The data was ____ entered into the system, resulting in a series of erroneous reports that misled management.",
+    "correct": "incorrectly",
+    "distractors": [
+      "indirectly",
+      "incompletely",
+      "incoherently"
+    ],
+    "translation": "Dữ liệu đã được nhập một cách sai lệch vào hệ thống, dẫn đến một loạt báo cáo sai lệch đã đánh lừa ban quản lý.",
+    "analysis": "'Incorrectly' là trạng từ. 'Indirectly', 'Incompletely', 'Incoherently' là bẫy hình thái."
+  },
+  {
+    "id": "18-3",
+    "familyId": "18",
+    "word": "incorrect information",
+    "sentence": "Spreading ____ about the safety of vaccines can have serious public health consequences.",
+    "correct": "incorrect information",
+    "distractors": [
+      "incomplete information",
+      "irrelevant information",
+      "classified information"
+    ],
+    "translation": "Lan truyền thông tin không chính xác về sự an toàn của vắc-xin có thể gây hậu quả nghiêm trọng cho sức khỏe cộng đồng.",
+    "analysis": "'Incorrect information' là thông tin không chính xác. 'Incomplete/Irrelevant/Classified information' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "18-4",
+    "familyId": "18",
+    "word": "incorrect answer",
+    "sentence": "Each ____ on the final exam will result in a deduction of half a point from your total score.",
+    "correct": "incorrect answer",
+    "distractors": [
+      "incomplete answer",
+      "indirect answer",
+      "incoherent answer"
+    ],
+    "translation": "Mỗi câu trả lời sai trong bài thi cuối kỳ sẽ bị trừ nửa điểm khỏi tổng điểm của bạn.",
+    "analysis": "'Incorrect answer' là câu trả lời sai. 'Incomplete/Indirect/Incoherent answer' là bẫy hình thái và ngữ cảnh."
+  },
+  {
+    "id": "18-5",
+    "familyId": "18",
+    "word": "incorrect assumption",
+    "sentence": "The project failed because the initial planning was based on the ____ that interest rates would remain low for the next five years.",
+    "correct": "incorrect assumption",
+    "distractors": [
+      "indirect assumption",
+      "implicit assumption",
+      "initial assumption"
+    ],
+    "translation": "Dự án thất bại vì việc lập kế hoạch ban đầu dựa trên giả định sai lầm rằng lãi suất sẽ duy trì ở mức thấp trong năm năm tới.",
+    "analysis": "'Incorrect assumption' là giả định sai lầm. 'Indirect/Implicit/Initial assumption' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "18-6",
+    "familyId": "18",
+    "word": "incorrectly stated",
+    "sentence": "The terms of the contract were ____ in the legal document, leading to a dispute between the two parties.",
+    "correct": "incorrectly stated",
+    "distractors": [
+      "indirectly stated",
+      "incompletely stated",
+      "incoherently stated"
+    ],
+    "translation": "Các điều khoản của hợp đồng đã được phát biểu sai lệch trong văn bản pháp lý, dẫn đến tranh chấp giữa hai bên.",
+    "analysis": "'Incorrectly stated' là được phát biểu sai lệch. 'Indirectly/Incompletely/Incoherently stated' là bẫy hình thái."
+  },
+  {
+    "id": "19-1",
+    "familyId": "19",
+    "word": "wrong",
+    "sentence": "The scientist realized he had taken the ____ approach to solving the equation after spending three hours without finding a solution.",
+    "correct": "wrong",
+    "distractors": [
+      "weak",
+      "weird",
+      "rigid"
+    ],
+    "translation": "Nhà khoa học nhận ra mình đã đi sai hướng trong việc giải phương trình sau khi dành ba giờ mà không tìm ra lời giải.",
+    "analysis": "'Wrong approach' là cách tiếp cận sai. 'Weak', 'Weird', 'Rigid' là các tính từ bẫy hình thái."
+  },
+  {
+    "id": "19-2",
+    "familyId": "19",
+    "word": "wrongly",
+    "sentence": "The employee was ____ accused of stealing company funds, and the real thief was only discovered months later.",
+    "correct": "wrongly",
+    "distractors": [
+      "weakly",
+      "weirdly",
+      "wryly"
+    ],
+    "translation": "Nhân viên đã bị buộc tội một cách sai lầm về việc ăn cắp quỹ của công ty, và tên trộm thực sự chỉ được phát hiện nhiều tháng sau đó.",
+    "analysis": "'Wrongly' là trạng từ. 'Weakly', 'Weirdly', 'Wryly' là bẫy hình thái."
+  },
+  {
+    "id": "19-3",
+    "familyId": "19",
+    "word": "wrong decision",
+    "sentence": "Investing all of the company's capital into a single untested venture turned out to be a ____ that led to bankruptcy.",
+    "correct": "wrong decision",
+    "distractors": [
+      "weak decision",
+      "wary decision",
+      "weird decision"
+    ],
+    "translation": "Đầu tư toàn bộ vốn của công ty vào một liên doanh chưa được kiểm chứng hóa ra là một quyết định sai lầm dẫn đến phá sản.",
+    "analysis": "'Wrong decision' là quyết định sai lầm. 'Weak/Wary/Weird decision' là bẫy hình thái."
+  },
+  {
+    "id": "19-4",
+    "familyId": "19",
+    "word": "wrong direction",
+    "sentence": "The hikers realized they were walking in the ____ when they reached a river that was not marked on their map.",
+    "correct": "wrong direction",
+    "distractors": [
+      "opposite direction",
+      "general direction",
+      "reverse direction"
+    ],
+    "translation": "Những người đi bộ đường dài nhận ra họ đang đi sai phương hướng khi đến một con sông không được đánh dấu trên bản đồ của họ.",
+    "analysis": "'Wrong direction' là sai phương hướng. 'Opposite/General/Reverse direction' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "19-5",
+    "familyId": "19",
+    "word": "wrong number",
+    "sentence": "When I called the embassy, I was connected to a completely different department because the operator gave me the ____.",
+    "correct": "wrong number",
+    "distractors": [
+      "busy signal",
+      "voicemail",
+      "disconnected line"
+    ],
+    "translation": "Khi tôi gọi đến đại sứ quán, tôi bị kết nối đến một bộ phận hoàn toàn khác vì nhân viên tổng đài đã cho tôi sai số.",
+    "analysis": "'Wrong number' là sai số điện thoại, phù hợp với ngữ cảnh gọi nhầm. 'Busy signal/Voicemail/Disconnected line' liên quan đến tình trạng đường dây."
+  },
+  {
+    "id": "19-6",
+    "familyId": "19",
+    "word": "wrongly accused",
+    "sentence": "The innocent man spent ten years in prison after being ____ of a crime he did not commit.",
+    "correct": "wrongly accused",
+    "distractors": [
+      "widely accused",
+      "wildly accused",
+      "weakly accused"
+    ],
+    "translation": "Người đàn ông vô tội đã phải ngồi tù mười năm sau khi bị buộc tội oan về một tội mà anh ta không gây ra.",
+    "analysis": "'Wrongly accused' là bị buộc tội oan. 'Widely/Wildly/Weakly accused' là bẫy hình thái."
+  },
+  {
+    "id": "20-1",
+    "familyId": "20",
+    "word": "erroneous",
+    "sentence": "The judge overturned the verdict after discovering that the jury had been given ____ instructions about the definition of reasonable doubt.",
+    "correct": "erroneous",
+    "distractors": [
+      "erratic",
+      "errant",
+      "erudite"
+    ],
+    "translation": "Thẩm phán đã hủy bỏ phán quyết sau khi phát hiện ra rằng bồi thẩm đoàn đã được hướng dẫn sai lầm về định nghĩa của nghi ngờ hợp lý.",
+    "analysis": "'Erroneous instructions' là hướng dẫn sai lầm. 'Erratic', 'Errant', 'Erudite' là bẫy hình thái."
+  },
+  {
+    "id": "20-2",
+    "familyId": "20",
+    "word": "erroneously",
+    "sentence": "The journalist ____ reported that the CEO had resigned, when in fact he was on a temporary leave of absence.",
+    "correct": "erroneously",
+    "distractors": [
+      "erratically",
+      "eruditely",
+      "errantly"
+    ],
+    "translation": "Nhà báo đã đưa tin một cách sai lầm rằng CEO đã từ chức, trong khi thực tế ông ấy đang nghỉ phép tạm thời.",
+    "analysis": "'Erroneously' là trạng từ. 'Erratically', 'Eruditely', 'Errantly' là bẫy hình thái."
+  },
+  {
+    "id": "20-3",
+    "familyId": "20",
+    "word": "erroneous belief",
+    "sentence": "The ____ that vaccines cause autism has been thoroughly debunked by numerous scientific studies, yet it persists in some communities.",
+    "correct": "erroneous belief",
+    "distractors": [
+      "erratic belief",
+      "errant belief",
+      "erudite belief"
+    ],
+    "translation": "Niềm tin sai lầm rằng vắc-xin gây ra bệnh tự kỷ đã bị vạch trần hoàn toàn bởi nhiều nghiên cứu khoa học, nhưng nó vẫn tồn tại trong một số cộng đồng.",
+    "analysis": "'Erroneous belief' là niềm tin sai lầm. 'Erratic/Errant/Erudite belief' là bẫy hình thái."
+  },
+  {
+    "id": "20-4",
+    "familyId": "20",
+    "word": "erroneous conclusion",
+    "sentence": "Drawing an ____ from a small sample size is a common statistical error that can undermine the validity of a research study.",
+    "correct": "erroneous conclusion",
+    "distractors": [
+      "ambiguous conclusion",
+      "premature conclusion",
+      "hasty generalization"
+    ],
+    "translation": "Rút ra kết luận sai lầm từ một cỡ mẫu nhỏ là một lỗi thống kê phổ biến có thể làm suy yếu giá trị của một nghiên cứu.",
+    "analysis": "'Erroneous conclusion' là kết luận sai lầm. Các lựa chọn khác là bẫy ngữ cảnh về lỗi thống kê."
+  },
+  {
+    "id": "20-5",
+    "familyId": "20",
+    "word": "erroneous data",
+    "sentence": "The algorithm produced unreliable predictions because it was trained on ____ that contained numerous typos and inconsistencies.",
+    "correct": "erroneous data",
+    "distractors": [
+      "empirical data",
+      "encrypted data",
+      "extraneous data"
+    ],
+    "translation": "Thuật toán tạo ra các dự đoán không đáng tin cậy vì nó được đào tạo trên dữ liệu sai lệch có chứa nhiều lỗi chính tả và sự không nhất quán.",
+    "analysis": "'Erroneous data' là dữ liệu sai lệch. 'Empirical/Encrypted/Extraneous data' là bẫy hình thái và ngữ cảnh."
+  },
+  {
+    "id": "20-6",
+    "familyId": "20",
+    "word": "erroneously reported",
+    "sentence": "The company's quarterly earnings were ____, causing its stock price to plummet when the mistake was discovered.",
+    "correct": "erroneously reported",
+    "distractors": [
+      "extensively reported",
+      "exclusively reported",
+      "explicitly reported"
+    ],
+    "translation": "Thu nhập hàng quý của công ty đã được báo cáo sai lệch, khiến giá cổ phiếu của công ty giảm mạnh khi sai lầm được phát hiện.",
+    "analysis": "'Erroneously reported' là được báo cáo sai lệch. 'Extensively/Exclusively/Explicitly reported' là bẫy hình thái."
+  },
+  {
+    "id": "21-1",
+    "familyId": "21",
+    "word": "false",
+    "sentence": "The witness was charged with perjury after admitting he had given a ____ statement to the police during the investigation.",
+    "correct": "false",
+    "distractors": [
+      "faulty",
+      "flawed",
+      "fickle"
+    ],
+    "translation": "Nhân chứng bị buộc tội khai man sau khi thừa nhận đã đưa ra lời khai sai sự thật với cảnh sát trong quá trình điều tra.",
+    "analysis": "'False' là sai sự thật. 'Faulty', 'Flawed', 'Fickle' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "21-2",
+    "familyId": "21",
+    "word": "falsely",
+    "sentence": "The defendant claimed he was ____ accused of the crime and provided an alibi to prove his innocence.",
+    "correct": "falsely",
+    "distractors": [
+      "faultily",
+      "fatally",
+      "fiercely"
+    ],
+    "translation": "Bị cáo tuyên bố mình đã bị buộc tội một cách sai trái và cung cấp bằng chứng ngoại phạm để chứng minh sự vô tội của mình.",
+    "analysis": "'Falsely' là một cách sai trái. 'Faultily', 'Fatally', 'Fiercely' là bẫy hình thái."
+  },
+  {
+    "id": "21-3",
+    "familyId": "21",
+    "word": "false statement",
+    "sentence": "Making a ____ on your visa application can result in a ban from entering the country for up to ten years.",
+    "correct": "false statement",
+    "distractors": [
+      "formal statement",
+      "financial statement",
+      "final statement"
+    ],
+    "translation": "Đưa ra một tuyên bố sai sự thật trong đơn xin thị thực của bạn có thể dẫn đến lệnh cấm nhập cảnh vào nước đó lên đến mười năm.",
+    "analysis": "'False statement' là tuyên bố sai sự thật. 'Formal/Financial/Final statement' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "21-4",
+    "familyId": "21",
+    "word": "false impression",
+    "sentence": "The politician's carefully worded response gave the ____ that he supported the reform, when in fact he opposed it.",
+    "correct": "false impression",
+    "distractors": [
+      "first impression",
+      "faint impression",
+      "fleeting impression"
+    ],
+    "translation": "Câu trả lời được trau chuốt kỹ lưỡng của chính trị gia đã tạo ra ấn tượng sai lầm rằng ông ủng hộ cải cách, trong khi thực tế ông phản đối.",
+    "analysis": "'False impression' là ấn tượng sai lầm. 'First/Faint/Fleeting impression' là bẫy hình thái và ngữ cảnh."
+  },
+  {
+    "id": "21-5",
+    "familyId": "21",
+    "word": "false alarm",
+    "sentence": "The evacuation of the building was triggered by a ____ when a faulty sensor detected smoke that was actually just steam from the kitchen.",
+    "correct": "false alarm",
+    "distractors": [
+      "faulty signal",
+      "minor alert",
+      "system error"
+    ],
+    "translation": "Việc sơ tán khỏi tòa nhà được kích hoạt bởi một báo động giả khi một cảm biến bị lỗi phát hiện khói mà thực chất chỉ là hơi nước từ nhà bếp.",
+    "analysis": "'False alarm' là báo động giả, phù hợp với ngữ cảnh. 'Real threat' và 'Genuine emergency' là mối đe dọa thực sự, 'Warning signal' là tín hiệu cảnh báo chung chung."
+  },
+  {
+    "id": "21-6",
+    "familyId": "21",
+    "word": "falsely accused",
+    "sentence": "The charity worker was ____ of embezzling funds, but the investigation later revealed that the money had been stolen by someone else.",
+    "correct": "falsely accused",
+    "distractors": [
+      "formally accused",
+      "fiercely accused",
+      "fatally accused"
+    ],
+    "translation": "Nhân viên từ thiện đã bị buộc tội vu khống về việc biển thủ quỹ, nhưng cuộc điều tra sau đó cho thấy số tiền đã bị người khác ăn cắp.",
+    "analysis": "'Falsely accused' là bị buộc tội vu khống. 'Formally/Fiercely/Fatally accused' là bẫy hình thái."
+  },
+  {
+    "id": "22-1",
+    "familyId": "22",
+    "word": "true",
+    "sentence": "The historian spent years trying to separate the ____ story from the many myths and legends that surrounded the ancient king.",
+    "correct": "true",
+    "distractors": [
+      "trusted",
+      "typical",
+      "trivial"
+    ],
+    "translation": "Nhà sử học đã dành nhiều năm để cố gắng tách biệt câu chuyện có thật khỏi nhiều huyền thoại và truyền thuyết xung quanh vị vua cổ đại.",
+    "analysis": "'True' là có thật. 'Trusted', 'Typical', 'Trivial' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "22-2",
+    "familyId": "22",
+    "word": "truly",
+    "sentence": "She was ____ sorry for her mistake and took full responsibility for the project's failure.",
+    "correct": "truly",
+    "distractors": [
+      "trustingly",
+      "trivially",
+      "typically"
+    ],
+    "translation": "Cô ấy thật sự xin lỗi vì sai lầm của mình và đã nhận hoàn toàn trách nhiệm cho sự thất bại của dự án.",
+    "analysis": "'Truly' là thật sự. 'Trustingly', 'Trivially', 'Typically' là bẫy hình thái."
+  },
+  {
+    "id": "22-3",
+    "familyId": "22",
+    "word": "true story",
+    "sentence": "The film is based on a ____ about a group of students who survived a plane crash in the Andes.",
+    "correct": "true story",
+    "distractors": [
+      "tragic story",
+      "typical story",
+      "trivial story"
+    ],
+    "translation": "Bộ phim dựa trên một câu chuyện có thật về một nhóm sinh viên sống sót sau một vụ rơi máy bay ở dãy Andes.",
+    "analysis": "'True story' là câu chuyện có thật. 'Tragic/Typical/Trivial story' là bẫy hình thái."
+  },
+  {
+    "id": "22-4",
+    "familyId": "22",
+    "word": "true meaning",
+    "sentence": "The poem's ____ was not immediately apparent, requiring readers to analyze its metaphors and symbolism carefully.",
+    "correct": "true meaning",
+    "distractors": [
+      "hidden meaning",
+      "literal meaning",
+      "underlying meaning"
+    ],
+    "translation": "Ý nghĩa thực sự của bài thơ không thể thấy ngay được, đòi hỏi người đọc phải phân tích cẩn thận các phép ẩn dụ và biểu tượng của nó.",
+    "analysis": "'True meaning' là ý nghĩa thực sự. 'Hidden/Literal/Underlying meaning' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "22-5",
+    "familyId": "22",
+    "word": "true friend",
+    "sentence": "In times of difficulty, you discover who your ____ are; they are the ones who stand by you when everyone else walks away.",
+    "correct": "true friend",
+    "distractors": [
+      "trusted colleague",
+      "typical friend",
+      "mutual friend"
+    ],
+    "translation": "Trong những lúc khó khăn, bạn khám phá ra ai là người bạn thực sự của mình; họ là những người ở bên bạn khi mọi người khác bỏ đi.",
+    "analysis": "'True friend' là bạn thực sự. 'Trusted colleague', 'Typical friend', 'Mutual friend' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "22-6",
+    "familyId": "22",
+    "word": "truly amazing",
+    "sentence": "The scientist's discovery of a new renewable energy source was ____ and earned her a Nobel Prize.",
+    "correct": "truly amazing",
+    "distractors": [
+      "typically average",
+      "trivially simple",
+      "tragically flawed"
+    ],
+    "translation": "Phát hiện của nhà khoa học về một nguồn năng lượng tái tạo mới thật sự tuyệt vời và đã mang về cho bà giải Nobel.",
+    "analysis": "'Truly amazing' là thật sự tuyệt vời. 'Typically average', 'Trivially simple', 'Tragically flawed' là bẫy ngữ cảnh và hình thái."
+  },
+  {
+    "id": "23-1",
+    "familyId": "23",
+    "word": "real",
+    "sentence": "The case study presents a ____ problem faced by logistics companies during the pandemic, rather than a hypothetical scenario.",
+    "correct": "real",
+    "distractors": [
+      "rare",
+      "raw",
+      "recent"
+    ],
+    "translation": "Nghiên cứu điển hình trình bày một vấn đề thực tế mà các công ty hậu cần gặp phải trong đại dịch, thay vì một kịch bản giả định.",
+    "analysis": "'Real problem' là vấn đề thực tế. 'Rare', 'Raw', 'Recent' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "23-2",
+    "familyId": "23",
+    "word": "really",
+    "sentence": "The new treatment has ____ improved the survival rate for patients with this aggressive form of cancer.",
+    "correct": "really",
+    "distractors": [
+      "rarely",
+      "recently",
+      "readily"
+    ],
+    "translation": "Phương pháp điều trị mới thực sự đã cải thiện tỷ lệ sống sót cho bệnh nhân mắc dạng ung thư hung hãn này.",
+    "analysis": "'Really' là thực sự. 'Rarely', 'Recently', 'Readily' là bẫy hình thái trạng từ."
+  },
+  {
+    "id": "23-3",
+    "familyId": "23",
+    "word": "real problem",
+    "sentence": "While the team focused on minor technical glitches, the ____ was a fundamental flaw in the product's design.",
+    "correct": "real problem",
+    "distractors": [
+      "root problem",
+      "routine problem",
+      "minor problem"
+    ],
+    "translation": "Trong khi nhóm tập trung vào các trục trặc kỹ thuật nhỏ, vấn đề thực tế lại là một sai sót cơ bản trong thiết kế của sản phẩm.",
+    "analysis": "'Real problem' là vấn đề thực tế. 'Root/Routine/Minor problem' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "23-4",
+    "familyId": "23",
+    "word": "real world",
+    "sentence": "The theory works perfectly in controlled laboratory conditions, but its application in the ____ has proven to be much more challenging.",
+    "correct": "real world",
+    "distractors": [
+      "corporate world",
+      "academic world",
+      "modern world"
+    ],
+    "translation": "Lý thuyết hoạt động hoàn hảo trong các điều kiện phòng thí nghiệm có kiểm soát, nhưng việc áp dụng nó trong thế giới thực tế đã chứng minh là khó khăn hơn nhiều.",
+    "analysis": "'Real world' là thế giới thực tế. 'Corporate/Academic/Modern world' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "23-5",
+    "familyId": "23",
+    "word": "real estate",
+    "sentence": "Investing in ____ in major Australian cities like Sydney and Melbourne has traditionally been considered a safe long-term investment strategy.",
+    "correct": "real estate",
+    "distractors": [
+      "personal property",
+      "stock market",
+      "government bonds"
+    ],
+    "translation": "Đầu tư vào bất động sản tại các thành phố lớn của Úc như Sydney và Melbourne theo truyền thống được coi là một chiến lược đầu tư dài hạn an toàn.",
+    "analysis": "'Real estate' là bất động sản, phù hợp với ngữ cảnh đầu tư tại các thành phố. 'Personal property' là tài sản cá nhân, 'Stock market' là thị trường chứng khoán."
+  },
+  {
+    "id": "23-6",
+    "familyId": "23",
+    "word": "really important",
+    "sentence": "The researcher emphasized that it is ____ to control for confounding variables when interpreting the results of the study.",
+    "correct": "really important",
+    "distractors": [
+      "relatively important",
+      "remotely important",
+      "routinely important"
+    ],
+    "translation": "Nhà nghiên cứu nhấn mạnh rằng việc kiểm soát các biến số gây nhiễu là thật sự quan trọng khi giải thích kết quả của nghiên cứu.",
+    "analysis": "'Really important' là thật sự quan trọng. 'Relatively/Remotely/Routinely important' là bẫy hình thái."
+  },
+  {
+    "id": "24-1",
+    "familyId": "24",
+    "word": "actual",
+    "sentence": "The budget forecast predicted a surplus, but the ____ figures showed a significant deficit due to unexpected economic shocks.",
+    "correct": "actual",
+    "distractors": [
+      "active",
+      "acute",
+      "academic"
+    ],
+    "translation": "Dự báo ngân sách dự đoán thặng dư, nhưng con số thực tế cho thấy thâm hụt đáng kể do các cú sốc kinh tế bất ngờ.",
+    "analysis": "'Actual figures' là số liệu thực tế. 'Active', 'Acute', 'Academic' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "24-2",
+    "familyId": "24",
+    "word": "actually",
+    "sentence": "Many people believe the company went bankrupt due to poor management, but the ____ cause was a sharp decline in global demand for its products.",
+    "correct": "actually",
+    "distractors": [
+      "actively",
+      "acutely",
+      "accidentally"
+    ],
+    "translation": "Nhiều người tin rằng công ty phá sản do quản lý kém, nhưng nguyên nhân thực tế là sự suy giảm mạnh về nhu cầu toàn cầu đối với sản phẩm của công ty.",
+    "analysis": "'Actually' là thực tế là. 'Actively', 'Acutely', 'Accidentally' là bẫy hình thái trạng từ."
+  },
+  {
+    "id": "24-3",
+    "familyId": "24",
+    "word": "actual cost",
+    "sentence": "After the project was completed, the ____ turned out to be 30% higher than the initial estimate provided by the contractors.",
+    "correct": "actual cost",
+    "distractors": [
+      "estimated expense",
+      "budgeted amount",
+      "potential fee"
+    ],
+    "translation": "Sau khi dự án hoàn thành, chi phí thực tế cao hơn 30% so với ước tính ban đầu do các nhà thầu cung cấp.",
+    "analysis": "'Actual cost' là chi phí thực tế. 'Estimated expense' và 'Budgeted amount' là chi phí ước tính, 'Potential fee' là phí tiềm năng."
+  },
+  {
+    "id": "24-4",
+    "familyId": "24",
+    "word": "actual events",
+    "sentence": "The novel is a work of fiction, but it is loosely based on ____ that took place in London during the 19th century.",
+    "correct": "actual events",
+    "distractors": [
+      "active events",
+      "annual events",
+      "accidental events"
+    ],
+    "translation": "Cuốn tiểu thuyết là một tác phẩm hư cấu, nhưng nó được dựa một cách lỏng lẻo trên các sự kiện thực tế đã diễn ra ở London trong thế kỷ 19.",
+    "analysis": "'Actual events' là sự kiện thực tế. 'Active/Annual/Accidental events' là bẫy hình thái."
+  },
+  {
+    "id": "24-5",
+    "familyId": "24",
+    "word": "actual size",
+    "sentence": "The blueprint shows the building's dimensions at ____, so every millimeter on the paper corresponds to a millimeter in reality.",
+    "correct": "actual size",
+    "distractors": [
+      "approximate size",
+      "average size",
+      "apparent size"
+    ],
+    "translation": "Bản thiết kế hiển thị kích thước thực tế của tòa nhà, do đó mỗi milimet trên giấy tương ứng với một milimet trong thực tế.",
+    "analysis": "'Actual size' là kích thước thực tế. 'Approximate/Average/Apparent size' là bẫy hình thái."
+  },
+  {
+    "id": "24-6",
+    "familyId": "24",
+    "word": "actually happened",
+    "sentence": "The witness gave a detailed account of what ____ on the night of the crime, which was consistent with the physical evidence.",
+    "correct": "actually happened",
+    "distractors": [
+      "actively happened",
+      "accidentally happened",
+      "abruptly happened"
+    ],
+    "translation": "Nhân chứng đã đưa ra một lời kể chi tiết về những gì thực tế đã xảy ra vào đêm xảy ra tội phạm, phù hợp với bằng chứng vật chất.",
+    "analysis": "'Actually happened' là thực tế đã xảy ra. 'Actively/Accidentally/Abruptly happened' là bẫy hình thái."
+  }
+]
+[
+  {
+    "id": "25-1",
+    "familyId": "25",
+    "word": "factual",
+    "sentence": "In academic writing, it is essential to base your arguments on ____ evidence rather than personal opinions or emotional appeals.",
+    "correct": "factual",
+    "distractors": [
+      "factional",
+      "fractional",
+      "functional"
+    ],
+    "translation": "Trong viết học thuật, điều cần thiết là dựa trên bằng chứng thực tế thay vì ý kiến cá nhân hoặc sự kêu gọi cảm xúc.",
+    "analysis": "Cần tính từ. 'Factual' là thực tế. 'Factional', 'Fractional', 'Functional' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "25-2",
+    "familyId": "25",
+    "word": "factually",
+    "sentence": "The journalist was praised for reporting ____, sticking strictly to verified information without exaggeration or bias.",
+    "correct": "factually",
+    "distractors": [
+      "fatally",
+      "facially",
+      "fancifully"
+    ],
+    "translation": "Nhà báo đã được khen ngợi vì đưa tin một cách khách quan dựa trên sự thật, tuân thủ nghiêm ngặt thông tin đã được xác minh mà không cường điệu hoặc thiên vị.",
+    "analysis": "'Factually' (về mặt sự thật) phù hợp với việc đưa tin dựa trên thông tin xác minh. 'Fatally', 'Facially', 'Fancifully' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "25-3",
+    "familyId": "25",
+    "word": "factual information",
+    "sentence": "The encyclopedia is known for providing ____ that has been rigorously checked by subject matter experts before publication.",
+    "correct": "factual information",
+    "distractors": [
+      "fictional information",
+      "anecdotal information",
+      "fabricated information"
+    ],
+    "translation": "Bách khoa toàn thư nổi tiếng vì cung cấp thông tin thực tế đã được kiểm tra nghiêm ngặt bởi các chuyên gia trong lĩnh vực trước khi xuất bản.",
+    "analysis": "'Factual information' là thông tin thực tế. 'Fictional/Anecdotal/Fabricated information' là các bẫy cụm từ ngữ cảnh."
+  },
+  {
+    "id": "25-4",
+    "familyId": "25",
+    "word": "factual accuracy",
+    "sentence": "The historian's work is renowned for its ____; every claim is supported by primary sources from the period.",
+    "correct": "factual accuracy",
+    "distractors": [
+      "grammatical correctness",
+      "stylistic consistency",
+      "narrative flow"
+    ],
+    "translation": "Công trình của nhà sử học nổi tiếng về độ chính xác của dữ liệu thực tế; mỗi tuyên bố đều được hỗ trợ bởi các nguồn chính thống từ thời kỳ đó.",
+    "analysis": "'Factual accuracy' là độ chính xác của dữ liệu thực tế, phù hợp với việc sử dụng nguồn chính thống. Các cụm từ còn lại là bẫy ngữ cảnh."
+  },
+  {
+    "id": "25-5",
+    "familyId": "25",
+    "word": "factual error",
+    "sentence": "The textbook was recalled because it contained a ____ stating that World War II ended in 1944 instead of 1945.",
+    "correct": "factual error",
+    "distractors": [
+      "typing mistake",
+      "spelling error",
+      "grammatical flaw"
+    ],
+    "translation": "Sách giáo khoa đã bị thu hồi vì nó có một sai sót về mặt sự thật, nói rằng Thế chiến II kết thúc vào năm 1944 thay vì 1945.",
+    "analysis": "'Factual error' là sai sót về mặt sự thật (thông tin sai). 'Typing mistake', 'Spelling error', 'Grammatical flaw' là các lỗi văn bản thông thường."
+  },
+  {
+    "id": "25-6",
+    "familyId": "25",
+    "word": "factually correct",
+    "sentence": "The statement that 'water boils at 100 degrees Celsius at sea level' is ____, though it requires the condition 'at sea level' to be precise.",
+    "correct": "factually correct",
+    "distractors": [
+      "grammatically sound",
+      "stylistically elegant",
+      "rhetorically powerful"
+    ],
+    "translation": "Tuyên bố rằng 'nước sôi ở 100 độ C ở mực nước biển' là đúng sự thật, mặc dù nó cần điều kiện 'ở mực nước biển' để chính xác.",
+    "analysis": "'Factually correct' là đúng sự thật, phù hợp với tuyên bố về khoa học. 'Grammatically sound', 'Stylistically elegant', 'Rhetorically powerful' là bẫy ngữ cảnh."
+  },
+  {
+    "id": "26-1",
+    "familyId": "26",
+    "word": "objective",
+    "sentence": "To conduct a fair assessment, the teacher must remain ____ and avoid letting personal feelings influence the grading process.",
+    "correct": "objective",
+    "distractors": [
+      "objectionable",
+      "observant",
+      "obscure"
+    ],
+    "translation": "Để thực hiện đánh giá công bằng, giáo viên phải giữ được tính khách quan và tránh để cảm xúc cá nhân ảnh hưởng đến quá trình chấm điểm.",
+    "analysis": "'Objective' là khách quan. 'Objectionable', 'Observant', 'Obscure' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "26-2",
+    "familyId": "26",
+    "word": "objectively",
+    "sentence": "The referee must judge the play ____, without favoring either team, based solely on the rules of the game.",
+    "correct": "objectively",
+    "distractors": [
+      "objectionably",
+      "observantly",
+      "obscurely"
+    ],
+    "translation": "Trọng tài phải đánh giá một cách khách quan, không thiên vị đội nào, chỉ dựa trên luật của trò chơi.",
+    "analysis": "'Objectively' (một cách khách quan) phù hợp với việc không thiên vị. 'Objectionably', 'Observantly', 'Obscurely' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "26-3",
+    "familyId": "26",
+    "word": "objective analysis",
+    "sentence": "The report provides an ____ of the country's immigration policy, presenting both benefits and drawbacks without taking sides.",
+    "correct": "objective analysis",
+    "distractors": [
+      "biased review",
+      "personal opinion",
+      "subjective critique"
+    ],
+    "translation": "Báo cáo cung cấp một phân tích khách quan về chính sách nhập cư của đất nước, trình bày cả lợi ích và hạn chế mà không đứng về phía nào.",
+    "analysis": "'Objective analysis' là phân tích khách quan. Các lựa chọn khác đều mang tính chủ quan hoặc thiên vị, trái với ý nghĩa của câu."
+  },
+  {
+    "id": "26-4",
+    "familyId": "26",
+    "word": "objective criteria",
+    "sentence": "The scholarship committee uses ____ such as GPA and test scores to select recipients, eliminating any potential for favoritism.",
+    "correct": "objective criteria",
+    "distractors": [
+      "subjective measures",
+      "personal preferences",
+      "emotional factors"
+    ],
+    "translation": "Ủy ban học bổng sử dụng các tiêu chí khách quan như GPA và điểm thi để chọn người nhận, loại bỏ mọi khả năng thiên vị.",
+    "analysis": "'Objective criteria' là tiêu chí khách quan, dựa trên số liệu cụ thể. Các lựa chọn khác đều mang tính chủ quan."
+  },
+  {
+    "id": "26-5",
+    "familyId": "26",
+    "word": "objective truth",
+    "sentence": "Philosophers have long debated whether ____ exists independently of human perception and cultural bias.",
+    "correct": "objective truth",
+    "distractors": [
+      "subjective opinion",
+      "personal belief",
+      "relative fact"
+    ],
+    "translation": "Các nhà triết học từ lâu đã tranh luận liệu sự thật khách quan có tồn tại độc lập với nhận thức của con người và định kiến văn hóa hay không.",
+    "analysis": "'Objective truth' là sự thật khách quan, tồn tại độc lập với con người. Các lựa chọn khác đều phụ thuộc vào quan điểm cá nhân."
+  },
+  {
+    "id": "26-6",
+    "familyId": "26",
+    "word": "objectively measured",
+    "sentence": "The success of the program will be ____ by tracking key performance indicators such as graduation rates and job placement.",
+    "correct": "objectively measured",
+    "distractors": [
+      "subjectively felt",
+      "personally judged",
+      "emotionally assessed"
+    ],
+    "translation": "Sự thành công của chương trình sẽ được đo lường một cách khách quan bằng cách theo dõi các chỉ số hiệu suất chính như tỷ lệ tốt nghiệp và việc làm sau khi tốt nghiệp.",
+    "analysis": "'Objectively measured' là được đo lường khách quan, dựa trên dữ liệu cụ thể. Các lựa chọn khác đều dựa trên cảm nhận chủ quan."
+  },
+  {
+    "id": "27-1",
+    "familyId": "27",
+    "word": "subjective",
+    "sentence": "The interpretation of abstract art is highly ____; what one person sees as chaos, another may see as a profound statement on society.",
+    "correct": "subjective",
+    "distractors": [
+      "submissive",
+      "substantive",
+      "subsequent"
+    ],
+    "translation": "Việc giải thích nghệ thuật trừu tượng mang tính chủ quan cao; những gì một người coi là hỗn loạn, người khác có thể coi là một tuyên bố sâu sắc về xã hội.",
+    "analysis": "'Subjective' là chủ quan, phù hợp với việc giải thích mang tính cá nhân. 'Submissive', 'Substantive', 'Subsequent' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "27-2",
+    "familyId": "27",
+    "word": "subjectively",
+    "sentence": "Different reviewers rated the same wine very differently, demonstrating that taste is ____ perceived.",
+    "correct": "subjectively",
+    "distractors": [
+      "submissively",
+      "substantively",
+      "subsequently"
+    ],
+    "translation": "Các nhà phê bình khác nhau đánh giá cùng một loại rượu rất khác nhau, chứng tỏ rằng hương vị được cảm nhận một cách chủ quan.",
+    "analysis": "'Subjectively' (một cách chủ quan) phù hợp với việc đánh giá khác nhau. 'Submissively', 'Substantively', 'Subsequently' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "27-3",
+    "familyId": "27",
+    "word": "subjective opinion",
+    "sentence": "A judge must base a verdict on evidence and law, not on personal ____ or emotional reactions to the defendant.",
+    "correct": "subjective opinion",
+    "distractors": [
+      "objective fact",
+      "legal precedent",
+      "jury instruction"
+    ],
+    "translation": "Thẩm phán phải dựa trên bằng chứng và luật pháp để đưa ra phán quyết, không dựa trên ý kiến chủ quan cá nhân hoặc phản ứng cảm xúc đối với bị cáo.",
+    "analysis": "'Subjective opinion' là ý kiến chủ quan. Các lựa chọn khác là sự thật khách quan hoặc thuật ngữ pháp lý."
+  },
+  {
+    "id": "27-4",
+    "familyId": "27",
+    "word": "subjective experience",
+    "sentence": "The patient's report of pain is a ____ that cannot be measured by any medical device; doctors must rely on the patient's own description.",
+    "correct": "subjective experience",
+    "distractors": [
+      "objective measurement",
+      "clinical data",
+      "lab result"
+    ],
+    "translation": "Báo cáo về cơn đau của bệnh nhân là một kinh nghiệm chủ quan không thể đo lường bằng bất kỳ thiết bị y tế nào; bác sĩ phải dựa vào mô tả của chính bệnh nhân.",
+    "analysis": "'Subjective experience' là kinh nghiệm chủ quan. Các lựa chọn khác đều là dữ liệu khách quan, có thể đo lường được."
+  },
+  {
+    "id": "27-5",
+    "familyId": "27",
+    "word": "subjective judgment",
+    "sentence": "Grading an essay inevitably involves some ____, which is why multiple assessors are often used to ensure fairness.",
+    "correct": "subjective judgment",
+    "distractors": [
+      "objective calculation",
+      "mathematical formula",
+      "mechanical scoring"
+    ],
+    "translation": "Chấm điểm một bài luận chắc chắn liên quan đến một số đánh giá chủ quan, đó là lý do tại sao nhiều giám khảo thường được sử dụng để đảm bảo tính công bằng.",
+    "analysis": "'Subjective judgment' là đánh giá chủ quan. Các lựa chọn khác đều là đánh giá khách quan, định lượng."
+  },
+  {
+    "id": "27-6",
+    "familyId": "27",
+    "word": "subjectively perceived",
+    "sentence": "Beauty is ____; what one person finds attractive, another may find completely unappealing.",
+    "correct": "subjectively perceived",
+    "distractors": [
+      "objectively measured",
+      "universally agreed",
+      "scientifically proven"
+    ],
+    "translation": "Cái đẹp được nhận thức một cách chủ quan; điều một người thấy hấp dẫn, người khác có thể thấy hoàn toàn không hấp dẫn.",
+    "analysis": "'Subjectively perceived' là được nhận thức chủ quan, phù hợp với sự khác biệt về sở thích. Các lựa chọn khác đều mang tính khách quan."
+  },
+  {
+    "id": "28-1",
+    "familyId": "28",
+    "word": "impartial",
+    "sentence": "The United Nations sent an ____ observer mission to monitor the election and ensure that the voting process was fair and transparent.",
+    "correct": "impartial",
+    "distractors": [
+      "impractical",
+      "imperial",
+      "impassive"
+    ],
+    "translation": "Liên Hợp Quốc đã cử một phái bộ quan sát viên vô tư để giám sát cuộc bầu cử và đảm bảo quy trình bỏ phiếu diễn ra công bằng và minh bạch.",
+    "analysis": "'Impartial' là vô tư, không thiên vị. 'Impractical', 'Imperial', 'Impassive' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "28-2",
+    "familyId": "28",
+    "word": "impartially",
+    "sentence": "The journalist was required to report ____, presenting all sides of the story without favoring any particular political party.",
+    "correct": "impartially",
+    "distractors": [
+      "impractically",
+      "imperially",
+      "impassively"
+    ],
+    "translation": "Nhà báo được yêu cầu đưa tin một cách vô tư, trình bày tất cả các khía cạnh của câu chuyện mà không ủng hộ bất kỳ đảng phái chính trị cụ thể nào.",
+    "analysis": "'Impartially' (một cách vô tư) phù hợp với yêu cầu trình bày mọi khía cạnh. 'Impractically', 'Imperially', 'Impassively' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "28-3",
+    "familyId": "28",
+    "word": "impartial judge",
+    "sentence": "The defendant's right to a fair trial requires an ____ who has no personal interest in the outcome of the case.",
+    "correct": "impartial judge",
+    "distractors": [
+      "biased arbitrator",
+      "prosecuting attorney",
+      "defense lawyer"
+    ],
+    "translation": "Quyền được xét xử công bằng của bị cáo đòi hỏi một thẩm phán vô tư, người không có lợi ích cá nhân trong kết quả của vụ án.",
+    "analysis": "'Impartial judge' là thẩm phán vô tư. Các cụm từ khác chỉ các vai trò có tính thiên vị hoặc đại diện cho một phe."
+  },
+  {
+    "id": "28-4",
+    "familyId": "28",
+    "word": "impartial advice",
+    "sentence": "When making major financial decisions, it is wise to seek ____ from a certified financial planner who does not earn commissions on products sold.",
+    "correct": "impartial advice",
+    "distractors": [
+      "biased recommendation",
+      "interested counsel",
+      "partisan guidance"
+    ],
+    "translation": "Khi đưa ra các quyết định tài chính lớn, bạn nên tìm kiếm lời khuyên vô tư từ một nhà hoạch định tài chính được chứng nhận, người không kiếm hoa hồng từ các sản phẩm được bán.",
+    "analysis": "'Impartial advice' là lời khuyên vô tư, không vụ lợi. Các lựa chọn khác đều là lời khuyên có động cơ hoặc thiên vị."
+  },
+  {
+    "id": "28-5",
+    "familyId": "28",
+    "word": "impartial analysis",
+    "sentence": "The think tank is respected for its ____ of policy issues, as it receives funding from multiple sources across the political spectrum.",
+    "correct": "impartial analysis",
+    "distractors": [
+      "slanted review",
+      "biased examination",
+      "partisan assessment"
+    ],
+    "translation": "Tổ chức tư vấn được tôn trọng vì các phân tích vô tư về các vấn đề chính sách, vì nó nhận được tài trợ từ nhiều nguồn trên phổ chính trị.",
+    "analysis": "'Impartial analysis' là phân tích vô tư. Các lựa chọn khác đều là phân tích có thiên hướng hoặc đảng phái."
+  },
+  {
+    "id": "28-6",
+    "familyId": "28",
+    "word": "impartially administered",
+    "sentence": "The scholarship program is ____ by an independent committee, ensuring that all applicants are evaluated using the same criteria.",
+    "correct": "impartially administered",
+    "distractors": [
+      "unfairly managed",
+      "preferentially run",
+      "discriminatorily operated"
+    ],
+    "translation": "Chương trình học bổng được quản lý một cách vô tư bởi một ủy ban độc lập, đảm bảo rằng tất cả các ứng viên được đánh giá bằng cùng một tiêu chí.",
+    "analysis": "'Impartially administered' là được quản lý vô tư. Các lựa chọn khác đều mang tính quản lý không công bằng."
+  },
+  {
+    "id": "29-1",
+    "familyId": "29",
+    "word": "unbiased",
+    "sentence": "The researcher took great care to select a random and ____ sample of participants to ensure the results of the survey were generalizable to the whole population.",
+    "correct": "unbiased",
+    "distractors": [
+      "unbalanced",
+      "unbound",
+      "unabridged"
+    ],
+    "translation": "Nhà nghiên cứu đã rất cẩn thận để chọn một mẫu ngẫu nhiên và không thiên vị nhằm đảm bảo kết quả khảo sát có thể khái quát hóa cho toàn bộ dân số.",
+    "analysis": "'Unbiased' là không thiên vị. 'Unbalanced', 'Unbound', 'Unabridged' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "29-2",
+    "familyId": "29",
+    "word": "unbiasedly",
+    "sentence": "The committee members were instructed to evaluate the proposals ____, without considering the applicants' affiliations or reputations.",
+    "correct": "unbiasedly",
+    "distractors": [
+      "unbearably",
+      "unbelievably",
+      "unabashedly"
+    ],
+    "translation": "Các thành viên ủy ban được hướng dẫn đánh giá các đề xuất một cách không thiên vị, mà không xem xét sự liên kết hoặc danh tiếng của người nộp đơn.",
+    "analysis": "'Unbiasedly' (một cách không thiên vị) phù hợp với việc bỏ qua các yếu tố bên ngoài. 'Unbearably', 'Unbelievably', 'Unabashedly' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "29-3",
+    "familyId": "29",
+    "word": "unbiased opinion",
+    "sentence": "When seeking feedback on your manuscript, it is best to ask for an ____ from someone who has no personal connection to you.",
+    "correct": "unbiased opinion",
+    "distractors": [
+      "prejudiced view",
+      "partial assessment",
+      "interested judgment"
+    ],
+    "translation": "Khi tìm kiếm phản hồi cho bản thảo của bạn, tốt nhất nên yêu cầu một ý kiến không thiên vị từ một người không có mối quan hệ cá nhân với bạn.",
+    "analysis": "'Unbiased opinion' là ý kiến không thiên vị. Các cụm từ khác đều là ý kiến có động cơ hoặc thiên vị."
+  },
+  {
+    "id": "29-4",
+    "familyId": "29",
+    "word": "unbiased reporting",
+    "sentence": "In an era of 'fake news' and media polarization, the public increasingly values ____ that presents all sides of a story without distortion.",
+    "correct": "unbiased reporting",
+    "distractors": [
+      "sensational journalism",
+      "opinion pieces",
+      "tabloid coverage"
+    ],
+    "translation": "Trong thời đại 'tin giả' và sự phân cực truyền thông, công chúng ngày càng coi trọng việc đưa tin không thiên vị, trình bày tất cả các khía cạnh của câu chuyện mà không bóp méo.",
+    "analysis": "'Unbiased reporting' là đưa tin không thiên vị. Các lựa chọn khác đều thường mang tính giật gân, chủ quan hoặc thiếu chính xác."
+  },
+  {
+    "id": "29-5",
+    "familyId": "29",
+    "word": "unbiased sample",
+    "sentence": "To obtain reliable results, pollsters must select an ____ that accurately represents the demographics of the voting population.",
+    "correct": "unbiased sample",
+    "distractors": [
+      "biased subset",
+      "unrepresentative group",
+      "skewed selection"
+    ],
+    "translation": "Để có được kết quả đáng tin cậy, các nhà thăm dò dư luận phải chọn một mẫu không thiên vị, đại diện chính xác cho nhân khẩu học của dân số cử tri.",
+    "analysis": "'Unbiased sample' là mẫu không thiên vị. Các lựa chọn khác đều là mẫu không đại diện, không đáng tin cậy."
+  },
+  {
+    "id": "29-6",
+    "familyId": "29",
+    "word": "unbiasedly selected",
+    "sentence": "Participants in the clinical trial were ____ from a pool of volunteers, ensuring that the treatment and control groups were comparable.",
+    "correct": "unbiasedly selected",
+    "distractors": [
+      "randomly chosen",
+      "arbitrarily picked",
+      "haphazardly selected"
+    ],
+    "translation": "Những người tham gia thử nghiệm lâm sàng đã được lựa chọn một cách khách quan từ một nhóm tình nguyện viên, đảm bảo rằng các nhóm điều trị và nhóm đối chứng có thể so sánh được với nhau.",
+    "analysis": "'Unbiasedly selected' là được lựa chọn khách quan, không thiên vị. Các lựa chọn khác mang tính chọn bừa bãi, tùy tiện."
+  },
+  {
+    "id": "30-1",
+    "familyId": "30",
+    "word": "neutral",
+    "sentence": "Switzerland has maintained a ____ position for centuries, refusing to join military alliances or take sides in international conflicts.",
+    "correct": "neutral",
+    "distractors": [
+      "natural",
+      "neural",
+      "nuclear"
+    ],
+    "translation": "Thụy Sĩ đã duy trì lập trường trung lập trong nhiều thế kỷ, từ chối tham gia các liên minh quân sự hoặc đứng về phía nào trong các cuộc xung đột quốc tế.",
+    "analysis": "'Neutral' là trung lập. 'Natural', 'Neural', 'Nuclear' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "30-2",
+    "familyId": "30",
+    "word": "neutrally",
+    "sentence": "The mediator listened ____ to both parties' arguments before offering a suggested resolution that did not favor either side.",
+    "correct": "neutrally",
+    "distractors": [
+      "naturally",
+      "neurally",
+      "nocturnally"
+    ],
+    "translation": "Người hòa giải đã lắng nghe một cách trung lập các lập luận của cả hai bên trước khi đưa ra một giải pháp được đề xuất không có lợi cho bên nào.",
+    "analysis": "'Neutrally' (một cách trung lập) phù hợp với vai trò hòa giải. 'Naturally', 'Neurally', 'Nocturnally' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "30-3",
+    "familyId": "30",
+    "word": "neutral position",
+    "sentence": "During the debate, the moderator maintained a ____, not expressing agreement or disagreement with any of the speakers.",
+    "correct": "neutral position",
+    "distractors": [
+      "biased stance",
+      "partial viewpoint",
+      "prejudiced stand"
+    ],
+    "translation": "Trong suốt cuộc tranh luận, người điều phối đã duy trì một lập trường trung lập, không bày tỏ sự đồng ý hay không đồng ý với bất kỳ người nói nào.",
+    "analysis": "'Neutral position' là lập trường trung lập. Các lựa chọn khác đều mang tính thiên vị."
+  },
+  {
+    "id": "30-4",
+    "familyId": "30",
+    "word": "neutral country",
+    "sentence": "As a ____, Sweden did not participate in World War II, although it allowed German troops to cross its territory.",
+    "correct": "neutral country",
+    "distractors": [
+      "warring nation",
+      "occupied territory",
+      "axis power"
+    ],
+    "translation": "Là một quốc gia trung lập, Thụy Điển đã không tham gia Thế chiến II, mặc dù nước này cho phép quân đội Đức đi qua lãnh thổ của mình.",
+    "analysis": "'Neutral country' là quốc gia trung lập. Các cụm từ còn lại chỉ phe tham chiến hoặc bị chiếm đóng."
+  },
+  {
+    "id": "30-5",
+    "familyId": "30",
+    "word": "neutral tone",
+    "sentence": "The news anchor reported the story in a ____, avoiding any language that might suggest approval or disapproval of the government's actions.",
+    "correct": "neutral tone",
+    "distractors": [
+      "passionate voice",
+      "emotional manner",
+      "biased style"
+    ],
+    "translation": "Người dẫn chương trình tin tức đã đưa tin câu chuyện với giọng điệu trung lập, tránh bất kỳ ngôn ngữ nào có thể gợi ý sự chấp thuận hay không chấp thuận các hành động của chính phủ.",
+    "analysis": "'Neutral tone' là giọng điệu trung lập. Các lựa chọn khác đều là cách thể hiện có cảm xúc hoặc thiên vị."
+  },
+  {
+    "id": "30-6",
+    "familyId": "30",
+    "word": "neutrally expressed",
+    "sentence": "The survey questions were ____ to avoid leading respondents toward a particular answer or influencing their opinions.",
+    "correct": "neutrally expressed",
+    "distractors": [
+      "suggestively worded",
+      "loaded phrased",
+      "leadingly stated"
+    ],
+    "translation": "Các câu hỏi khảo sát đã được thể hiện một cách trung lập để tránh hướng người trả lời đến một câu trả lời cụ thể hoặc ảnh hưởng đến ý kiến của họ.",
+    "analysis": "'Neutrally expressed' là được thể hiện trung lập. Các lựa chọn khác đều là cách đặt câu hỏi có xu hướng dẫn dắt câu trả lời."
+  },
+  {
+    "id": "32-1",
+    "familyId": "32",
+    "word": "just",
+    "sentence": "Activists are fighting for a more ____ society where resources are distributed fairly and everyone has equal access to opportunities.",
+    "correct": "just",
+    "distractors": [
+      "joint",
+      "jovial",
+      "judicious"
+    ],
+    "translation": "Các nhà hoạt động đang đấu tranh cho một xã hội công bằng hơn, nơi nguồn lực được phân phối công bằng và mọi người đều có cơ hội tiếp cận bình đẳng.",
+    "analysis": "Cần tính từ. 'Just' là công bằng. 'Joint', 'Jovial', 'Judicious' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "32-2",
+    "familyId": "32",
+    "word": "justly",
+    "sentence": "The criminal was ____ punished for his crimes, receiving a sentence that matched the severity of his actions.",
+    "correct": "justly",
+    "distractors": [
+      "jointly",
+      "jovially",
+      "judiciously"
+    ],
+    "translation": "Tội phạm đã bị trừng phạt một cách chính đáng cho tội ác của mình, nhận một bản án phù hợp với mức độ nghiêm trọng của hành động của hắn.",
+    "analysis": "'Justly' (một cách chính đáng) phù hợp với bản án tương xứng. 'Jointly', 'Jovially', 'Judiciously' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "32-3",
+    "familyId": "32",
+    "word": "just society",
+    "sentence": "The new legislation aims to create a more ____ by ensuring that all citizens, regardless of background, have access to quality education and healthcare.",
+    "correct": "just society",
+    "distractors": [
+      "unfair system",
+      "unequal community",
+      "partial regime"
+    ],
+    "translation": "Đạo luật mới nhằm mục đích tạo ra một xã hội công bằng hơn bằng cách đảm bảo rằng tất cả công dân, bất kể nền tảng, đều có thể tiếp cận giáo dục và chăm sóc sức khỏe chất lượng.",
+    "analysis": "'Just society' là xã hội công bằng. Các lựa chọn khác đều mô tả xã hội không công bằng, trái với mục tiêu của luật."
+  },
+  {
+    "id": "32-4",
+    "familyId": "32",
+    "word": "just decision",
+    "sentence": "The judge's ____ took into account all of the evidence and the circumstances of the defendant's difficult upbringing.",
+    "correct": "just decision",
+    "distractors": [
+      "arbitrary ruling",
+      "random choice",
+      "unfair verdict"
+    ],
+    "translation": "Quyết định công bằng của thẩm phán đã xem xét tất cả các bằng chứng và hoàn cảnh khó khăn trong quá trình trưởng thành của bị cáo.",
+    "analysis": "'Just decision' là quyết định công bằng. Các cụm từ khác đều chỉ các phán quyết tùy tiện, không công bằng."
+  },
+  {
+    "id": "32-5",
+    "familyId": "32",
+    "word": "just cause",
+    "sentence": "The employees were given permission to strike because the union was able to demonstrate that they had ____ for their grievances against the employer.",
+    "correct": "just cause",
+    "distractors": [
+      "unfair reason",
+      "trivial matter",
+      "personal grudge"
+    ],
+    "translation": "Các nhân viên được phép đình công vì công đoàn đã chứng minh được rằng họ có lý do chính đáng cho những khiếu nại của mình đối với người sử dụng lao động.",
+    "analysis": "'Just cause' là lý do chính đáng. Các lựa chọn khác chỉ lý do không công bằng, vụn vặt, hoặc thù hận cá nhân."
+  },
+  {
+    "id": "32-6",
+    "familyId": "32",
+    "word": "justly deserved",
+    "sentence": "The award-winning scientist received the ____ recognition for her groundbreaking discoveries, which had saved countless lives.",
+    "correct": "justly deserved",
+    "distractors": [
+      "totally undeserved",
+      "completely unearned",
+      "wholly unwarranted"
+    ],
+    "translation": "Nhà khoa học đoạt giải đã nhận được sự công nhận xứng đáng một cách chính đáng cho những khám phá mang tính đột phá của mình, đã cứu sống vô số người.",
+    "analysis": "'Justly deserved' là xứng đáng một cách chính đáng. Các lựa chọn khác là cụm từ trái nghĩa tương đương về độ dài (không xứng đáng)."
+  },
+  {
+    "id": "34-1",
+    "familyId": "34",
+    "word": "biased",
+    "sentence": "The study was criticized for being ____ because the funding came from a company that would directly benefit from the research findings.",
+    "correct": "biased",
+    "distractors": [
+      "based",
+      "bland",
+      "blind"
+    ],
+    "translation": "Nghiên cứu bị chỉ trích là thiên vị vì nguồn tài trợ đến từ một công ty sẽ hưởng lợi trực tiếp từ kết quả nghiên cứu.",
+    "analysis": "'Biased' là thiên vị, phù hợp với ngữ cảnh xung đột lợi ích. 'Based', 'Bland', 'Blind' là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "34-2",
+    "familyId": "34",
+    "word": "biased reporting",
+    "sentence": "The news outlet was accused of ____ after it repeatedly covered the same candidate's mistakes while ignoring the opponent's scandals.",
+    "correct": "biased reporting",
+    "distractors": [
+      "objective journalism",
+      "balanced coverage",
+      "fair reporting"
+    ],
+    "translation": "Cơ quan báo chí đã bị buộc tội đưa tin thiên vị sau khi liên tục đưa tin về những sai lầm của cùng một ứng cử viên trong khi bỏ qua các vụ bê bối của đối thủ.",
+    "analysis": "'Biased reporting' là đưa tin thiên vị. Các cụm từ khác đều là đưa tin công bằng, khách quan - trái với hành vi được mô tả."
+  },
+  {
+    "id": "34-3",
+    "familyId": "34",
+    "word": "biased sample",
+    "sentence": "The survey results were invalid because the researchers used a ____, polling only people from wealthy neighborhoods.",
+    "correct": "biased sample",
+    "distractors": [
+      "representative group",
+      "random selection",
+      "diverse population"
+    ],
+    "translation": "Kết quả khảo sát không hợp lệ vì các nhà nghiên cứu đã sử dụng một mẫu thiên vị, chỉ thăm dò những người từ các khu phố giàu có.",
+    "analysis": "'Biased sample' là mẫu thiên vị. Các lựa chọn khác đều là mẫu có tính đại diện, không thiên vị."
+  },
+  {
+    "id": "34-4",
+    "familyId": "34",
+    "word": "biased opinion",
+    "sentence": "As a close friend of the candidate, it is difficult for him to offer an objective assessment; his ____ is clearly influenced by their personal relationship.",
+    "correct": "biased opinion",
+    "distractors": [
+      "fair judgment",
+      "neutral view",
+      "expert analysis"
+    ],
+    "translation": "Là bạn thân của ứng cử viên, rất khó để anh ấy đưa ra đánh giá khách quan; ý kiến thiên vị của anh ấy rõ ràng bị ảnh hưởng bởi mối quan hệ cá nhân.",
+    "analysis": "'Biased opinion' là ý kiến thiên vị. Các lựa chọn khác đều mô tả những đánh giá khách quan hoặc đáng tin cậy."
+  },
+  {
+    "id": "34-5",
+    "familyId": "34",
+    "word": "biasedly presented",
+    "sentence": "The documentary was ____, showing only evidence that supported the director's preconceived conclusion while omitting contradictory facts.",
+    "correct": "biasedly presented",
+    "distractors": [
+      "objectively shown",
+      "fairly displayed",
+      "neutrally portrayed"
+    ],
+    "translation": "Bộ phim tài liệu đã được trình bày một cách thiên vị, chỉ đưa ra bằng chứng ủng hộ kết luận định kiến của đạo diễn trong khi bỏ qua các sự thật mâu thuẫn.",
+    "analysis": "'Biasedly presented' là được trình bày một cách thiên vị. Các lựa chọn khác đều là trình bày khách quan, công bằng."
+  }
+]
+[
+  {
+    "id": "35-1",
+    "familyId": "35",
+    "word": "prejudiced",
+    "sentence": "The manager's ____ attitude towards older workers led to several age discrimination complaints being filed with the fair work commission.",
+    "correct": "prejudiced",
+    "distractors": [
+      "prejudicial",
+      "prejudged",
+      "prejudging"
+    ],
+    "translation": "Thái độ có thành kiến của người quản lý đối với công nhân lớn tuổi đã dẫn đến một số đơn khiếu nại phân biệt tuổi tác được gửi lên ủy ban việc làm công bằng.",
+    "analysis": "Cần tính từ. 'Prejudiced' là có thành kiến. 'Prejudicial' (gây tổn hại), 'Prejudged' (bị phán xét trước), 'Prejudging' (đang phán xét) là các bẫy hình thái."
+  },
+  {
+    "id": "35-2",
+    "familyId": "35",
+    "word": "prejudiced views",
+    "sentence": "The documentary challenged commonly held ____ about immigrants, showing that they actually contribute significantly to the economy.",
+    "correct": "prejudiced views",
+    "distractors": [
+      "preliminary views",
+      "prescriptive views",
+      "prevailing views"
+    ],
+    "translation": "Bộ phim tài liệu đã thách thức những quan điểm thành kiến phổ biến về người nhập cư, cho thấy họ thực sự đóng góp đáng kể cho nền kinh tế.",
+    "analysis": "'Prejudiced views' là quan điểm thành kiến, trái ngược với thực tế mà phim tài liệu chứng minh. 'Preliminary/Prescriptive/Prevailing views' là các bẫy hình thái và ngữ cảnh."
+  },
+  {
+    "id": "35-3",
+    "familyId": "35",
+    "word": "prejudiced attitude",
+    "sentence": "Her ____ towards people from different cultural backgrounds was evident in the way she refused to work with colleagues who were not born in Australia.",
+    "correct": "prejudiced attitude",
+    "distractors": [
+      "preferential attitude",
+      "presumptuous attitude",
+      "provocative attitude"
+    ],
+    "translation": "Thái độ thành kiến của cô ấy đối với những người đến từ các nền văn hóa khác nhau đã thể hiện rõ qua cách cô từ chối làm việc với các đồng nghiệp không sinh ra ở Úc.",
+    "analysis": "'Prejudiced attitude' là thái độ thành kiến. 'Preferential/Presumptuous/Provocative attitude' là các bẫy hình thái và sắc thái."
+  },
+  {
+    "id": "35-4",
+    "familyId": "35",
+    "word": "prejudiced decision",
+    "sentence": "The court overturned the ____, ruling that the original judge had allowed personal bias to affect the outcome.",
+    "correct": "prejudiced decision",
+    "distractors": [
+      "preliminary decision",
+      "premature decision",
+      "prescriptive decision"
+    ],
+    "translation": "Tòa án đã lật lại quyết định đầy thành kiến, phán quyết rằng thẩm phán ban đầu đã để thành kiến cá nhân ảnh hưởng đến kết quả.",
+    "analysis": "'Prejudiced decision' là quyết định đầy thành kiến. 'Preliminary/Premature/Prescriptive decision' là các bẫy hình thái."
+  },
+  {
+    "id": "35-5",
+    "familyId": "35",
+    "word": "prejudicedly judged",
+    "sentence": "The applicant felt she had been ____ during the interview process because of her accent, even though her qualifications were superior.",
+    "correct": "prejudicedly judged",
+    "distractors": [
+      "prematurely judged",
+      "presumptuously judged",
+      "preferentially judged"
+    ],
+    "translation": "Người nộp đơn cảm thấy mình đã bị đánh giá một cách thành kiến trong quá trình phỏng vấn vì giọng nói của mình, mặc dù trình độ của cô ấy vượt trội hơn.",
+    "analysis": "'Prejudicedly judged' là bị đánh giá một cách thành kiến. 'Prematurely/Presumptuously/Preferentially judged' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "43-1",
+    "familyId": "43",
+    "word": "proportional",
+    "sentence": "The amount of tax you pay is ____ to your income, meaning those who earn more contribute a larger absolute amount.",
+    "correct": "proportional",
+    "distractors": [
+      "proportionate",
+      "proportioned",
+      "propositional"
+    ],
+    "translation": "Số tiền thuế bạn trả tỷ lệ thuận với thu nhập của bạn, có nghĩa là những người kiếm được nhiều hơn sẽ đóng góp một số tiền tuyệt đối lớn hơn.",
+    "analysis": "Cần tính từ. 'Proportional' là tỷ lệ thuận. 'Proportionate' (tương xứng), 'Proportioned' (được chia theo tỷ lệ), 'Propositional' (thuộc về mệnh đề) là các bẫy hình thái."
+  },
+  {
+    "id": "43-2",
+    "familyId": "43",
+    "word": "proportionally",
+    "sentence": "As the company's profits increased, employee bonuses were raised ____ to reward the staff for their contributions.",
+    "correct": "proportionally",
+    "distractors": [
+      "proportionately",
+      "propositionally",
+      "disproportionally"
+    ],
+    "translation": "Khi lợi nhuận của công ty tăng lên, tiền thưởng của nhân viên đã được tăng một cách tỷ lệ để khen thưởng sự đóng góp của họ.",
+    "analysis": "'Proportionally' (một cách tỷ lệ) phù hợp với sự tăng tương xứng. 'Proportionately', 'Propositionally', 'Disproportionally' (không cân xứng) là các bẫy hình thái."
+  },
+  {
+    "id": "43-3",
+    "familyId": "43",
+    "word": "proportional representation",
+    "sentence": "Unlike the first-past-the-post system, ____ ensures that the number of seats a party wins in parliament closely reflects its share of the popular vote.",
+    "correct": "proportional representation",
+    "distractors": [
+      "proportionate representation",
+      "propositional representation",
+      "provisional representation"
+    ],
+    "translation": "Không giống như hệ thống 'người thắng lấy tất cả', đại diện tỷ lệ đảm bảo rằng số ghế một đảng giành được trong quốc hội phản ánh sát sao tỷ lệ phiếu phổ thông của đảng đó.",
+    "analysis": "'Proportional representation' là hệ thống đại diện tỷ lệ. Các cụm từ khác là bẫy hình thái."
+  },
+  {
+    "id": "43-4",
+    "familyId": "43",
+    "word": "proportional relationship",
+    "sentence": "In physics, there is a ____ between force and acceleration when mass is held constant, as described by Newton's second law.",
+    "correct": "proportional relationship",
+    "distractors": [
+      "proportionate relationship",
+      "progressive relationship",
+      "projected relationship"
+    ],
+    "translation": "Trong vật lý, có một mối quan hệ tỷ lệ giữa lực và gia tốc khi khối lượng không đổi, như được mô tả bởi định luật thứ hai của Newton.",
+    "analysis": "'Proportional relationship' là mối quan hệ tỷ lệ. 'Proportionate/Progressive/Projected relationship' là các bẫy hình thái."
+  },
+  {
+    "id": "43-5",
+    "familyId": "43",
+    "word": "proportional response",
+    "sentence": "International law requires that any military action taken in self-defense must be a ____, not exceeding what is necessary to address the threat.",
+    "correct": "proportional response",
+    "distractors": [
+      "proportionate response",
+      "provisional response",
+      "progressive response"
+    ],
+    "translation": "Luật pháp quốc tế yêu cầu rằng bất kỳ hành động quân sự nào được thực hiện để tự vệ phải là một phản ứng tỷ lệ, không vượt quá những gì cần thiết để đối phó với mối đe dọa.",
+    "analysis": "'Proportional response' là phản ứng tỷ lệ. 'Proportionate/Provisional/Progressive response' là các bẫy hình thái."
+  },
+  {
+    "id": "43-6",
+    "familyId": "43",
+    "word": "proportionally divided",
+    "sentence": "The inheritance was ____ among the five children according to the terms of their father's will, with each receiving an equal share.",
+    "correct": "proportionally divided",
+    "distractors": [
+      "proportionately divided",
+      "provisionally divided",
+      "progressively divided"
+    ],
+    "translation": "Tài sản thừa kế đã được chia theo tỷ lệ cho năm người con theo các điều khoản trong di chúc của cha họ, mỗi người nhận một phần bằng nhau.",
+    "analysis": "'Proportionally divided' là chia theo tỷ lệ. Các lựa chọn khác là bẫy hình thái."
+  },
+  {
+    "id": "44-1",
+    "familyId": "44",
+    "word": "corresponding",
+    "sentence": "The company's profits increased by 20%, and the CEO received a ____ increase in her annual bonus.",
+    "correct": "corresponding",
+    "distractors": [
+      "correlative",
+      "corroborative",
+      "corrosive"
+    ],
+    "translation": "Lợi nhuận của công ty tăng 20%, và CEO đã nhận được một khoản tăng tương ứng trong tiền thưởng hàng năm của mình.",
+    "analysis": "Cần tính từ. 'Corresponding' là tương ứng. 'Correlative' (tương quan), 'Corroborative' (chứng thực), 'Corrosive' (ăn mòn) là các bẫy hình thái tính từ."
+  },
+  {
+    "id": "44-2",
+    "familyId": "44",
+    "word": "correspondingly",
+    "sentence": "As the population ages, the demand for healthcare services will increase, and government spending on pensions will rise ____.",
+    "correct": "correspondingly",
+    "distractors": [
+      "correlatively",
+      "corroboratively",
+      "coincidentally"
+    ],
+    "translation": "Khi dân số già đi, nhu cầu về dịch vụ chăm sóc sức khỏe sẽ tăng lên, và chi tiêu của chính phủ cho lương hưu cũng sẽ tăng một cách tương ứng.",
+    "analysis": "'Correspondingly' là trạng từ chỉ sự thay đổi tương ứng. 'Correlatively', 'Corroboratively', 'Coincidentally' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "44-3",
+    "familyId": "44",
+    "word": "corresponding period",
+    "sentence": "Sales in the last quarter were 15% higher than in the ____ of the previous year, indicating strong year-on-year growth.",
+    "correct": "corresponding period",
+    "distractors": [
+      "correlative period",
+      "corroborating period",
+      "coinciding period"
+    ],
+    "translation": "Doanh số trong quý vừa qua cao hơn 15% so với cùng kỳ năm trước, cho thấy mức tăng trưởng mạnh mẽ theo năm.",
+    "analysis": "'Corresponding period' là kỳ tương ứng (cùng kỳ). 'Correlative/Corroborating/Coinciding period' là các bẫy hình thái."
+  },
+  {
+    "id": "44-4",
+    "familyId": "44",
+    "word": "corresponding increase",
+    "sentence": "The company expects a ____ in operating costs as it expands its production capacity to meet rising demand.",
+    "correct": "corresponding increase",
+    "distractors": [
+      "correlative increase",
+      "corroborating increase",
+      "coinciding increase"
+    ],
+    "translation": "Công ty dự kiến sẽ có mức tăng tương ứng trong chi phí vận hành khi mở rộng năng lực sản xuất để đáp ứng nhu cầu gia tăng.",
+    "analysis": "'Corresponding increase' là mức tăng tương ứng. Các cụm từ khác là bẫy hình thái."
+  },
+  {
+    "id": "44-5",
+    "familyId": "44",
+    "word": "corresponding author",
+    "sentence": "In academic publishing, the ____ is responsible for handling all communications with the journal during the submission and review process.",
+    "correct": "corresponding author",
+    "distractors": [
+      "coordinating author",
+      "co-author",
+      "contributing author"
+    ],
+    "translation": "Trong xuất bản học thuật, tác giả tương ứng chịu trách nhiệm xử lý mọi liên lạc với tạp chí trong quá trình gửi bài và đánh giá.",
+    "analysis": "'Corresponding author' là tác giả liên lạc chính trong xuất bản học thuật. 'Coordinating/Co-author/Contributing author' là các vai trò khác (bẫy ngữ cảnh)."
+  },
+  {
+    "id": "44-6",
+    "familyId": "44",
+    "word": "correspondingly high",
+    "sentence": "The cost of living in Sydney is ____, which is why many young professionals choose to live in more affordable suburbs.",
+    "correct": "correspondingly high",
+    "distractors": [
+      "correlatively high",
+      "coincidentally high",
+      "consistently high"
+    ],
+    "translation": "Chi phí sinh hoạt ở Sydney ở mức cao tương ứng, đó là lý do tại sao nhiều chuyên gia trẻ chọn sống ở các vùng ngoại ô dễ chịu hơn.",
+    "analysis": "'Correspondingly high' là mức cao tương ứng. 'Correlatively/Coincidentally/Consistently high' là các bẫy hình thái."
+  },
+  {
+    "id": "47-1",
+    "familyId": "47",
+    "word": "identical",
+    "sentence": "The two DNA samples were almost ____, confirming that the suspect had indeed been present at the crime scene.",
+    "correct": "identical",
+    "distractors": [
+      "identifiable",
+      "identified",
+      "ideological"
+    ],
+    "translation": "Hai mẫu DNA gần như giống hệt nhau, xác nhận rằng nghi phạm thực sự đã có mặt tại hiện trường vụ án.",
+    "analysis": "Cần tính từ. 'Identical' là giống hệt. 'Identifiable' (có thể nhận dạng), 'Identified' (đã được nhận dạng), 'Ideological' (thuộc hệ tư tưởng) là các bẫy hình thái."
+  },
+  {
+    "id": "47-2",
+    "familyId": "47",
+    "word": "identically",
+    "sentence": "The two software programs function ____, producing the same output regardless of which one is used.",
+    "correct": "identically",
+    "distractors": [
+      "identifiably",
+      "ideologically",
+      "idiomatically"
+    ],
+    "translation": "Hai chương trình phần mềm hoạt động một cách giống hệt nhau, tạo ra cùng một đầu ra bất kể chương trình nào được sử dụng.",
+    "analysis": "'Identically' (một cách giống hệt nhau) phù hợp với việc có cùng đầu ra. 'Identifiably', 'Ideologically', 'Idiomatically' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "47-3",
+    "familyId": "47",
+    "word": "identical twins",
+    "sentence": "Studies of ____ who were separated at birth allow researchers to explore the influence of genetics versus environment on personality development.",
+    "correct": "identical twins",
+    "distractors": [
+      "fraternal twins",
+      "conjoined twins",
+      "dizygotic twins"
+    ],
+    "translation": "Các nghiên cứu về cặp song sinh cùng trứng bị tách rời từ khi mới sinh cho phép các nhà nghiên cứu khám phá ảnh hưởng của di truyền so với môi trường đối với sự phát triển nhân cách.",
+    "analysis": "'Identical twins' là song sinh cùng trứng (cùng DNA). 'Fraternal twins', 'Conjoined twins', 'Dizygotic twins' là các bẫy thuật ngữ y khoa/sinh học."
+  },
+  {
+    "id": "47-4",
+    "familyId": "47",
+    "word": "identical copy",
+    "sentence": "The forger created an almost ____ of the famous painting, but experts were able to spot subtle differences in the brushwork.",
+    "correct": "identical copy",
+    "distractors": [
+      "identifiable copy",
+      "idealized copy",
+      "idiosyncratic copy"
+    ],
+    "translation": "Kẻ làm giả đã tạo ra một bản sao gần như giống hệt bức tranh nổi tiếng, nhưng các chuyên gia đã có thể phát hiện ra những khác biệt tinh tế trong nét vẽ.",
+    "analysis": "'Identical copy' là bản sao giống hệt. 'Identifiable/Idealized/Idiosyncratic copy' là các bẫy hình thái."
+  },
+  {
+    "id": "47-5",
+    "familyId": "47",
+    "word": "identical results",
+    "sentence": "The experiment was repeated three times, and each trial produced ____, confirming the reliability of the findings.",
+    "correct": "identical results",
+    "distractors": [
+      "identifiable results",
+      "idealized results",
+      "idiosyncratic results"
+    ],
+    "translation": "Thí nghiệm được lặp lại ba lần, và mỗi lần thử nghiệm đều tạo ra kết quả giống hệt nhau, xác nhận độ tin cậy của các phát hiện.",
+    "analysis": "'Identical results' là kết quả giống hệt nhau. 'Identifiable/Idealized/Idiosyncratic results' là các bẫy hình thái."
+  },
+  {
+    "id": "47-6",
+    "familyId": "47",
+    "word": "identically dressed",
+    "sentence": "The performers were ____ in matching costumes, making it difficult for the audience to tell them apart.",
+    "correct": "identically dressed",
+    "distractors": [
+      "identifiably dressed",
+      "ideally dressed",
+      "immaculately dressed"
+    ],
+    "translation": "Những người biểu diễn đã ăn mặc giống hệt nhau trong trang phục giống nhau, khiến khán giả khó có thể phân biệt họ.",
+    "analysis": "'Identically dressed' là ăn mặc giống hệt nhau. Các lựa chọn khác là bẫy hình thái trạng từ."
+  },
+  {
+    "id": "49-1",
+    "familyId": "49",
+    "word": "different",
+    "sentence": "The two research teams arrived at ____ conclusions using the same set of data, which sparked a lively debate in the scientific community.",
+    "correct": "different",
+    "distractors": [
+      "differing",
+      "differential",
+      "diffident"
+    ],
+    "translation": "Hai nhóm nghiên cứu đã đi đến các kết luận khác nhau khi sử dụng cùng một bộ dữ liệu, điều này đã làm dấy lên một cuộc tranh luận sôi nổi trong cộng đồng khoa học.",
+    "analysis": "Cần tính từ. 'Different' là khác nhau. 'Differing' (khác biệt), 'Differential' (vi phân/chênh lệch), 'Diffident' (thiếu tự tin) là các bẫy hình thái."
+  },
+  {
+    "id": "49-2",
+    "familyId": "49",
+    "word": "differently",
+    "sentence": "The two groups of participants responded ____ to the same treatment, suggesting that genetic factors may play a role.",
+    "correct": "differently",
+    "distractors": [
+      "differentially",
+      "diffidently",
+      "diffusely"
+    ],
+    "translation": "Hai nhóm người tham gia đã phản ứng một cách khác nhau với cùng một phương pháp điều trị, cho thấy các yếu tố di truyền có thể đóng một vai trò.",
+    "analysis": "'Differently' (một cách khác nhau) phù hợp ngữ cảnh. 'Differentially', 'Diffidently', 'Diffusely' là các bẫy hình thái trạng từ."
+  },
+  {
+    "id": "49-3",
+    "familyId": "49",
+    "word": "different approach",
+    "sentence": "After the traditional method failed, the researchers decided to try a ____ to solving the problem, which ultimately led to a breakthrough.",
+    "correct": "different approach",
+    "distractors": [
+      "differential approach",
+      "diffident approach",
+      "diffuse approach"
+    ],
+    "translation": "Sau khi phương pháp truyền thống thất bại, các nhà nghiên cứu quyết định thử một cách tiếp cận khác để giải quyết vấn đề, và điều đó cuối cùng đã dẫn đến một bước đột phá.",
+    "analysis": "'Different approach' là cách tiếp cận khác. Các lựa chọn khác là bẫy hình thái."
+  },
+  {
+    "id": "49-4",
+    "familyId": "49",
+    "word": "different perspective",
+    "sentence": "Visiting another country can give you a ____ on your own culture, allowing you to see customs and values you previously took for granted.",
+    "correct": "different perspective",
+    "distractors": [
+      "differential perspective",
+      "diffident perspective",
+      "diffuse perspective"
+    ],
+    "translation": "Thăm một quốc gia khác có thể mang đến cho bạn một góc nhìn khác về văn hóa của chính mình, cho phép bạn thấy những phong tục và giá trị mà trước đây bạn coi là đương nhiên.",
+    "analysis": "'Different perspective' là góc nhìn khác. Các cụm từ khác là bẫy hình thái."
+  },
+  {
+    "id": "49-5",
+    "familyId": "49",
+    "word": "different results",
+    "sentence": "The two laboratories obtained ____ when analyzing the same samples, raising concerns about the consistency of the measurement protocol.",
+    "correct": "different results",
+    "distractors": [
+      "differential results",
+      "differing results",
+      "diffuse results"
+    ],
+    "translation": "Hai phòng thí nghiệm đã thu được các kết quả khác nhau khi phân tích các mẫu giống nhau, làm dấy lên lo ngại về tính nhất quán của quy trình đo lường.",
+    "analysis": "'Different results' là kết quả khác nhau. 'Differential/Differing/Diffuse results' là các bẫy hình thái."
+  },
+  {
+    "id": "49-6",
+    "familyId": "49",
+    "word": "differently abled",
+    "sentence": "The company has implemented policies to support ____ employees, including providing assistive technologies and flexible work arrangements.",
+    "correct": "differently abled",
+    "distractors": [
+      "differentially abled",
+      "diffidently abled",
+      "diversely abled"
+    ],
+    "translation": "Công ty đã thực hiện các chính sách hỗ trợ nhân viên có khả năng khác biệt (người khuyết tật), bao gồm cung cấp các công nghệ hỗ trợ và sắp xếp công việc linh hoạt.",
+    "analysis": "'Differently abled' là cách nói lịch sự chỉ người khuyết tật. Các cụm từ khác là bẫy hình thái cấu tạo từ."
+  },
+  {
+    "id": "50-1",
+    "familyId": "50",
+    "word": "distinct",
+    "sentence": "The two species are genetically ____, meaning they cannot interbreed to produce fertile offspring.",
+    "correct": "distinct",
+    "distractors": [
+      "distinctive",
+      "distinguished",
+      "distinguishable"
+    ],
+    "translation": "Hai loài này khác biệt rõ rệt về mặt di truyền, có nghĩa là chúng không thể giao phối với nhau để tạo ra con cái có khả năng sinh sản.",
+    "analysis": "'Distinct' có nghĩa là riêng biệt, khác biệt rõ ràng. 'Distinctive' (đặc trưng), 'Distinguished' (lỗi lạc), 'Distinguishable' (có thể phân biệt) là các bẫy hình thái."
+  },
+  {
+    "id": "50-2",
+    "familyId": "50",
+    "word": "distinctly",
+    "sentence": "I ____ remember the professor saying that the exam would focus on chapters 5 through 8, not the entire textbook.",
+    "correct": "distinctly",
+    "distractors": [
+      "distinctively",
+      "distinguishably",
+      "distantly"
+    ],
+    "translation": "Tôi ghi nhớ một cách rõ ràng rằng giáo sư đã nói bài thi sẽ tập trung vào các chương 5 đến 8, không phải toàn bộ sách giáo khoa.",
+    "analysis": "'Distinctly' (một cách rõ ràng) phù hợp với việc nhớ chính xác chi tiết. 'Distinctively', 'Distinguishably', 'Distantly' là bẫy hình thái trạng từ."
+  },
+  {
+    "id": "50-3",
+    "familyId": "50",
+    "word": "distinct advantage",
+    "sentence": "Having a PhD in a specialized field gives candidates a ____ when applying for senior research positions at top universities.",
+    "correct": "distinct advantage",
+    "distractors": [
+      "distinctive advantage",
+      "distinguished advantage",
+      "distinguishable advantage"
+    ],
+    "translation": "Có bằng tiến sĩ trong một lĩnh vực chuyên môn mang lại cho ứng viên một lợi thế rõ rệt khi nộp đơn cho các vị trí nghiên cứu cấp cao tại các trường đại học hàng đầu.",
+    "analysis": "'Distinct advantage' là lợi thế rõ rệt. Các lựa chọn khác là bẫy hình thái."
+  },
+  {
+    "id": "50-4",
+    "familyId": "50",
+    "word": "distinct possibility",
+    "sentence": "Given the current economic indicators, there is a ____ that interest rates will rise in the next quarter.",
+    "correct": "distinct possibility",
+    "distractors": [
+      "distinctive possibility",
+      "distinguished possibility",
+      "distant possibility"
+    ],
+    "translation": "Dựa trên các chỉ số kinh tế hiện tại, có một khả năng rõ rệt rằng lãi suất sẽ tăng trong quý tới.",
+    "analysis": "'Distinct possibility' là khả năng rõ rệt, đáng kể. Các cụm từ khác là bẫy hình thái."
+  },
+  {
+    "id": "50-5",
+    "familyId": "50",
+    "word": "distinct flavor",
+    "sentence": "The wine has a ____ that sets it apart from others produced in the same region, due to the unique soil composition of the vineyard.",
+    "correct": "distinct flavor",
+    "distractors": [
+      "distinctive flavor",
+      "distinguished flavor",
+      "distinguishable flavor"
+    ],
+    "translation": "Loại rượu có một hương vị khác biệt rõ rệt so với các loại khác được sản xuất trong cùng khu vực, do thành phần đất độc đáo của vườn nho.",
+    "analysis": "'Distinct flavor' là hương vị khác biệt rõ rệt. 'Distinctive/Distinguished/Distinguishable flavor' là các bẫy hình thái."
+  },
+  {
+    "id": "50-6",
+    "familyId": "50",
+    "word": "distinctly remember",
+    "sentence": "I ____ locking the door before I left the house this morning, so I don't understand how the burglar got in.",
+    "correct": "distinctly remember",
+    "distractors": [
+      "distinctively remember",
+      "distantly remember",
+      "distractedly remember"
+    ],
+    "translation": "Tôi ghi nhớ rất rõ là đã khóa cửa trước khi rời khỏi nhà sáng nay, vì vậy tôi không hiểu làm thế nào tên trộm có thể vào được.",
+    "analysis": "'Distinctly remember' là ghi nhớ rất rõ ràng. Các cụm từ khác là bẫy hình thái."
+  }
+]
+[
+  {
+    "id": "58-1",
+    "familyId": "58",
+    "word": "irregular heartbeat",
+    "sentence": "A persistent ____ can be a symptom of an underlying cardiovascular condition and requires medical evaluation.",
+    "correct": "irregular heartbeat",
+    "distractors": ["irrelevant heartbeat", "irrational heartbeat", "uneven heartbeat"],
+    "translation": "Nhịp tim không đều kéo dài có thể là triệu chứng của một tình trạng tim mạch tiềm ẩn và cần được đánh giá y tế.",
+    "analysis": "Irregular heartbeat (nhịp tim không đều) là thuật ngữ y khoa cố định[cite: 58]. Irrelevant (không liên quan) và Irrational (phi lý) sai nghĩa; Uneven (không bằng phẳng) không dùng cho nhịp tim trong văn cảnh học thuật[cite: 264, 265]."
+  },
+  {
+    "id": "58-2",
+    "familyId": "58",
+    "word": "irregularly shaped",
+    "sentence": "The archaeological team discovered several ____ stone tools that were likely used for specific hunting tasks.",
+    "correct": "irregularly shaped",
+    "distractors": ["irrelevant shaped", "irresistibly shaped", "uncommonly shaped"],
+    "translation": "Nhóm khảo cổ đã phát hiện ra một số công cụ đá có hình dáng không đều, có khả năng được sử dụng cho các nhiệm vụ săn bắn cụ thể.",
+    "analysis": "Irregularly shaped mô tả vật thể không có hình dạng chuẩn[cite: 58]. Irrelevant và Irresistibly (không cưỡng lại được) sai về nghĩa; Uncommonly chỉ mức độ hiếm, không mô tả hình dáng[cite: 264, 266]."
+  },
+  {
+    "id": "62-1",
+    "familyId": "62",
+    "word": "common practice",
+    "sentence": "In many Australian universities, it is ____ to provide students with detailed rubrics before an assignment is due.",
+    "correct": "common practice",
+    "distractors": ["common tradition", "common habit", "common routine"],
+    "translation": "Tại nhiều trường đại học ở Úc, việc cung cấp cho sinh viên bảng tiêu chí đánh giá chi tiết trước hạn nộp bài là một thông lệ thông thường.",
+    "analysis": "Common practice (thông lệ phổ biến) dùng cho quy trình chuẩn trong tổ chức[cite: 62]. Tradition mang tính văn hóa, Habit dùng cho cá nhân, Routine dùng cho các bước lặp lại hàng ngày[cite: 265, 266]."
+  },
+  {
+    "id": "62-2",
+    "familyId": "62",
+    "word": "commonly used",
+    "sentence": "Qualitative interviews are a ____ method in social science research to gather in-depth personal perspectives.",
+    "correct": "commonly used",
+    "distractors": ["commonly applied", "commonly utilized", "commonly handled"],
+    "translation": "Phỏng vấn định tính là một phương pháp thường được dùng trong nghiên cứu khoa học xã hội để thu thập các quan điểm cá nhân chuyên sâu.",
+    "analysis": "Commonly used là cụm từ tự nhiên nhất đi với 'method'[cite: 62]. Applied/Utilized mang sắc thái trang trọng quá mức hoặc chuyên dụng kỹ thuật; Handled không phù hợp với phương pháp nghiên cứu[cite: 265, 266]."
+  },
+  {
+    "id": "64-1",
+    "familyId": "64",
+    "word": "rare opportunity",
+    "sentence": "The international exchange program offers students a ____ to experience diverse cultures while earning academic credits.",
+    "correct": "rare opportunity",
+    "distractors": ["scarce opportunity", "sparse opportunity", "thin opportunity"],
+    "translation": "Chương trình trao đổi quốc tế mang đến cho sinh viên một cơ hội hiếm có để trải nghiệm các nền văn hóa đa dạng trong khi vẫn tích lũy tín chỉ học thuật.",
+    "analysis": "Rare opportunity là cụm cố định chỉ cơ hội quý giá[cite: 64]. Scarce dùng cho tài nguyên (nước, thực phẩm); Sparse dùng cho mật độ; Thin không kết hợp với opportunity[cite: 265, 266]."
+  },
+  {
+    "id": "70-1",
+    "familyId": "70",
+    "word": "constant pressure",
+    "sentence": "Ph.D. candidates often face ____ to publish their findings in high-impact scholarly journals.",
+    "correct": "constant pressure",
+    "distractors": ["consistent pressure", "continual pressure", "instant pressure"],
+    "translation": "Các ứng viên tiến sĩ thường đối mặt với áp lực không ngừng trong việc xuất bản các phát hiện của mình trên các tạp chí học thuật có tầm ảnh hưởng cao.",
+    "analysis": "Constant pressure chỉ áp lực diễn ra liên tục, không dứt[cite: 70]. Consistent là nhất quán; Continual có quãng nghỉ; Instant (tức thì) không hợp ngữ cảnh áp lực kéo dài[cite: 266]."
+  },
+  {
+    "id": "70-2",
+    "familyId": "70",
+    "word": "constantly evolving",
+    "sentence": "The field of cybersecurity is ____, requiring professionals to engage in lifelong learning to stay relevant.",
+    "correct": "constantly evolving",
+    "distractors": ["constantly revolving", "constantly involving", "constantly resolving"],
+    "translation": "Lĩnh vực an ninh mạng không ngừng phát triển, đòi hỏi các chuyên gia phải học tập suốt đời để duy trì năng lực.",
+    "analysis": "Evolving (phát triển/tiến hóa) đi với field/technology[cite: 70]. Revolving (quay quanh), Involving (liên quan), Resolving (giải quyết) sai lệch về nghĩa trong ngữ cảnh này[cite: 264]."
+  },
+  {
+    "id": "73-1",
+    "familyId": "73",
+    "word": "at all times",
+    "sentence": "For safety reasons, laboratory participants must wear protective equipment ____ while handling hazardous chemicals.",
+    "correct": "at all times",
+    "distractors": ["in all times", "for all times", "at all hours"],
+    "translation": "Vì lý do an toàn, những người tham gia phòng thí nghiệm phải mặc đồ bảo hộ mọi lúc khi xử lý các hóa chất độc hại.",
+    "analysis": "At all times là cụm cố định nghĩa là 'luôn luôn/mọi lúc'[cite: 73]. In/For all times sai cấu trúc; At all hours thường dùng cho giờ giấc bất thường (đêm muộn)[cite: 265]."
+  },
+  {
+    "id": "74-1",
+    "familyId": "74",
+    "word": "under no circumstances",
+    "sentence": "____ should a researcher disclose the private identity of participants without their explicit consent.",
+    "correct": "under no circumstances",
+    "distractors": ["in no circumstances", "by no circumstances", "with no circumstances"],
+    "translation": "Không trong bất kỳ trường hợp nào nhà nghiên cứu được tiết lộ danh tính riêng tư của người tham gia mà không có sự đồng ý rõ ràng của họ.",
+    "analysis": "Under no circumstances là cụm cố định dùng trong đảo ngữ để nhấn mạnh sự cấm đoán[cite: 74]. Các giới từ In/By/With không tạo thành cụm từ có nghĩa tương tự[cite: 265]."
+  },
+  {
+    "id": "74-2",
+    "familyId": "74",
+    "word": "never before",
+    "sentence": "____ has the Australian economy faced such a significant shift towards digital infrastructure in such a short period.",
+    "correct": "never before",
+    "distractors": ["never mind", "never again", "ever before"],
+    "translation": "Chưa từng có trước đây nền kinh tế Úc lại đối mặt với sự chuyển dịch đáng kể sang cơ sở hạ tầng số trong một khoảng thời gian ngắn như vậy.",
+    "analysis": "Never before (chưa từng có trước đây) dùng để nhấn mạnh tính tiền lệ của sự kiện[cite: 11]. Never mind là đừng bận tâm [cite: 12], Never again là không bao giờ lặp lại[cite: 11], Ever before sai cấu trúc đảo ngữ trong ngữ cảnh này."
+  },
+  {
+    "id": "75-1",
+    "familyId": "75",
+    "word": "seen everywhere",
+    "sentence": "The effects of rapid urbanization are now ____, as high-rise apartments replace traditional suburban landscapes.",
+    "correct": "seen everywhere",
+    "distractors": ["found everywhere", "go everywhere", "all over"],
+    "translation": "Tác động của đô thị hóa nhanh chóng hiện có thể được thấy ở khắp nơi, khi các căn hộ cao tầng thay thế cảnh quan ngoại ô truyền thống.",
+    "analysis": "Seen everywhere (thấy ở khắp nơi) dùng cho các hiện tượng quan sát bằng mắt thường[cite: 11]. Found everywhere dùng cho vật chất/dữ liệu tìm kiếm được, Go everywhere dùng cho chủ thể di chuyển[cite: 11]."
+  },
+  {
+    "id": "75-2",
+    "familyId": "75",
+    "word": "found everywhere",
+    "sentence": "In modern scientific research, traces of microplastics are ____ in the world's oceans, affecting marine biodiversity.",
+    "correct": "found everywhere",
+    "distractors": ["seen everywhere", "go everywhere", "all over"],
+    "translation": "Trong nghiên cứu khoa học hiện đại, dấu vết của vi nhựa được tìm thấy ở mọi nơi trong các đại dương trên thế giới, ảnh hưởng đến đa dạng sinh học biển.",
+    "analysis": "Found everywhere (tìm thấy ở mọi nơi) dùng khi nói về sự hiện diện của vật chất qua kiểm chứng/tìm kiếm[cite: 11]. Seen everywhere chỉ là quan sát bề ngoài[cite: 11]."
+  },
+  {
+    "id": "75-3",
+    "familyId": "75",
+    "word": "all over",
+    "sentence": "The invasive species has spread ____ the Australian continent, threatening indigenous flora and fauna.",
+    "correct": "all over",
+    "distractors": ["everywhere", "somewhere", "anywhere"],
+    "translation": "Loài xâm lấn đã lan rộng khắp bề mặt lục địa Úc, đe dọa hệ thực vật và động vật bản địa.",
+    "analysis": "All over (khắp bề mặt/mọi nơi) thường đi kèm với một địa danh cụ thể (the continent)[cite: 11]. Everywhere là trạng từ đứng độc lập[cite: 11]."
+  },
+  {
+    "id": "75-4",
+    "familyId": "75",
+    "word": "everywhere",
+    "sentence": "Digital technology has become ubiquitous; its influence is felt ____ in contemporary Australian society.",
+    "correct": "everywhere",
+    "distractors": ["somewhere", "anywhere", "nowhere"],
+    "translation": "Công nghệ kỹ thuật số đã trở nên phổ biến; ảnh hưởng của nó được cảm nhận ở khắp mọi nơi trong xã hội Úc đương đại.",
+    "analysis": "Everywhere (khắp mọi nơi) chỉ sự hiện diện toàn bộ[cite: 11]. Somewhere là đâu đó, Anywhere dùng trong câu phủ định/nghi vấn[cite: 11]."
+  },
+  {
+    "id": "75-5",
+    "familyId": "75",
+    "word": "go everywhere",
+    "sentence": "International students often ____ within Australia to explore the diverse cultural and natural heritage of the country.",
+    "correct": "go everywhere",
+    "distractors": ["found everywhere", "seen everywhere", "all over"],
+    "translation": "Sinh viên quốc tế thường đi khắp nơi trong nước Úc để khám phá di sản văn hóa và tự nhiên đa dạng của quốc gia này.",
+    "analysis": "Go everywhere (đi khắp nơi) chỉ hành động di chuyển rộng rãi[cite: 11]. Các từ khác không kết hợp được với động từ chỉ sự di chuyển của chủ thể[cite: 11]."
+  },
+  {
+    "id": "76-1",
+    "familyId": "76",
+    "word": "somewhere else",
+    "sentence": "If university resources are insufficient, researchers may need to conduct their experiments ____.",
+    "correct": "somewhere else",
+    "distractors": ["somewhere", "find somewhere", "go somewhere"],
+    "translation": "Nếu nguồn lực của trường đại học không đủ, các nhà nghiên cứu có thể cần thực hiện các thí nghiệm của mình ở một nơi khác.",
+    "analysis": "Somewhere else (ở một nơi khác) dùng để chỉ sự thay đổi địa điểm thay thế[cite: 11]. Somewhere không nhấn mạnh được ý 'khác' so với hiện tại[cite: 11]."
+  },
+  {
+    "id": "76-2",
+    "familyId": "76",
+    "word": "somewhere",
+    "sentence": "The missing historical artifacts are believed to be hidden ____ in the remote areas of the Northern Territory.",
+    "correct": "somewhere",
+    "distractors": ["everywhere", "anywhere", "nowhere"],
+    "translation": "Các hiện vật lịch sử bị mất được tin là đang được giấu ở một nơi nào đó tại các vùng xa xôi của Lãnh thổ phía Bắc.",
+    "analysis": "Somewhere (ở một nơi nào đó) chỉ vị trí chưa xác định trong câu khẳng định[cite: 11]. Everywhere (khắp nơi) không hợp lý với hành động giấu đồ vật[cite: 11]."
+  },
+  {
+    "id": "76-3",
+    "familyId": "76",
+    "word": "find somewhere",
+    "sentence": "International migrants often struggle to ____ to live that is both affordable and close to employment hubs.",
+    "correct": "find somewhere",
+    "distractors": ["go somewhere", "somewhere else", "everywhere"],
+    "translation": "Người di cư quốc tế thường gặp khó khăn trong việc tìm một nơi nào đó để sống mà vừa túi tiền vừa gần các trung tâm việc làm.",
+    "analysis": "Find somewhere (tìm thấy ở đâu đó) diễn tả nỗ lực tìm kiếm địa điểm[cite: 11]. Go somewhere chỉ là hành động đi tới[cite: 11]."
+  },
+  {
+    "id": "76-4",
+    "familyId": "76",
+    "word": "go somewhere",
+    "sentence": "It is common for Australian families to ____ quiet for their annual holidays to escape the busy city life.",
+    "correct": "go somewhere",
+    "distractors": ["find somewhere", "somewhere else", "nowhere"],
+    "translation": "Các gia đình người Úc thường đi đâu đó yên tĩnh cho kỳ nghỉ hàng năm để thoát khỏi cuộc sống thành phố bận rộn.",
+    "analysis": "Go somewhere (đi đâu đó) chỉ hành động di chuyển đến một điểm đến[cite: 11]. Cụm này đi trực tiếp với tính từ (quiet) để mô tả địa điểm[cite: 11]."
+  },
+  {
+    "id": "76-5",
+    "familyId": "76",
+    "word": "somewhere or other",
+    "sentence": "The lost documentation must be ____ in the archives, though its exact location remains unknown.",
+    "correct": "somewhere or other",
+    "distractors": ["somewhere else", "everywhere", "nowhere else"],
+    "translation": "Tài liệu bị thất lạc chắc chắn nằm ở đâu đó trong kho lưu trữ, mặc dù vị trí chính xác của nó vẫn chưa được biết.",
+    "analysis": "Somewhere or other (ở đâu đó không rõ cụ thể) nhấn mạnh sự mơ hồ về vị trí nhưng khẳng định nó tồn tại[cite: 11]. Somewhere else chỉ địa điểm khác biệt[cite: 11]."
+  }
+]

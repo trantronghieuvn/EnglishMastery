@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTE 99 - Context First</title>
+
+    <!-- Fix lỗi favicon.ico 404 -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <!-- Thay thế Tailwind CDN bằng file tĩnh để KHÔNG bị lỗi iframe và Tracking Prevention -->
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(226, 232, 240, 1);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .active-nav {
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+        }
+
+        /* Hiệu ứng nhấp nháy cho Mic */
+        .recording-pulse {
+            animation: pulse-red 1.5s infinite;
+            background-color: #fee2e2 !important;
+            color: #ef4444 !important;
+            border-color: #ef4444 !important;
+        }
+
+        @keyframes pulse-red {
+            0% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+
+        /* Hiệu ứng nhấp nháy cho Loa (Đọc lặp lại) */
+        .playing-pulse {
+            animation: pulse-blue 1.5s infinite;
+            background-color: #eff6ff !important;
+            color: #3b82f6 !important;
+            border-color: #bfdbfe !important;
+        }
+
+        @keyframes pulse-blue {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+
+        /* Level Dots */
+        .level-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #e2e8f0;
+            transition: all 0.3s;
+        }
+
+        .level-dot.active {
+            background-color: #3b82f6;
+            box-shadow: 0 0 4px rgba(59, 130, 246, 0.5);
+        }
+
+        /* ===== UX FIX: one-screen learning flow ===== */
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        main {
+            box-sizing: border-box;
+            height: calc(100dvh - 56px);
+            overflow: hidden;
+        }
+
+        #view-quiz.active:not(.hidden) {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        .view-content:not(#view-quiz):not(.hidden) {
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 24px;
+        }
+
+        #learning-area {
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        #interaction-area {
+            flex: 0 0 auto;
+            z-index: 40;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 10px;
+            padding-bottom: 6px;
+        }
+
+        #feedback-panel .glass-card {
+            margin-bottom: 6px;
+        }
+
+        #feedback-header,
+        #feedback-panel > div:nth-child(2) {
+            padding: 9px 14px !important;
+        }
+
+        #feedback-panel p {
+            margin: 0;
+        }
+
+        #next-btn {
+            min-width: 220px;
+            background: #111827 !important;
+            color: #ffffff !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            box-shadow: 0 12px 30px rgba(15,23,42,0.25);
+        }
+
+        #next-btn span {
+            display: inline-block;
+            color: #ffffff !important;
+        }
+
+        .compact-feedback {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #modal {
+            cursor: pointer;
+        }
+
+        #modal > div {
+            cursor: default;
+        }
+
+        #modal-close-btn {
+            display: block !important;
+            width: 100% !important;
+            margin-top: 18px !important;
+            padding: 12px 16px !important;
+            border: 0 !important;
+            border-radius: 12px !important;
+            background: #111827 !important;
+            color: #ffffff !important;
+            font-weight: 900 !important;
+            font-size: 12px !important;
+            line-height: 1 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0 !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            cursor: pointer !important;
+        }
+
+        #modal-close-btn:hover {
+            background: #1f2937 !important;
+        }
+        @media (max-height: 900px) {
+            #learning-area {
+                gap: 10px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .glass-card {
+                padding-top: 12px !important;
+                padding-bottom: 12px !important;
+            }
+
+            #options-grid {
+                gap: 8px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .option-btn {
+                padding: 12px 14px !important;
+                border-radius: 14px !important;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="min-h-screen text-slate-800 bg-slate-50">
+
+    <!-- Cảnh báo khi bị Tracking Prevention chặn LocalStorage -->
+    <div id="storage-warning"
+        class="hidden bg-yellow-100 border-b border-yellow-200 text-yellow-800 px-4 py-2 text-[10px] font-bold text-center tracking-wide">
+        ⚠️ CẢNH BÁO BẢO MẬT TRÌNH DUYỆT: Lưu trữ đang bị chặn. Hãy nhớ <span class="underline cursor-pointer"
+            onclick="showView('data')">Xuất Backup tiến độ</span> trước khi tắt trang để không mất dữ liệu!
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div
+                    class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black text-lg shadow-lg shadow-blue-200">
+                    C</div>
+                <span class="font-black text-lg tracking-tight text-slate-900 hidden sm:inline-block">CONTEXT <span
+                        class="text-blue-600 uppercase text-xs align-top">Mastery</span></span>
+            </div>
+
+            <div id="nav-links"
+                class="flex space-x-3 sm:space-x-6 text-[11px] font-black uppercase tracking-wider text-slate-400 items-center">
+                <!-- Dropdown chọn Giọng đọc -->
+                <div class="relative group">
+                    <select id="voice-select"
+                        class="bg-slate-100 text-slate-700 border border-slate-200 rounded-md px-2 py-1.5 outline-none focus:border-blue-400 transition-colors cursor-pointer w-[100px] sm:w-[150px] md:w-[200px] truncate font-medium normal-case text-xs"
+                        title="Đổi giọng đọc (TTS)">
+                        <option value="">Đang tải giọng đọc...</option>
+                    </select>
+                </div>
+
+                <button onclick="showView('quiz')"
+                    class="nav-item py-4 border-b-3 border-transparent transition-all hover:text-blue-600">Luyện
+                    tập</button>
+                <button onclick="showView('library')"
+                    class="nav-item py-4 border-b-3 border-transparent transition-all hover:text-blue-600 hidden sm:inline-block">Từ
+                    điển</button>
+                <button onclick="showView('data')"
+                    class="nav-item py-4 border-b-3 border-transparent transition-all hover:text-blue-600">Dữ
+                    liệu</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-6">
+
+        <!-- View: Quiz -->
+        <div id="view-quiz" class="view-content active fade-in">
+            <!-- Header -->
+            <div class="flex justify-between items-end mb-4 px-1">
+                <div>
+                    <h2 class="text-xl font-black text-slate-900 tracking-tight">Học qua Ngữ cảnh</h2>
+                    <p class="text-xs text-slate-500 font-medium mt-1">Nghe hiểu câu đồng nghĩa trước khi điền từ.</p>
+                </div>
+                <div class="text-right">
+                    <span id="score-display" class="text-4xl font-black text-blue-600 tracking-tighter">0</span>
+                    <p class="text-[9px] uppercase font-bold text-slate-400">Câu đúng</p>
+                </div>
+            </div>
+
+            <!-- Learning Area -->
+            <div id="learning-area" class="grid grid-cols-1 gap-4 mb-6">
+
+                <!-- 1. Paraphrase Card -->
+                <div class="glass-card p-5 rounded-2xl border-l-4 border-indigo-400 bg-indigo-50/20 shadow-sm">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-black text-indigo-500 uppercase tracking-widest">1. Ngữ cảnh /
+                            Biến thể (Gợi ý)</span>
+                        <div id="score-para"
+                            class="hidden px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tight"></div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex flex-col gap-2 shrink-0 pt-1">
+                            <button id="speaker-para" onclick="speakText('para')"
+                                class="w-10 h-10 rounded-xl bg-white text-indigo-600 flex items-center justify-center hover:bg-indigo-600 hover:text-white transition shadow-sm border border-indigo-100"
+                                title="Đọc liên tục / Dừng đọc">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button id="mic-para" onclick="toggleMic('para')"
+                                class="w-10 h-10 rounded-xl bg-white text-indigo-600 flex items-center justify-center hover:bg-indigo-600 hover:text-white transition shadow-sm border border-indigo-100"
+                                title="Luyện nói câu gợi ý">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-20a3 3 0 00-3 3v8a3 3 0 006 0V5a3 3 0 00-3-3z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <p id="target-para"
+                                class="text-sm md:text-base font-medium text-slate-700 leading-relaxed italic"></p>
+                            <div id="translate-para-container" class="hidden mt-2 pt-2 border-t border-indigo-200/50">
+                                <p class="text-xs text-indigo-800/80 font-medium leading-relaxed"
+                                    id="translate-para-text">Đang dịch...</p>
+                            </div>
+                            <p id="live-transcript-para"
+                                class="text-[10px] text-indigo-500 italic min-h-[1.5em] mt-1 truncate">...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Main Question Card -->
+                <div
+                    class="glass-card p-5 rounded-2xl border-l-4 border-blue-500 bg-white shadow-md relative overflow-hidden">
+                    <div class="flex justify-between items-center mb-3">
+                        <span
+                            class="bg-slate-100 text-slate-500 px-2 py-0.5 rounded text-[9px] font-black uppercase tracking-widest"
+                            id="logic-badge">Nhóm Logic</span>
+                        <div class="flex space-x-1" id="leitner-dots"></div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div id="main-controls"
+                            class="flex flex-col gap-2 shrink-0 pt-1 invisible opacity-0 transition-all duration-500">
+                            <button id="speaker-main" onclick="speakText('main')"
+                                class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition shadow-sm"
+                                title="Đọc liên tục / Dừng đọc">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <button id="mic-main" onclick="toggleMic('main')"
+                                class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition shadow-sm"
+                                title="Luyện nói câu trả lời">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-20a3 3 0 00-3 3v8a3 3 0 006 0V5a3 3 0 00-3-3z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[9px] font-black text-blue-400 uppercase tracking-widest">2. Câu hỏi
+                                    (Điền từ)</span>
+                                <div id="score-main"
+                                    class="hidden px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tight">
+                                </div>
+                            </div>
+                            <p id="target-main-display"
+                                class="text-lg md:text-xl font-bold text-slate-800 leading-snug"></p>
+                            <div id="translate-main-container" class="hidden mt-2 pt-2 border-t border-blue-100">
+                                <p class="text-xs text-blue-800/80 font-medium leading-relaxed"
+                                    id="translate-main-text">Đang dịch...</p>
+                            </div>
+                            <p id="live-transcript-main"
+                                class="text-[10px] text-blue-500 italic min-h-[1.5em] mt-1 truncate">...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Options & Feedback -->
+            <div id="interaction-area">
+                <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                    <!-- Options injected here -->
+                </div>
+
+                <div id="feedback-panel" class="hidden space-y-2 fade-in">
+                    <!-- Result Header -->
+                    <div id="feedback-header"
+                        class="glass-card p-3 rounded-xl border-l-4 transition-all shadow-sm flex items-center justify-between min-h-[70px]">
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 mt-3 flex-wrap">
+                        <div class="text-left text-xs font-semibold text-slate-700 pl-1">
+                            <span class="uppercase text-[10px] tracking-wider text-slate-400 font-black">Thông tin logic</span><br>
+                            <span id="info-logic" class="font-bold text-slate-900">...</span>
+                            <span class="mx-1 text-slate-300">|</span>
+                            Cấu trúc:
+                            <span id="info-grammar" class="font-bold text-slate-900">...</span>
+                        </div>
+
+                        <button id="next-btn" onclick="generateQuestion()"
+                            class="bg-slate-900 text-white px-6 py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-lg hover:bg-slate-800 transition transform active:scale-95 flex items-center gap-2">
+                            <span>Câu tiếp theo</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Data Management -->
+        <div id="view-data" class="view-content hidden fade-in">
+            <h2 class="text-lg font-black text-slate-900 mb-6 uppercase tracking-tight">Quản lý Database</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="glass-card p-6 rounded-2xl text-center space-y-4 border-dashed border-2 border-slate-200 hover:border-blue-400 transition cursor-pointer"
+                    onclick="document.getElementById('file-selector').click()">
+                    <div
+                        class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm text-slate-800">Nạp file Logic / Backup (JSON)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Nhấn để khôi phục tiến độ từ file máy tính</p>
+                    </div>
+                    <input type="file" id="file-selector" accept=".json" class="hidden"
+                        onchange="handleFileSelect(event)">
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl space-y-5">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-end">
+                            <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Tiến độ
+                                Mastery</span>
+                            <span id="progress-percent" class="text-2xl font-black text-blue-600">0%</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                            <div id="progress-bar" class="bg-blue-600 h-full transition-all duration-1000"
+                                style="width: 0%"></div>
+                        </div>
+                        <p class="text-[9px] text-slate-400 font-bold uppercase text-center tracking-wide">Đã học <span
+                                id="learned-count" class="text-slate-800 font-black">0</span> / <span
+                                id="total-count">0</span> từ</p>
+                    </div>
+                    <button onclick="exportProgress()"
+                        class="w-full border border-slate-200 py-3 rounded-xl font-bold text-xs uppercase hover:bg-slate-50 transition text-slate-600">Sao
+                        lưu tiến độ</button>
+                    <button onclick="resetStats()"
+                        class="w-full border border-red-100 text-red-400 py-3 rounded-xl font-bold text-xs uppercase hover:bg-red-50 transition">Reset
+                        toàn bộ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Library -->
+        <div id="view-library" class="view-content hidden fade-in">
+            <div class="flex justify-between items-center mb-5">
+                <h2 class="text-lg font-black text-slate-900 uppercase tracking-tight">Từ điển Logic</h2>
+                <div id="lib-tag-count"
+                    class="bg-blue-600 text-white px-2 py-0.5 rounded text-[9px] font-black uppercase tracking-wider">0
+                    Items</div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-3 mb-5">
+                <div class="relative flex-1">
+                    <input type="text" id="lib-search" oninput="renderLibrary()" placeholder="Tìm kiếm từ khóa..."
+                        class="w-full p-3 pl-10 glass-card rounded-xl outline-none focus:ring-2 focus:ring-blue-500 text-sm font-medium">
+                    <svg class="w-4 h-4 text-slate-400 absolute left-3 top-3.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <select id="lib-filter-logic" onchange="renderLibrary()"
+                    class="p-3 glass-card rounded-xl outline-none text-[10px] font-bold uppercase tracking-tight text-slate-600 border-r-[8px] border-transparent">
+                    <option value="">Tất cả Nhóm Logic</option>
+                    <option value="Illustration">Illustration</option>
+                    <option value="Evidence">Evidence</option>
+                    <option value="Result">Result</option>
+                    <option value="Contrast">Contrast</option>
+                    <option value="Addition">Addition</option>
+                    <option value="Comparison">Comparison</option>
+                    <option value="Topic/Subject">Topic Words</option>
+                </select>
+            </div>
+            <div id="library-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+        </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="modal"
+        class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center z-[100] hidden px-4">
+        <div
+            class="bg-white p-6 rounded-3xl max-w-xs w-full shadow-2xl text-center fade-in border border-slate-100 transform scale-100">
+            <div id="modal-icon" class="text-4xl mb-3"></div>
+            <h3 id="modal-title" class="text-base font-black mb-1 text-slate-900"></h3>
+            <p id="modal-desc" class="text-slate-500 text-xs font-medium mb-6 leading-relaxed"></p>
+            <button id="modal-close-btn" type="button" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. SAFESTORAGE ENGINE ---
+        const SafeStorage = {
+            mem: {},
+            checkSupport() {
+                try {
+                    window.localStorage.setItem('__test__', '1');
+                    window.localStorage.removeItem('__test__');
+                    return true;
+                } catch (e) { return false; }
+            },
+            get(key) {
+                try { return window.localStorage.getItem(key) || this.mem[key] || null; }
+                catch (e) { return this.mem[key] || null; }
+            },
+            set(key, value) {
+                this.mem[key] = value;
+                try { window.localStorage.setItem(key, value); }
+                catch (e) { }
+            }
+        };
+
+        // --- 2. CONFIG & STATE ---
+        const DEFAULT_DATA = [
+            { keyword: "as shown by", logic_type: "Evidence", grammar_pos: "+ Noun Phrase", topic_context: "as shown by recent studies, exercise improves mental health", paraphrase: "as evidenced by current research, physical activity enhances psychological well-being" },
+            { keyword: "consequently", logic_type: "Result", grammar_pos: "+ Clause", topic_context: "consequently, traditional skills are being lost", paraphrase: "as a result, heritage abilities are fading" },
+            { keyword: "equally", logic_type: "Comparison", grammar_pos: "Adverb", topic_context: "equally important is the role of education", paraphrase: "just as crucial is the function of schooling" },
+            { keyword: "emission", logic_type: "Topic/Subject", grammar_pos: "Noun", topic_context: "carbon emissions are a major cause of climate change", paraphrase: "carbon dioxide output is a primary reason for global warming" }
+        ];
+
+        let appData = [...DEFAULT_DATA];
+        let stats = { score: 0, progress: {} };
+
+        // Load data an toàn
+        const savedData = SafeStorage.get('pte_ultimate_data');
+        if (savedData) {
+            try { appData = JSON.parse(savedData); } catch (e) { }
+        }
+
+        const savedStats = SafeStorage.get('pte_ultimate_stats_v2');
+        if (savedStats) {
+            try { stats = JSON.parse(savedStats); } catch (e) { }
+        }
+
+        let currentQuestion = null;
+        let recognition = null;
+        let activeTarget = null;
+        let availableVoices = [];
+        let isLooping = false;
+        let loopingType = null;
+
+        
+        let autoSpeakTimer = null;
+        let autoSpeakRunId = 0;
+        const AUTO_READ_GAP_MS = 1000;
+async function translateText(text, targetElementId) {
+            const targetEl = document.getElementById(targetElementId);
+            if (!targetEl) return;
+
+            // Sử dụng endpoint chuẩn xác hơn hoặc một proxy nếu cần
+            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(text)}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                // Cấu trúc trả về của GG Translate API
+                const translatedText = data[0].map(item => item[0]).join('');
+                targetEl.innerText = translatedText;
+            } catch (e) {
+                console.error("Translation error:", e);
+                targetEl.innerText = "Lỗi kết nối dịch thuật.";
+            }
+        }
+        // --- 3. AUDIO & SPEECH ---
+        function loadVoices() {
+            availableVoices = window.speechSynthesis.getVoices();
+            const voiceSelect = document.getElementById('voice-select');
+
+            if (availableVoices.length === 0) return;
+            voiceSelect.innerHTML = '';
+
+            const englishVoices = availableVoices.filter(v => v.lang.toLowerCase().includes('en'));
+            const voicesToDisplay = englishVoices.length > 0 ? englishVoices : availableVoices;
+
+            voicesToDisplay.forEach(voice => {
+                const option = document.createElement('option');
+                option.value = voice.name;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                voiceSelect.appendChild(option);
+            });
+
+            const defaultVoice = voicesToDisplay.find(v => v.name.includes('Google US English')) || voicesToDisplay[0];
+            if (defaultVoice) {
+                voiceSelect.value = defaultVoice.name;
+            }
+        }
+
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+
+        function initSpeech() {
+            window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (window.SpeechRecognition) {
+                recognition = new SpeechRecognition();
+                recognition.lang = 'en-US';
+                recognition.interimResults = true;
+                recognition.continuous = true;
+
+                recognition.onresult = (event) => {
+                    let finalTranscript = '';
+                    for (let i = 0; i < event.results.length; ++i) {
+                        finalTranscript += event.results[i][0].transcript;
+                    }
+
+                    if (activeTarget === 'main') {
+                        const el = document.getElementById('live-transcript-main');
+                        if (el) el.innerText = finalTranscript || "...";
+                    }
+                    if (activeTarget === 'para') {
+                        const el = document.getElementById('live-transcript-para');
+                        if (el) el.innerText = finalTranscript || "...";
+                    }
+                };
+
+                recognition.onend = () => {
+                    if (activeTarget) {
+                        stopMic();
+                    }
+                };
+            }
+        }
+
+        function speakText(type) {
+            if (activeTarget) { stopMic(); }
+            if (isLooping && loopingType === type) { stopSpeak(); return; }
+            stopSpeak();
+
+            isLooping = true;
+            loopingType = type;
+
+            const btn = document.getElementById(`speaker-${type}`);
+            if (btn) {
+                btn.classList.add('playing-pulse');
+                btn.innerHTML = `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H10a1 1 0 01-1-1v-4z"></path></svg>`;
+            }
+
+            playAudioRecursive(type);
+        }
+
+        function playAudioRecursive(type) {
+            if (!isLooping || loopingType !== type || !currentQuestion) return;
+
+            const text = type === 'main' ? currentQuestion.topic_context : currentQuestion.paraphrase;
+            if (!text) return;
+
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+
+            const voiceSelect = document.getElementById('voice-select');
+            const selectedVoiceName = voiceSelect ? voiceSelect.value : null;
+            if (selectedVoiceName && availableVoices.length > 0) {
+                const voice = availableVoices.find(v => v.name === selectedVoiceName);
+                if (voice) utterance.voice = voice;
+            }
+
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+
+            utterance.onend = () => {
+                if (isLooping && loopingType === type) {
+                    setTimeout(() => {
+                        if (isLooping && loopingType === type) {
+                            playAudioRecursive(type);
+                        }
+                    }, 800);
+                }
+            };
+
+            utterance.onerror = (e) => { console.log("Speech Error:", e); };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+
+        function getSelectedSpeechVoice() {
+            const voiceSelect = document.getElementById('voice-select');
+            const selectedVoiceName = voiceSelect ? voiceSelect.value : null;
+            if (!selectedVoiceName || availableVoices.length === 0) return null;
+            return availableVoices.find(v => v.name === selectedVoiceName) || null;
+        }
+
+        function buildUtterance(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            const voice = getSelectedSpeechVoice();
+            if (voice) utterance.voice = voice;
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            return utterance;
+        }
+
+        function speakOnce(text, runId) {
+            return new Promise(resolve => {
+                if (!text || runId !== autoSpeakRunId) return resolve();
+
+                const utterance = buildUtterance(text);
+                utterance.onend = resolve;
+                utterance.onerror = resolve;
+
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+            });
+        }
+
+        function waitAutoRead(ms, runId) {
+            return new Promise(resolve => {
+                if (runId !== autoSpeakRunId) return resolve();
+                autoSpeakTimer = setTimeout(() => {
+                    autoSpeakTimer = null;
+                    resolve();
+                }, ms);
+            });
+        }
+
+        async function autoReadAnswerPair() {
+            if (!currentQuestion) return;
+            if (activeTarget) stopMic();
+
+            stopSpeak();
+            const runId = ++autoSpeakRunId;
+            const firstSentence = currentQuestion.paraphrase || "";
+            const secondSentence = currentQuestion.topic_context || "";
+
+            await speakOnce(firstSentence, runId);
+            await waitAutoRead(AUTO_READ_GAP_MS, runId);
+            await speakOnce(secondSentence, runId);
+        }
+        function stopSpeak() {
+            autoSpeakRunId += 1;
+            if (autoSpeakTimer) {
+                clearTimeout(autoSpeakTimer);
+                autoSpeakTimer = null;
+            }
+            isLooping = false;
+            let typeToStop = loopingType;
+            loopingType = null;
+            window.speechSynthesis.cancel();
+
+            if (typeToStop) {
+                const btn = document.getElementById(`speaker-${typeToStop}`);
+                if (btn) {
+                    btn.classList.remove('playing-pulse');
+                    btn.innerHTML = `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>`;
+                }
+            }
+        }
+
+        function toggleMic(type) {
+            if (!recognition) return showModal("Lỗi thiết bị", "Trình duyệt không hỗ trợ Web Speech API.", "🎤");
+            stopSpeak();
+            if (activeTarget === type) { stopMic(); }
+            else if (activeTarget) { stopMic(); setTimeout(() => startMic(type), 300); }
+            else { startMic(type); }
+        }
+
+        function startMic(type) {
+            activeTarget = type;
+            try { recognition.start(); } catch (e) { }
+
+            const btn = document.getElementById(`mic-${type}`);
+            if (btn) btn.classList.add('recording-pulse', 'bg-red-50', 'text-red-600', 'border-red-200');
+
+            if (type === 'main') {
+                const el = document.getElementById('live-transcript-main');
+                if (el) el.innerText = "...";
+            }
+            if (type === 'para') {
+                const el = document.getElementById('live-transcript-para');
+                if (el) el.innerText = "...";
+            }
+        }
+
+        function stopMic() {
+            if (!activeTarget) return;
+            const type = activeTarget;
+            recognition.stop();
+            activeTarget = null;
+
+            const btn = document.getElementById(`mic-${type}`);
+            if (btn) btn.classList.remove('recording-pulse', 'bg-red-50', 'text-red-600', 'border-red-200');
+
+            const transEl = document.getElementById(type === 'main' ? 'live-transcript-main' : 'live-transcript-para');
+            if (transEl) {
+                comparePronunciation(type, transEl.innerText);
+            }
+        }
+
+        function comparePronunciation(type, spoken) {
+            if (!currentQuestion || spoken === "..." || !spoken) return;
+
+            const targetText = type === 'main' ? currentQuestion.topic_context : currentQuestion.paraphrase;
+            if (!targetText) return;
+
+            const target = targetText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+            const input = spoken.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+
+            const targetWords = target.split(/\s+/).filter(w => w.length > 0);
+            const inputWords = input.split(/\s+/).filter(w => w.length > 0);
+
+            if (targetWords.length === 0) return;
+
+            let matches = 0;
+            targetWords.forEach(w => { if (inputWords.includes(w)) matches++; });
+            const score = Math.round((matches / targetWords.length) * 100);
+
+            const scoreEl = document.getElementById(`score-${type}`);
+            if (scoreEl) {
+                scoreEl.classList.remove('hidden');
+                scoreEl.innerText = `${score}%`;
+                if (score >= 80) scoreEl.className = "px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tight bg-green-100 text-green-700";
+                else if (score >= 50) scoreEl.className = "px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tight bg-yellow-100 text-yellow-700";
+                else scoreEl.className = "px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tight bg-red-100 text-red-700";
+            }
+        }
+
+        // --- 4. QUIZ ENGINE (Context First) ---
+        function escapeRegExp(string) {
+            if (!string) return "";
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function generateQuestion() {
+            stopSpeak();
+            if (activeTarget) stopMic();
+
+            // UI Reset Safely
+            const fPanel = document.getElementById('feedback-panel');
+            if (fPanel) fPanel.classList.add('hidden');
+
+            const oGrid = document.getElementById('options-grid');
+            if (oGrid) {
+                oGrid.classList.remove('hidden');
+                oGrid.innerHTML = '';
+            }
+
+            ['score-main', 'score-para'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add('hidden');
+            });
+
+            ['live-transcript-main', 'live-transcript-para'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.innerText = "...";
+            });
+
+            ['translate-main-container', 'translate-para-container'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add('hidden');
+            });
+
+            ['translate-main-text', 'translate-para-text'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.innerText = "Đang dịch...";
+            });
+
+            const mainControls = document.getElementById('main-controls');
+            if (mainControls) {
+                mainControls.classList.add('invisible', 'opacity-0');
+                mainControls.classList.remove('visible', 'opacity-100');
+            }
+
+            if (!appData || appData.length === 0) return showModal("Dữ liệu Trống", "Vui lòng nhập file JSON.", "⚠️");
+
+            // --- LEITNER SELECTION ---
+            const candidates = appData.map(item => {
+                const level = stats.progress[item.keyword] || 0;
+                let weight = 100;
+                if (level === 1) weight = 50; else if (level === 2) weight = 25; else if (level === 3) weight = 12; else if (level === 4) weight = 6; else if (level === 5) weight = 1;
+                return { item, weight, level };
+            });
+            const totalWeight = candidates.reduce((sum, c) => sum + c.weight, 0);
+            let randomNum = Math.random() * totalWeight;
+            let selected = candidates[0];
+            for (const c of candidates) { randomNum -= c.weight; if (randomNum <= 0) { selected = c; break; } }
+
+            currentQuestion = selected.item;
+            const currentLevel = selected.level;
+
+            // --- Distractors ---
+            let sameLogic = appData.filter(d => d.logic_type === currentQuestion.logic_type && d.keyword !== currentQuestion.keyword);
+            let sameGrammar = appData.filter(d => d.grammar_pos === currentQuestion.grammar_pos && d.keyword !== currentQuestion.keyword);
+            let randoms = appData.filter(d => d.keyword !== currentQuestion.keyword);
+            let distractorPool = [];
+
+            if (sameLogic.length > 0) distractorPool.push(sameLogic[Math.floor(Math.random() * sameLogic.length)]);
+            if (sameGrammar.length > 0) distractorPool.push(sameGrammar[Math.floor(Math.random() * sameGrammar.length)]);
+            while (distractorPool.length < 3) {
+                if (randoms.length === 0) break;
+                let r = randoms[Math.floor(Math.random() * randoms.length)];
+                if (!distractorPool.includes(r)) distractorPool.push(r);
+                if (randoms.length < 5 && distractorPool.length + 1 >= appData.length) break;
+            }
+            distractorPool = [...new Set(distractorPool)];
+            if (distractorPool.length < 3) {
+                let remaining = appData.filter(d => d.keyword !== currentQuestion.keyword && !distractorPool.includes(d));
+                distractorPool = distractorPool.concat(remaining.slice(0, 3 - distractorPool.length));
+            }
+
+            let options = [...distractorPool, currentQuestion].sort(() => 0.5 - Math.random());
+
+            const targetPara = document.getElementById('target-para');
+            if (targetPara) targetPara.innerText = currentQuestion.paraphrase || "Không có câu gợi ý.";
+
+            let escapedKw = escapeRegExp(currentQuestion.keyword);
+            let tc = currentQuestion.topic_context || "";
+            let displaySentence = tc.replace(new RegExp(escapedKw, 'gi'), "__________");
+
+            const targetMainDisp = document.getElementById('target-main-display');
+            if (targetMainDisp) targetMainDisp.innerHTML = `"${displaySentence}"`;
+
+            const logicBadge = document.getElementById('logic-badge');
+            if (logicBadge) logicBadge.innerText = `Nhóm: ${currentQuestion.logic_type || 'General'}`;
+
+            let dotsHtml = '';
+            for (let i = 1; i <= 5; i++) dotsHtml += `<div class="level-dot ${i <= currentLevel ? 'active' : ''}"></div>`;
+            const leitnerDots = document.getElementById('leitner-dots');
+            if (leitnerDots) leitnerDots.innerHTML = dotsHtml;
+
+            if (oGrid) {
+                options.forEach(opt => {
+                    if (!opt.keyword) return;
+                    const btn = document.createElement('button');
+                    btn.className = "option-btn p-5 border-2 border-slate-100 rounded-2xl text-left hover:border-blue-500 hover:bg-blue-50 transition-all font-bold text-slate-700 text-sm shadow-sm active:scale-[0.98]";
+                    btn.innerText = opt.keyword;
+                    btn.onclick = () => checkAnswer(opt.keyword);
+                    oGrid.appendChild(btn);
+                });
+            }
+        }
+
+        function checkAnswer(selected) {
+            stopSpeak();
+            if (activeTarget) stopMic();
+
+            if (!currentQuestion) return;
+
+            const isCorrect = selected === currentQuestion.keyword;
+
+            const mainControls = document.getElementById('main-controls');
+            if (mainControls) {
+                mainControls.classList.remove('invisible', 'opacity-0');
+                mainControls.classList.add('visible', 'opacity-100');
+            }
+
+            let escapedKw = escapeRegExp(currentQuestion.keyword);
+            let tc = currentQuestion.topic_context || "";
+            let kwDisplay = currentQuestion.keyword || "";
+            let filledSentence = tc.replace(new RegExp(escapedKw, 'gi'), `<span class="text-blue-600 underline decoration-2">${kwDisplay}</span>`);
+
+            const targetMainDisp = document.getElementById('target-main-display');
+            if (targetMainDisp) targetMainDisp.innerHTML = `"${filledSentence}"`;
+
+            const transParaCont = document.getElementById('translate-para-container');
+            if (transParaCont) transParaCont.classList.remove('hidden');
+
+            if (currentQuestion.paraphrase) {
+                translateText(currentQuestion.paraphrase, 'translate-para-text');
+            }
+            const transMainCont = document.getElementById('translate-main-container');
+            if (transMainCont) transMainCont.classList.remove('hidden');
+
+            if (currentQuestion.topic_context) {
+                translateText(currentQuestion.topic_context, 'translate-main-text');
+            }
+
+            const oGrid = document.getElementById('options-grid');
+            if (oGrid) oGrid.classList.add('hidden');
+
+            const fPanel = document.getElementById('feedback-panel');
+            if (fPanel) {
+                fPanel.classList.remove('hidden');
+            }
+
+            const header = document.getElementById('feedback-header');
+            const infoLogic = document.getElementById('info-logic');
+            const infoGrammar = document.getElementById('info-grammar');
+
+            if (infoLogic) infoLogic.innerText = currentQuestion.logic_type || 'N/A';
+            if (infoGrammar) infoGrammar.innerText = currentQuestion.grammar_pos || "N/A";
+
+            const kw = currentQuestion.keyword;
+            if (kw) {
+                let currentLevel = stats.progress[kw] || 0;
+
+                if (isCorrect) {
+                    stats.score += 1;
+                    currentLevel = Math.min(currentLevel + 1, 5);
+                    stats.progress[kw] = currentLevel;
+
+                    if (header) {
+                        header.className = "glass-card p-4 rounded-xl border-l-4 border-green-500 bg-green-50/50 fade-in flex justify-between items-center";
+                        header.innerHTML = `
+                            <div>
+                                <h4 class="font-black text-green-800 uppercase text-xs tracking-wide mb-0.5">✅ Chính xác!</h4>
+                                
+                            </div>
+                        `;
+                    }
+                } else {
+                    currentLevel = 1;
+                    stats.progress[kw] = currentLevel;
+
+                    if (header) {
+                        header.className = "glass-card p-4 rounded-xl border-l-4 border-red-500 bg-red-50/50 fade-in flex justify-between items-center";
+                        header.innerHTML = `
+                            <div>
+                                <h4 class="font-black text-red-800 uppercase text-xs tracking-wide mb-0.5">❌ Sai rồi</h4>
+                                <p class="text-[11px] text-red-700">Đáp án: <b>${kwDisplay}</b></p>
+                            </div>
+                        `;
+                    }
+                }
+
+                saveProgress();
+                const scoreDisp = document.getElementById('score-display');
+                if (scoreDisp) scoreDisp.innerText = stats.score;
+            }
+            autoReadAnswerPair();
+        }
+
+        // --- 5. DATA MGMT & UI ---
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            event.target.value = '';
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const parsed = JSON.parse(e.target.result);
+                    let newData = [];
+                    let importedStats = null;
+
+                    // KIỂM TRA ĐỊNH DẠNG FILE AN TOÀN
+                    if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && parsed.data) {
+                        // Trường hợp nạp file Backup (Có chứa .data)
+                        if (Array.isArray(parsed.data)) {
+                            newData = parsed.data;
+                        }
+                        if (parsed.stats && typeof parsed.stats === 'object') {
+                            importedStats = parsed.stats;
+                        }
+                    } else if (Array.isArray(parsed)) {
+                        // Trường hợp nạp file Database gốc
+                        newData = parsed;
+                    } else {
+                        throw new Error("Lỗi định dạng cấu trúc JSON");
+                    }
+
+                    // Chuẩn hóa và làm sạch dữ liệu
+                    const validData = [];
+                    for (let i = 0; i < newData.length; i++) {
+                        let item = newData[i];
+                        if (item && item.keyword && typeof item.keyword === 'string' && item.keyword.trim().length > 0) {
+                            validData.push({
+                                keyword: item.keyword.trim(),
+                                logic_type: item.logic_type || "General",
+                                grammar_pos: item.grammar_pos || item.grammar || "N/A", // Hỗ trợ cả key grammar cũ
+                                topic_context: item.topic_context || item.example || "", // Hỗ trợ cả key example cũ
+                                paraphrase: item.paraphrase || item.para || "" // Hỗ trợ cả key para cũ
+                            });
+                        }
+                    }
+
+                    if (validData.length === 0) throw new Error("File JSON không chứa từ vựng hợp lệ");
+
+                    appData = validData;
+
+                    if (importedStats && importedStats.progress) {
+                        // Khôi phục chính xác stats
+                        stats.score = importedStats.score || 0;
+                        stats.progress = importedStats.progress;
+                    } else {
+                        // Tạo mới tiến độ
+                        appData.forEach(item => { if (stats.progress[item.keyword] === undefined) stats.progress[item.keyword] = 0; });
+                    }
+
+                    SafeStorage.set('pte_ultimate_data', JSON.stringify(appData));
+                    saveProgress();
+
+                    const scoreDisp = document.getElementById('score-display');
+                    if (scoreDisp) scoreDisp.innerText = stats.score || 0;
+
+                    showModal("Thành công", `Đã nạp ${validData.length} từ chức năng${importedStats ? ' và khôi phục tiến độ' : ''}.`, "📂");
+                    renderLibrary();
+                    updateProgressDisplay();
+                    generateQuestion();
+                } catch (err) {
+                    showModal("Lỗi File", "File không hợp lệ hoặc sai cấu trúc. " + err.message, "❌");
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function saveProgress() {
+            SafeStorage.set('pte_ultimate_stats_v2', JSON.stringify(stats));
+        }
+
+        function resetStats() {
+            if (confirm("Xóa toàn bộ tiến độ?")) {
+                stats = { score: 0, progress: {} };
+                saveProgress();
+                location.reload();
+            }
+        }
+
+        function updateProgressDisplay() {
+            if (!appData) return;
+            const total = appData.length;
+            const levels = Object.values(stats.progress || {});
+            const masteredCount = levels.filter(l => l >= 4).length;
+            const currentTotalScore = levels.reduce((a, b) => a + (typeof b === 'number' ? b : 0), 0);
+            const maxTotalScore = total * 5;
+            const percent = total > 0 ? Math.round((currentTotalScore / maxTotalScore) * 100) : 0;
+
+            const pp = document.getElementById('progress-percent');
+            if (pp) pp.innerText = `${percent}%`;
+
+            const pb = document.getElementById('progress-bar');
+            if (pb) pb.style.width = `${percent}%`;
+
+            const lc = document.getElementById('learned-count');
+            if (lc) lc.innerText = masteredCount;
+
+            const tc = document.getElementById('total-count');
+            if (tc) tc.innerText = total;
+        }
+
+        // FORMAT TÊN FILE XUẤT RA CHUẨN (VD: EMFW_Backup_20260522_0837.json)
+        function exportProgress() {
+            const blob = new Blob([JSON.stringify({ data: appData, stats: stats }, null, 2)], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+
+            const now = new Date();
+            const yyyy = now.getFullYear();
+            const mm = String(now.getMonth() + 1).padStart(2, '0');
+            const dd = String(now.getDate()).padStart(2, '0');
+            const hh = String(now.getHours()).padStart(2, '0');
+            const min = String(now.getMinutes()).padStart(2, '0');
+
+            a.download = `EMFW_Backup_${yyyy}${mm}${dd}_${hh}${min}.json`;
+            a.click();
+        }
+
+        function showView(viewId) {
+            document.querySelectorAll('.view-content').forEach(v => v.classList.add('hidden'));
+            document.querySelectorAll('.nav-item').forEach(v => v.classList.remove('active-nav', 'text-blue-600'));
+
+            const vId = document.getElementById(`view-${viewId}`);
+            if (vId) vId.classList.remove('hidden');
+
+            const navs = document.querySelectorAll('.nav-item');
+            if (viewId === 'quiz' && navs[0]) navs[0].classList.add('active-nav', 'text-blue-600');
+            if (viewId === 'library' && navs[1]) navs[1].classList.add('active-nav', 'text-blue-600');
+            if (viewId === 'data' && navs[2]) navs[2].classList.add('active-nav', 'text-blue-600');
+
+            if (viewId === 'library') renderLibrary();
+            if (viewId === 'data') updateProgressDisplay();
+        }
+
+        function renderLibrary() {
+            const list = document.getElementById('library-list');
+            if (!list) return;
+
+            const searchEl = document.getElementById('lib-search');
+            const search = searchEl ? searchEl.value.toLowerCase() : "";
+
+            const filterEl = document.getElementById('lib-filter-logic');
+            const filterLogic = filterEl ? filterEl.value : "";
+
+            const filtered = appData.filter(i => {
+                if (!i) return false;
+                const kwMatch = i.keyword ? i.keyword.toLowerCase().includes(search) : false;
+                const ctxMatch = i.topic_context ? i.topic_context.toLowerCase().includes(search) : false;
+                const matchesSearch = kwMatch || ctxMatch;
+                const matchesLogic = !filterLogic || i.logic_type === filterLogic;
+                return matchesSearch && matchesLogic;
+            });
+
+            const tagCount = document.getElementById('lib-tag-count');
+            if (tagCount) tagCount.innerText = `${filtered.length} Items`;
+
+            list.innerHTML = filtered.map(item => {
+                const level = (stats.progress && item.keyword) ? (stats.progress[item.keyword] || 0) : 0;
+                let dots = '';
+                for (let k = 1; k <= 5; k++) dots += `<div class="w-1.5 h-1.5 rounded-full ${k <= level ? 'bg-blue-500' : 'bg-slate-200'}"></div>`;
+
+                return `
+                <div class="glass-card p-4 rounded-xl hover:border-blue-400 transition-all border border-slate-100 flex flex-col h-full bg-white group">
+                    <div class="mb-2">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="font-black text-slate-800 text-sm group-hover:text-blue-600 transition">${item.keyword || ''}</span>
+                            <div class="flex gap-0.5 mt-1">${dots}</div>
+                        </div>
+                        <span class="text-[9px] font-black uppercase text-blue-500 bg-blue-50 px-1.5 py-0.5 rounded tracking-tighter mb-1 inline-block">${item.logic_type || ''}</span>
+                        <p class="text-[11px] text-slate-500 italic leading-snug">"${item.topic_context || ''}"</p>
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        function showModal(title, desc, icon) {
+            const mTitle = document.getElementById('modal-title');
+            if (mTitle) mTitle.innerText = title;
+
+            const mDesc = document.getElementById('modal-desc');
+            if (mDesc) mDesc.innerText = desc;
+
+            const mIcon = document.getElementById('modal-icon');
+            if (mIcon) mIcon.innerText = icon;
+
+            const mod = document.getElementById('modal');
+            if (mod) mod.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const mod = document.getElementById('modal');
+            if (mod) mod.classList.add('hidden');
+        }
+
+        // Khởi tạo an toàn
+        
+        // UX helper: Escape = close modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // UX helper: Enter = next question after answering
+        document.addEventListener('keydown', (e) => {
+            const feedbackPanel = document.getElementById('feedback-panel');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (
+                e.key === 'Enter' &&
+                feedbackPanel &&
+                !feedbackPanel.classList.contains('hidden')
+            ) {
+                e.preventDefault();
+                nextBtn.click();
+            }
+        });
+
+
+        window.onload = () => {
+            if (!SafeStorage.checkSupport()) {
+                const warn = document.getElementById('storage-warning');
+                if (warn) warn.classList.remove('hidden');
+            }
+
+            const sd = document.getElementById('score-display');
+            if (sd) sd.innerText = stats.score || 0;
+
+            initSpeech();
+            loadVoices();
+            generateQuestion();
+            showView('quiz');
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPA Master Studio - Huấn Luyện Viên AI</title>
+    <!-- Thư viện hỗ trợ giao diện và logic -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto+Mono:wght@400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0f172a; }
+        .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes wave { 0%, 100% { height: 30%; } 50% { height: 100%; } }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+
+        // --- BIỂU TƯỢNG (ICONS) ---
+        const IconVolume = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>;
+        const IconLayers = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>;
+        const IconMic = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>;
+        const IconStop = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>;
+        const IconRotate = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>;
+        const IconSearch = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>;
+        const IconBrain = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.04-2.44V4.5A2.5 2.5 0 0 1 7.5 2h2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.04-2.44V4.5A2.5 2.5 0 0 0 16.5 2h-2z"></path></svg>;
+        const IconSettings = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>;
+
+        // --- CƠ SỞ DỮ LIỆU ÂM VỊ (DATABASE) ---
+        const PHONEME_DATA = {
+            'iː': { type: 'vowel', voice: 'voiced', tongue: [70, 20], jaw: 0.1, lips: 'spread', desc: 'Lưỡi đưa cao ra trước, môi bè sang hai bên, âm dài.' },
+            'ɪ':  { type: 'vowel', voice: 'voiced', tongue: [65, 30], jaw: 0.2, lips: 'neutral', desc: 'Lưỡi thấp hơn /iː/ một chút, ngắn và dứt khoát.' },
+            'i':  { type: 'vowel', voice: 'voiced', tongue: [68, 25], jaw: 0.15, lips: 'spread', desc: 'Biến thể ngắn của âm /iː/, thường xuất hiện ở cuối từ không nhấn mạnh. Lưỡi cao trung bình.' },
+            'e':  { type: 'vowel', voice: 'voiced', tongue: [60, 50], jaw: 0.4, lips: 'neutral', desc: 'Lưỡi ở độ cao trung bình, mở rộng miệng hơn /ɪ/.' },
+            'æ':  { type: 'vowel', voice: 'voiced', tongue: [55, 75], jaw: 0.8, lips: 'spread', desc: 'Hàm mở rộng tối đa, lưỡi nằm thấp và phẳng.' },
+            'ɑː': { type: 'vowel', voice: 'voiced', tongue: [30, 80], jaw: 0.9, lips: 'neutral', desc: 'Lưỡi thụt sâu về sau, hạ thấp, miệng mở to.' },
+            'ɑ':  { type: 'vowel', voice: 'voiced', tongue: [30, 80], jaw: 0.9, lips: 'neutral', desc: 'Tương tự /ɑː/ nhưng thời gian phát âm ngắn hơn.' },
+            'ɔː': { type: 'vowel', voice: 'voiced', tongue: [20, 60], jaw: 0.6, lips: 'rounded', desc: 'Lưỡi cong lên phía sau, môi tròn chặt.' },
+            'ɒ':  { type: 'vowel', voice: 'voiced', tongue: [25, 75], jaw: 0.8, lips: 'rounded', desc: 'Âm o ngắn. Miệng mở rộng, môi hơi tròn, lưỡi thụt về sau.' },
+            'ʊ':  { type: 'vowel', voice: 'voiced', tongue: [35, 35], jaw: 0.3, lips: 'rounded', desc: 'Lưỡi lùi về sau nhưng thả lỏng, môi hơi tròn.' },
+            'uː': { type: 'vowel', voice: 'voiced', tongue: [30, 20], jaw: 0.1, lips: 'rounded', desc: 'Lưỡi nâng cao ở phía sau, môi tròn nhỏ.' },
+            'u':  { type: 'vowel', voice: 'voiced', tongue: [30, 20], jaw: 0.1, lips: 'rounded', desc: 'Biến thể của âm /uː/ hoặc /ʊ/. Môi tròn, lưỡi nâng cao phía sau.' },
+            'ʌ':  { type: 'vowel', voice: 'voiced', tongue: [40, 60], jaw: 0.5, lips: 'neutral', desc: 'Miệng mở tự nhiên, âm ngắn, phát ra từ cổ họng.' },
+            'ə':  { type: 'vowel', voice: 'voiced', tongue: [50, 50], jaw: 0.3, lips: 'neutral', desc: 'Âm Schwa - Thả lỏng hoàn toàn lưỡi và môi. Âm lướt nhẹ.' },
+            'ɜː': { type: 'vowel', voice: 'voiced', tongue: [50, 50], jaw: 0.3, lips: 'neutral', desc: 'Giống schwa nhưng lưỡi cong lên một chút, âm dài.' },
+            'eɪ': { type: 'diphthong', voice: 'voiced', tongue: [60, 40], jaw: 0.3, lips: 'spread', desc: 'Trượt từ /e/ sang /ɪ/.' },
+            'aɪ': { type: 'diphthong', voice: 'voiced', tongue: [45, 60], jaw: 0.7, lips: 'neutral', desc: 'Mở rộng miệng /ɑ/ rồi nâng lên /ɪ/.' },
+            'ɔɪ': { type: 'diphthong', voice: 'voiced', tongue: [30, 50], jaw: 0.5, lips: 'rounded', desc: 'Trượt từ /ɔ/ tròn môi sang /ɪ/ bè môi.' },
+            'aʊ': { type: 'diphthong', voice: 'voiced', tongue: [40, 70], jaw: 0.8, lips: 'rounded', desc: 'Mở to /ɑ/ rồi thu tròn môi về /ʊ/.' },
+            'əʊ': { type: 'diphthong', voice: 'voiced', tongue: [45, 45], jaw: 0.3, lips: 'rounded', desc: 'Trượt từ /ə/ sang /ʊ/.' },
+            'oʊ': { type: 'diphthong', voice: 'voiced', tongue: [45, 45], jaw: 0.3, lips: 'rounded', desc: 'Trượt từ /o/ sang /ʊ/.' },
+            'p':  { type: 'stop', voice: 'unvoiced', manner: 'stop', place: 'bilabial', tongue: [50, 80], jaw: 0, lips: 'closed', desc: 'Mím chặt hai môi rồi bật hơi mạnh (Vô thanh).' },
+            'b':  { type: 'stop', voice: 'voiced', manner: 'stop', place: 'bilabial', tongue: [50, 80], jaw: 0, lips: 'closed', desc: 'Mím môi, rung dây thanh quản khi bật hơi (Hữu thanh).' },
+            't':  { type: 'stop', voice: 'unvoiced', manner: 'stop', place: 'alveolar', tongue: [75, 15], jaw: 0.2, lips: 'neutral', desc: 'Đầu lưỡi chạm nướu trên rồi bật xuống.' },
+            'd':  { type: 'stop', voice: 'voiced', manner: 'stop', place: 'alveolar', tongue: [75, 15], jaw: 0.2, lips: 'neutral', desc: 'Đầu lưỡi chạm nướu trên, rung thanh quản.' },
+            'k':  { type: 'stop', voice: 'unvoiced', manner: 'stop', place: 'velar', tongue: [20, 20], jaw: 0.4, lips: 'neutral', desc: 'Cuống lưỡi nâng lên chạm ngạc mềm.' },
+            'g':  { type: 'stop', voice: 'voiced', manner: 'stop', place: 'velar', tongue: [20, 20], jaw: 0.4, lips: 'neutral', desc: 'Cuống lưỡi chạm ngạc mềm, rung cổ họng.' },
+            'ɡ':  { type: 'stop', voice: 'voiced', manner: 'stop', place: 'velar', tongue: [20, 20], jaw: 0.4, lips: 'neutral', desc: 'Biến thể của âm /g/. Cuống lưỡi chạm ngạc mềm, rung cổ họng.' },
+            'f':  { type: 'fricative', voice: 'unvoiced', manner: 'fricative', place: 'labiodental', tongue: [50, 60], jaw: 0.1, lips: 'tuck', desc: 'Răng trên chạm môi dưới, thổi hơi ra.' },
+            'v':  { type: 'fricative', voice: 'voiced', manner: 'fricative', place: 'labiodental', tongue: [50, 60], jaw: 0.1, lips: 'tuck', desc: 'Răng trên chạm môi dưới, rung cổ họng.' },
+            's':  { type: 'fricative', voice: 'unvoiced', manner: 'fricative', place: 'alveolar', tongue: [70, 25], jaw: 0.1, lips: 'spread', desc: 'Lưỡi gần nướu trên, xì hơi gió.' },
+            'z':  { type: 'fricative', voice: 'voiced', manner: 'fricative', place: 'alveolar', tongue: [70, 25], jaw: 0.1, lips: 'spread', desc: 'Giống /s/ nhưng rung dây thanh quản.' },
+            'ʃ':  { type: 'fricative', voice: 'unvoiced', manner: 'fricative', place: 'postalveolar', tongue: [60, 25], jaw: 0.1, lips: 'rounded', desc: 'Chu môi, cong lưỡi xì hơi mạnh.' },
+            'ʒ':  { type: 'fricative', voice: 'voiced', manner: 'fricative', place: 'postalveolar', tongue: [60, 25], jaw: 0.1, lips: 'rounded', desc: 'Chu môi, nâng lưỡi, rung cổ họng.' },
+            'θ':  { type: 'fricative', voice: 'unvoiced', manner: 'fricative', place: 'dental', tongue: [85, 40], jaw: 0.2, lips: 'neutral', desc: 'Đầu lưỡi giữa hai hàm răng, thổi hơi nhẹ.' },
+            'ð':  { type: 'fricative', voice: 'voiced', manner: 'fricative', place: 'dental', tongue: [85, 40], jaw: 0.2, lips: 'neutral', desc: 'Lưỡi giữa răng, rung cổ họng.' },
+            'l':  { type: 'liquid', voice: 'voiced', manner: 'liquid', place: 'alveolar', tongue: [75, 15], jaw: 0.3, lips: 'neutral', desc: 'Đầu lưỡi chạm nướu trên, hơi thoát hai bên.' },
+            'r':  { type: 'liquid', voice: 'voiced', manner: 'liquid', place: 'postalveolar', tongue: [45, 40], jaw: 0.3, lips: 'rounded', desc: 'Đầu lưỡi cong ngược về sau.' },
+            'ɹ':  { type: 'liquid', voice: 'voiced', manner: 'liquid', place: 'postalveolar', tongue: [45, 40], jaw: 0.3, lips: 'rounded', desc: 'Âm "r" Mỹ. Lưỡi cong về sau không chạm vòm.' },
+            'j':  { type: 'approximant', voice: 'voiced', tongue: [65, 25], jaw: 0.2, lips: 'neutral', desc: 'Bán nguyên âm. Nâng thân lưỡi lên gần ngạc cứng.' },
+            'y':  { type: 'vowel', voice: 'voiced', tongue: [70, 20], jaw: 0.1, lips: 'rounded', desc: 'Trong IPA, đây là âm i nhưng môi tròn. Thường bị nhầm với âm /j/ hoặc /i/.' },
+            'default': { type: 'default', voice: 'unvoiced', tongue: [50, 60], jaw: 0.2, lips: 'neutral', desc: 'Chọn một âm vị trên thanh điều hướng để xem hướng dẫn kỹ thuật chi tiết.' }
+        };
+
+        const PHONEME_SOUNDS = { 
+            'iː': 'ee', 'ɪ': 'ih', 'i': 'ee', 'e': 'eh', 'æ': 'a', 'ɑː': 'ah', 'ɑ': 'ah', 'ɔː': 'aw', 'ɔ': 'aw', 'ɒ': 'o', 'ʊ': 'uh', 'uː': 'oo', 'u': 'oo',
+            'ʌ': 'uh', 'ə': 'uh', 'ɜː': 'ur', 'p': 'puh', 'b': 'buh', 't': 'tuh', 'd': 'duh', 'k': 'kuh', 'g': 'guh', 'ɡ': 'guh',
+            'f': 'ff', 'v': 'vv', 's': 'ss', 'z': 'zz', 'ʃ': 'sh', 'ʒ': 'zhh', 'θ': 'th', 'ð': 'thh', 'm': 'mm', 
+            'n': 'nn', 'ŋ': 'ng', 'h': 'hh', 'j': 'yuh', 'w': 'wuh', 'r': 'rrr', 'ɹ': 'rrr', 'y': 'yuh', 'dʒ': 'dguh', 'tʃ': 'chuh'
+        };
+
+        const IPA_AFFIX_MAP = { 'un': 'ʌn', 'im': 'ɪm', 're': 'riː', 'ly': 'li', 'ing': 'ɪŋ', 'ed': 'd' };
+        const IPA_PREFIXES = ['un', 'im', 'in', 'dis', 're', 'mis', 'non', 'pre', 'over'];
+
+        // --- HÀM TRỢ GIÚP ---
+        const getPhonemeInfo = (phoneme) => {
+            if (!phoneme) return PHONEME_DATA['default'];
+            let clean = phoneme.replace(/['ˌˈ.()]/g, '');
+            if (clean === 'ɡ') clean = 'g';
+            if (!PHONEME_DATA[clean]) {
+                if (clean === 'a') return PHONEME_DATA['æ'];
+                if (clean === 'o') return PHONEME_DATA['ɒ'];
+            }
+            return PHONEME_DATA[clean] || PHONEME_DATA['default'];
+        };
+
+        const getPhonemeDuration = (phonemeObj, isSlow) => {
+            const char = typeof phonemeObj === 'string' ? phonemeObj : phonemeObj.char;
+            const data = getPhonemeInfo(char);
+            let base = 65;
+            if (data.type === 'vowel' || data.type === 'diphthong') base = 100;
+            else if (data.type === 'stop') base = 40;
+            return isSlow ? base * 1.85 : base;
+        };
+
+        const parseIPA = (ipaRaw) => {
+            const cleanStr = ipaRaw.replace(/[\/\[\]()?]/g, '').trim(); 
+            const syll = [];
+            const knownKeys = Object.keys(PHONEME_DATA).sort((a, b) => b.length - a.length);
+            let i = 0;
+            let currentStress = 'none';
+            while (i < cleanStr.length) {
+                const char = cleanStr[i];
+                if (char === 'ˈ') { currentStress = 'primary'; i++; continue; }
+                if (char === 'ˌ') { currentStress = 'secondary'; i++; continue; }
+                if (char === '.' || char === ' ') { i++; continue; }
+                let match = false;
+                for (let phon of knownKeys) {
+                    if (cleanStr.startsWith(phon, i)) {
+                        syll.push({ char: phon, stress: currentStress });
+                        currentStress = 'none'; i += phon.length; match = true; break;
+                    }
+                }
+                if (!match) { syll.push({ char: cleanStr[i], stress: currentStress }); currentStress = 'none'; i++; }
+            }
+            return { ipa: cleanStr, syll }; 
+        };
+
+        const alignSequences = (targetSeq, spokenSeq) => {
+            const n = targetSeq.length; const m = spokenSeq.length;
+            const dp = Array(n + 1).fill(null).map(() => Array(m + 1).fill(0));
+            for (let i = 0; i <= n; i++) dp[i][0] = i;
+            for (let j = 0; j <= m; j++) dp[0][j] = j;
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= m; j++) {
+                    const cost = (targetSeq[i - 1] === spokenSeq[j - 1] || 
+                                 (targetSeq[i - 1] === 'r' && spokenSeq[j - 1] === 'ɹ') ||
+                                 (targetSeq[i - 1] === 'uː' && spokenSeq[j - 1] === 'u')) ? 0 : 1;
+                    dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+                }
+            }
+            let i = n, j = m; const alignment = [];
+            while (i > 0 || j > 0) {
+                if (i > 0 && j > 0 && (targetSeq[i - 1] === spokenSeq[j - 1] || 
+                                      (targetSeq[i - 1] === 'r' && spokenSeq[j - 1] === 'ɹ') ||
+                                      (targetSeq[i - 1] === 'uː' && spokenSeq[j - 1] === 'u'))) { alignment.unshift({ t: targetSeq[i - 1], s: spokenSeq[j - 1], type: 'match' }); i--; j--; }
+                else if (i > 0 && j > 0 && dp[i][j] === dp[i - 1][j - 1] + 1) { alignment.unshift({ t: targetSeq[i - 1], s: spokenSeq[j - 1], type: 'sub' }); i--; j--; }
+                else if (i > 0 && dp[i][j] === dp[i - 1][j] + 1) { alignment.unshift({ t: targetSeq[i - 1], s: null, type: 'del' }); i--; }
+                else { alignment.unshift({ t: null, s: spokenSeq[j - 1], type: 'ins' }); j--; }
+            }
+            return alignment;
+        };
+
+        // --- SUB-COMPONENTS ---
+        const AudioAnalyzer = ({ isActive }) => {
+            const canvasRef = useRef(null);
+            const audioContextRef = useRef(null);
+            const analyserRef = useRef(null);
+            const animationRef = useRef(null);
+            useEffect(() => {
+                if (!isActive) { if (animationRef.current) cancelAnimationFrame(animationRef.current); return; }
+                const init = async () => {
+                    try {
+                        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                        audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+                        analyserRef.current = audioContextRef.current.createAnalyser();
+                        const source = audioContextRef.current.createMediaStreamSource(stream);
+                        source.connect(analyserRef.current);
+                        analyserRef.current.fftSize = 512;
+                        draw();
+                    } catch (e) {}
+                };
+                const draw = () => {
+                    if (!canvasRef.current || !analyserRef.current) return;
+                    const ctx = canvasRef.current.getContext('2d');
+                    const bufferLength = analyserRef.current.frequencyBinCount;
+                    const dataArray = new Uint8Array(bufferLength);
+                    const render = () => {
+                        animationRef.current = requestAnimationFrame(render);
+                        analyserRef.current.getByteTimeDomainData(dataArray);
+                        ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+                        ctx.lineWidth = 2.5; ctx.strokeStyle = '#ef4444'; ctx.beginPath();
+                        const sliceWidth = canvasRef.current.width / bufferLength;
+                        let x = 0;
+                        for (let i = 0; i < bufferLength; i++) {
+                            const v = dataArray[i] / 128.0; const y = v * canvasRef.current.height / 2;
+                            if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+                            x += sliceWidth;
+                        }
+                        ctx.lineTo(canvasRef.current.width, canvasRef.current.height / 2); ctx.stroke();
+                    };
+                    render();
+                };
+                init();
+                return () => {
+                    if (animationRef.current) cancelAnimationFrame(animationRef.current);
+                    if (audioContextRef.current && audioContextRef.current.state !== 'closed') audioContextRef.current.close();
+                };
+            }, [isActive]);
+            return <canvas ref={canvasRef} className="w-full h-full" width={600} height={64} />;
+        };
+
+        const TargetWaveform = ({ syllables, isSlow }) => {
+            if (!syllables || syllables.length === 0) return null;
+            let path = "M 0 32 "; let currentX = 0;
+            const totalDur = syllables.reduce((acc, s) => acc + getPhonemeDuration(s, isSlow), 0);
+            const scaleX = 400 / totalDur;
+            syllables.forEach((s) => {
+                const data = getPhonemeInfo(s.char);
+                const dur = getPhonemeDuration(s, isSlow) * scaleX;
+                let amp = (s.stress === 'primary' ? 26 : (data.type === 'vowel' ? 16 : 8));
+                path += `Q ${currentX + dur/2} ${32-amp}, ${currentX + dur} 32 `;
+                currentX += dur;
+            });
+            let pathBottom = `L ${currentX} 32 `; let revX = currentX;
+            [...syllables].reverse().forEach((s) => {
+                const data = getPhonemeInfo(s.char);
+                const dur = getPhonemeDuration(s, isSlow) * scaleX;
+                let amp = (s.stress === 'primary' ? 26 : (data.type === 'vowel' ? 16 : 8));
+                pathBottom += `Q ${revX - dur/2} ${32+amp}, ${revX - dur} 32 `;
+                revX -= dur;
+            });
+            return (
+                <svg viewBox="0 0 400 64" className="w-full h-full" preserveAspectRatio="none">
+                    <path d={path + pathBottom} fill="rgba(99, 102, 241, 0.15)" stroke="#6366f1" strokeWidth="2.5" />
+                </svg>
+            );
+        };
+
+        const MouthVisualizer = ({ phoneme }) => {
+            const data = getPhonemeInfo(phoneme);
+            const tipX = 50 + (data.tongue[0] * 0.8); const tipY = 80 + (data.tongue[1] * 0.5);
+            const jawOpen = (data.jaw || 0) * 45;
+            return (
+                <div className="w-full h-full bg-slate-900 flex justify-center items-center relative overflow-hidden">
+                    <svg viewBox="0 0 200 200" className="w-full h-full max-w-[450px]">
+                        <defs><linearGradient id="skinG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#fca5a5" /><stop offset="100%" stopColor="#fecaca" /></linearGradient></defs>
+                        <path d="M 10,180 Q 10,10 100,10 Q 180,10 180,90" fill="none" stroke="#334155" strokeWidth="2" />
+                        <path d="M 40,130 Q 40,80 100,60 T 160,85" fill="none" stroke="#64748b" strokeWidth="3" />
+                        <path d="M 155,85 L 155,105" stroke="#cbd5e1" strokeWidth="6" />
+                        <path d={`M 20,130 Q ${80 + (data.tongue[0]/4)},${120 - (data.tongue[1]/2)} ${tipX},${tipY}`} fill="none" stroke="#ef4444" strokeWidth="24" strokeLinecap="round" className="transition-all duration-150 ease-out" />
+                        <g transform={`rotate(${jawOpen}, 40, 100)`} className="transition-transform duration-150 ease-out">
+                            <path d="M 40,130 Q 80,180 160,160 L 160,135" fill="none" stroke="#64748b" strokeWidth="3" />
+                            <path d="M 150,135 L 150,115" stroke="#cbd5e1" strokeWidth="6" />
+                        </g>
+                        <path d={`M 165,95 Q ${data.lips === 'rounded' ? '195,95' : '170,85'} ${data.lips === 'tuck' ? '155,105' : '185,105'}`} fill="none" stroke="#fda4af" strokeWidth="12" strokeLinecap="round" className="transition-all duration-150 ease-out"/>
+                    </svg>
+                    <div className="absolute top-4 left-4 text-3xl font-mono font-black text-white/10">/{phoneme}/</div>
+                </div>
+            );
+        };
+
+        // --- MAIN APP ---
+        function App() {
+            const [mode, setMode] = useState('practice');
+            const [inputWord, setInputWord] = useState('');
+            const [targetWord, setTargetWord] = useState(null);
+            const [selectedPhoneme, setSelectedPhoneme] = useState('default');
+            const [activePhonemeIndex, setActivePhonemeIndex] = useState(null);
+            const [isListening, setIsListening] = useState(false);
+            const [speechResult, setSpeechResult] = useState(null);
+            const [feedback, setFeedback] = useState(null);
+            const [detailedFeedback, setDetailedFeedback] = useState([]);
+            const [isPlaying, setIsPlaying] = useState(false);
+            const [slowMode, setSlowMode] = useState(false);
+            const [sentenceContext, setSentenceContext] = useState(null);
+            const [selectedWordIndex, setSelectedWordIndex] = useState(null);
+            const [isLoading, setIsLoading] = useState(false);
+            const [mispronouncedMap, setMispronouncedMap] = useState({}); 
+            const [aiCoachGuide, setAiCoachGuide] = useState(null);
+            const [isAiLoading, setIsAiLoading] = useState(false);
+            const [apiKey, setApiKey] = useState("");
+            const [showApiInput, setShowApiInput] = useState(false);
+
+            const animationTimeoutRef = useRef(null);
+            const recognitionRef = useRef(null);
+
+            useEffect(() => {
+                if ('webkitSpeechRecognition' in window) {
+                    const SpeechRecognition = window.webkitSpeechRecognition;
+                    const recognition = new SpeechRecognition();
+                    recognition.continuous = true;
+                    recognition.interimResults = true;
+                    recognition.lang = 'en-US';
+                    recognition.onresult = (event) => {
+                        let final = '';
+                        for (let i = event.resultIndex; i < event.results.length; ++i) {
+                            if (event.results[i].isFinal) final += event.results[i][0].transcript;
+                        }
+                        if (final) { setSpeechResult(final); analyzeSpeech(final); }
+                    };
+                    recognition.onstart = () => setIsListening(true);
+                    recognition.onend = () => setIsListening(false);
+                    recognitionRef.current = recognition;
+                }
+            }, [targetWord]);
+
+            const fetchAiCoachGuide = async (text) => {
+                setAiCoachGuide(null);
+                setIsAiLoading(true);
+                const currentApiKey = apiKey || "";
+                const systemPrompt = "Bạn là Huấn luyện viên ngữ âm tiếng Anh cho người Việt. Hãy phân tích từ/cụm từ được cung cấp. Cấu trúc câu trả lời: 1. Từ + IPA. 2. Trọng âm: Chỉ rõ nhấn mạnh vào đâu. 3. Mẹo xử lý âm khó (như đuôi ed/s/ced). 4. Cách đọc mẫu kiểu Việt hóa dễ hiểu (Ví dụ: PRE - dgiơ - đist). TRẢ LỜI THUẦN VĂN BẢN, KHÔNG DÙNG DẤU SAO (*), XUỐNG DÒNG RÕ RÀNG, TỐI ĐA 8 DÒNG.";
+                const userPrompt = `Hãy phân tích cách phát âm chuẩn nhất cho: "${text}"`;
+                try {
+                    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${currentApiKey}`, {
+                        method: 'POST', headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ contents: [{ parts: [{ text: userPrompt }] }], systemInstruction: { parts: [{ text: systemPrompt }] } })
+                    });
+                    const data = await response.json();
+                    const textResult = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (textResult) {
+                        const cleanText = textResult.replace(/\*/g, '');
+                        setAiCoachGuide(cleanText);
+                    } else setAiCoachGuide("Không có phản hồi từ AI Coach.");
+                } catch (e) { setAiCoachGuide("Cần dán API Key (biểu tượng Bánh răng) để kích hoạt Huấn luyện viên AI."); }
+                setIsAiLoading(false);
+            };
+
+            const stopMicIfActive = () => {
+                if (recognitionRef.current && isListening) { try { recognitionRef.current.stop(); } catch(e) {} setIsListening(false); }
+            };
+
+            const analyzeSpeech = async (spoken) => {
+                if (!targetWord) return;
+                try {
+                    const spokenData = await fetchPhraseData(spoken);
+                    if (spokenData) {
+                        const tChars = targetWord.syll.map((s) => s.char.replace(/['ˌˈ.()]/g, ''));
+                        const sChars = spokenData.syll.map((s) => s.char.replace(/['ˌˈ.()]/g, ''));
+                        const alignment = alignSequences(tChars, sChars);
+                        const errs = []; const errorMap = {}; 
+                        let targetPtr = 0;
+                        alignment.forEach(p => {
+                            if (p.t !== null) {
+                                if (p.type === 'sub') { errs.push({ msg: `Âm /${p.t}/: Nhầm thành /${p.s}/.` }); errorMap[targetPtr] = p.s; }
+                                else if (p.type === 'del') { errs.push({ msg: `Thiếu âm: Bạn bỏ sót âm /${p.t}/.` }); errorMap[targetPtr] = 'ø'; }
+                                targetPtr++;
+                            }
+                        });
+                        setDetailedFeedback(errs); setMispronouncedMap(errorMap);
+
+                        // KIỂM TRA KHỚP TỪ ĐỂ TẮT MIC
+                        const targetBaseWord = targetWord.word.split(' ')[0].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+                        const recognizedText = spoken.toLowerCase();
+                        
+                        if (recognizedText.includes(targetBaseWord)) {
+                            stopMicIfActive(); // TẮT MIC NGAY KHI NHẬN RA TỪ
+                        }
+
+                        if (errs.length === 0) setFeedback({ type: 'success', message: 'Hoàn hảo!', suggestion: 'Phát âm của bạn cực kỳ chính xác.' });
+                        else setFeedback(null);
+                    }
+                } catch (e) {}
+            };
+
+            const startTTS = (isSlow) => {
+                stopMicIfActive(); window.speechSynthesis.cancel();
+                if (animationTimeoutRef.current) clearTimeout(animationTimeoutRef.current);
+                setSlowMode(isSlow);
+                const utterance = new SpeechSynthesisUtterance(targetWord.word);
+                utterance.lang = 'en-US'; utterance.rate = isSlow ? 0.45 : 0.85;
+                utterance.onstart = () => { setIsPlaying(true); setTimeout(() => animatePhonemes(0, isSlow), 20); };
+                utterance.onend = () => { setIsPlaying(false); setActivePhonemeIndex(null); setSelectedPhoneme('default'); };
+                window.speechSynthesis.speak(utterance);
+            };
+
+            const animatePhonemes = (index, isSlow) => {
+                if (!targetWord || index >= targetWord.syll.length) return;
+                const s = targetWord.syll[index]; setSelectedPhoneme(s.char); setActivePhonemeIndex(index);
+                animationTimeoutRef.current = setTimeout(() => animatePhonemes(index + 1, isSlow), getPhonemeDuration(s, isSlow));
+            };
+
+            const playSingle = (char, idx) => {
+                stopMicIfActive(); window.speechSynthesis.cancel();
+                setActivePhonemeIndex(idx);
+                setSelectedPhoneme(char);
+                const clean = char.replace(/['ˌˈ.()]/g, '');
+                let norm = (clean === 'ɡ') ? 'g' : clean;
+                const soundKey = PHONEME_SOUNDS[norm] || norm;
+                const utterance = new SpeechSynthesisUtterance(soundKey);
+                utterance.lang = 'en-US'; window.speechSynthesis.speak(utterance);
+            };
+
+            const fetchWordAndReconstruct = async (word) => {
+                const clean = word.toLowerCase().trim();
+                try {
+                    const controller = new AbortController(); const timeoutId = setTimeout(() => controller.abort(), 3000);
+                    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${clean}`, { signal: controller.signal });
+                    clearTimeout(timeoutId);
+                    if (res.ok) {
+                        const data = await res.json();
+                        const found = data[0].phonetics.find((p) => p.text) || data[0].phonetic;
+                        if (found) return { word: data[0].word, ipaRaw: typeof found === 'string' ? found : found.text };
+                    }
+                } catch (e) {}
+                for (const pre of IPA_PREFIXES) {
+                    if (clean.startsWith(pre) && clean.length > pre.length + 2) {
+                        const root = await fetchWordAndReconstruct(clean.slice(pre.length));
+                        if (root) return { word: clean, ipaRaw: (IPA_AFFIX_MAP[pre] || pre) + root.ipaRaw };
+                    }
+                }
+                return { word: clean, ipaRaw: clean.replace(/a/g, 'æ').replace(/e/g, 'e').replace(/i/g, 'ɪ').replace(/o/g, 'ɒ') };
+            };
+
+            const fetchPhraseData = async (phrase) => {
+                const words = phrase.split(/\s+/).filter(w => w.length > 0);
+                if (words.length === 0) return null;
+                const results = await Promise.all(words.map(w => fetchWordAndReconstruct(w)));
+                const valid = results.filter(r => r !== null);
+                const combinedIPA = valid.map(r => r.ipaRaw).join(' '); const parsed = parseIPA(combinedIPA);
+                return { word: valid.map(r => r.word).join(' '), ipa: parsed.ipa, syll: parsed.syll };
+            };
+
+            const performSearch = async (word) => {
+                const clean = word.trim(); if (!clean) return;
+                setIsLoading(true); setTargetWord(null); setFeedback(null); setDetailedFeedback([]); setMispronouncedMap({}); 
+                const words = clean.split(/\s+/);
+                if (words.length >= 3) {
+                    setMode('reader'); const data = await fetchPhraseData(clean);
+                    if (data) { setSentenceContext({ text: clean, words }); setTargetWord(data); setSelectedWordIndex(0); }
+                } else {
+                    setMode('practice'); const data = await fetchPhraseData(clean);
+                    if (data) setTargetWord(data);
+                }
+                fetchAiCoachGuide(clean); setIsLoading(false);
+            };
+
+            const selectWord = async (index) => {
+                const word = sentenceContext.words[index].replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+                setSelectedWordIndex(index); setIsLoading(true); setMispronouncedMap({}); 
+                const data = await fetchPhraseData(word);
+                if (data) { setTargetWord(data); fetchAiCoachGuide(word); }
+                setIsLoading(false);
+            };
+
+            const toggleMic = () => {
+                if (!recognitionRef.current) return;
+                if (isListening) recognitionRef.current.stop();
+                else {
+                    try {
+                        setSpeechResult(null); setFeedback(null); setDetailedFeedback([]); setMispronouncedMap({}); 
+                        window.speechSynthesis.cancel(); recognitionRef.current.start();
+                    } catch (e) { try { recognitionRef.current.stop(); } catch(err) {} }
+                }
+            };
+
+            return (
+                <div className="h-screen bg-slate-100 text-slate-950 font-sans flex flex-col overflow-hidden">
+                    <header className="flex items-center gap-4 shrink-0 bg-white p-2 border-b border-slate-300 shadow-sm z-20">
+                        <div className="bg-indigo-700 p-2 rounded-xl text-white shadow-md">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <div className="flex-1 relative flex items-center">
+                            <input 
+                                type="text" value={inputWord} onChange={(e) => setInputWord(e.target.value)} 
+                                onKeyDown={(e) => e.key === 'Enter' && performSearch(inputWord)} 
+                                placeholder="Dán từ hoặc câu tiếng Anh cần luyện tập..." 
+                                className="w-full bg-white border border-slate-400 rounded-xl py-2 px-10 text-sm text-slate-950 outline-none focus:border-indigo-600 focus:bg-white transition-all font-black" 
+                            />
+                            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500"><IconSearch /></div>
+                            <button onClick={() => performSearch(inputWord)} className="absolute right-1 top-1 bottom-1 bg-indigo-700 px-4 rounded-lg text-white font-bold text-[9px] uppercase hover:bg-indigo-800 shadow-md">Phân tích</button>
+                        </div>
+                        {targetWord && (
+                            <div className="flex items-center gap-2 bg-slate-200 p-1 rounded-xl border border-slate-300 shadow-inner">
+                                <button onClick={() => startTTS(false)} className={`flex items-center gap-2 px-3 py-1.5 rounded-lg font-black uppercase text-[8px] transition-all shadow-sm ${isPlaying && !slowMode ? 'bg-indigo-700 text-white shadow-md' : 'bg-white text-slate-700 hover:bg-indigo-50 hover:text-indigo-700'}`}><IconVolume /> Bình thường</button>
+                                <button onClick={() => startTTS(true)} className={`flex items-center gap-2 px-3 py-1.5 rounded-lg font-black uppercase text-[8px] transition-all shadow-sm ${isPlaying && slowMode ? 'bg-indigo-700 text-white shadow-md' : 'bg-white text-slate-700 hover:bg-indigo-50 hover:text-indigo-700'}`}><IconLayers /> Chậm</button>
+                                <div className="w-px h-5 bg-slate-400 mx-1"></div>
+                                <button onClick={toggleMic} className={`flex items-center gap-2 px-4 py-1.5 rounded-lg font-black uppercase text-[8px] transition-all shadow-sm ${isListening ? 'bg-red-600 text-white shadow-md ring-2 ring-red-100' : 'bg-white text-slate-700 hover:bg-red-50 hover:text-red-600'}`}>
+                                    {isListening ? <IconStop /> : <IconMic />} <span>{isListening ? 'Dừng' : 'Micro'}</span>
+                                </button>
+                            </div>
+                        )}
+                        <div className="flex gap-1">
+                            <button onClick={() => setShowApiInput(!showApiInput)} className="p-1.5 bg-white text-slate-600 rounded-xl hover:text-indigo-700 border border-slate-300 shadow-sm transition-all" title="Cài đặt API"><IconSettings /></button>
+                            <button onClick={() => {setTargetWord(null); setInputWord(''); setFeedback(null); setAiCoachGuide(null); setActivePhonemeIndex(null); window.speechSynthesis.cancel();}} className="p-1.5 bg-white text-slate-600 rounded-xl hover:text-indigo-700 border border-slate-300 shadow-sm transition-all"><IconRotate /></button>
+                        </div>
+                    </header>
+
+                    {showApiInput && (
+                        <div className="bg-indigo-50 p-2 border-b border-indigo-200 flex items-center gap-4 animate-fade-in">
+                            <span className="text-[10px] font-black text-indigo-700 uppercase ml-4">Mã API (Gemini):</span>
+                            <input type="password" value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Dán mã API cá nhân để kích hoạt AI Coach..." className="flex-1 max-w-sm bg-white border border-indigo-200 rounded-lg px-3 py-1 text-xs outline-none focus:ring-1 focus:ring-indigo-500 font-mono" />
+                            <p className="text-[8px] text-slate-500 italic mr-4">*Khóa sẽ mất khi tải lại trang để bảo mật.</p>
+                        </div>
+                    )}
+
+                    {!targetWord ? (
+                        <div className="flex-1 flex flex-col items-center justify-center opacity-30">
+                            {isLoading ? ( <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div> ) : ( <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="text-slate-500"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg> )}
+                            <p className="text-xl font-black mt-4 uppercase tracking-[0.4em] text-slate-600 text-center">Studio Sẵn Sàng</p>
+                        </div>
+                    ) : (
+                        <div className="flex-1 grid grid-cols-12 min-h-0 bg-white">
+                            <div className="col-span-4 flex flex-col min-h-0 border-r border-slate-300 bg-slate-100/50 overflow-hidden">
+                                <div className="p-3 border-b border-slate-300 space-y-4 shrink-0 bg-white shadow-sm">
+                                    <div className="space-y-3">
+                                        <div className="space-y-1"><div className="px-1 flex justify-between"><span className="text-[8px] font-black text-slate-500 uppercase tracking-widest">Nhịp điệu & Độ cao mẫu</span><span className="text-[7px] text-indigo-600 font-bold uppercase">Mẫu Chuẩn</span></div><div className="bg-slate-50 p-2 rounded-xl border border-slate-100 h-14 shadow-inner flex items-center justify-center"><TargetWaveform syllables={targetWord.syll} isSlow={slowMode} /></div></div>
+                                        <div className="space-y-1"><div className="px-1 flex justify-between"><span className="text-[8px] font-black text-red-600 uppercase tracking-widest">Giọng của bạn</span><span className="text-[7px] text-red-400 font-bold uppercase">Micro</span></div><div className="bg-slate-50 p-2 rounded-xl border border-slate-100 h-14 shadow-inner flex items-center justify-center"><AudioAnalyzer isActive={isListening} /></div></div>
+                                    </div>
+                                </div>
+                                <div className="flex-1 min-h-0 flex flex-col p-3 overflow-hidden bg-slate-50/50">
+                                    <div className="text-[10px] font-black text-slate-950 uppercase tracking-widest px-2 mb-2 flex items-center justify-between"><span>Mô hình khẩu hình 3D HD</span></div>
+                                    <div className="flex-1 bg-slate-900 rounded-[2.5rem] border-4 border-white overflow-hidden shadow-2xl relative"><MouthVisualizer phoneme={selectedPhoneme} /></div>
+                                </div>
+                            </div>
+                            <div className="col-span-8 flex flex-col min-h-0 p-4 gap-4 overflow-hidden bg-white">
+                                <div className="bg-slate-50 p-4 rounded-3xl border border-slate-200 shadow-sm shrink-0 flex flex-col gap-4">
+                                    <div className="flex items-center gap-4">
+                                        <div className="text-indigo-800 font-mono text-base font-black bg-indigo-50 px-4 py-1.5 rounded-xl border-2 border-indigo-200 shadow-inner">/{targetWord.ipa}/</div>
+                                        <div className="w-px h-6 bg-slate-300"></div>
+                                        {mode === 'reader' && sentenceContext && (
+                                            <div className="flex-1 flex flex-wrap gap-1 justify-start">
+                                                {sentenceContext.words.map((w, i) => (<button key={i} onClick={() => selectWord(i)} className={`px-2 py-0.5 rounded-md text-[7px] font-black uppercase transition-all ${selectedWordIndex === i ? 'bg-indigo-700 text-white shadow-sm' : 'bg-white text-slate-400 border border-slate-200'}`}>{w}</button>))}
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="flex flex-wrap gap-x-2 gap-y-4 overflow-y-auto max-h-32 custom-scrollbar pr-2 pb-2">
+                                        {targetWord.syll.map((s, i) => {
+                                            const wrongPhoneme = mispronouncedMap[i]; const isError = !!wrongPhoneme;
+                                            return (
+                                                <div key={i} className="flex flex-col items-center gap-1.5">
+                                                    <button onClick={() => playSingle(s.char, i)} className={`px-3 py-1 rounded-lg font-mono text-[10px] font-black border-2 transition-all shadow-sm ${activePhonemeIndex === i ? 'bg-indigo-700 border-indigo-700 text-white scale-105 z-10' : isError ? 'bg-red-50 border-red-500 text-red-600 shadow-[0_0_8px_rgba(239,68,68,0.2)]' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-500'}`}>{s.stress === 'primary' && <span className={isError ? "text-red-700" : "text-red-500"}>ˈ</span>}{s.char}</button>
+                                                    {isError && ( <button onClick={() => playSingle(wrongPhoneme, -1)} className="px-2 py-0.5 rounded bg-red-600 text-white font-mono text-[8px] font-black shadow-md animate-fade-in hover:bg-red-700">/{wrongPhoneme}/</button> )}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                                <div className="flex-1 grid grid-cols-2 gap-4 min-h-0">
+                                    <div className="flex flex-col min-h-0 bg-indigo-50/40 p-5 rounded-[2.5rem] border border-indigo-200 shadow-sm overflow-hidden">
+                                        <div className="text-indigo-800 text-[10px] font-black uppercase tracking-widest mb-4 border-b border-indigo-200 pb-3 flex items-center justify-between">
+                                            <div className="flex items-center gap-2 text-slate-950 font-black"><IconBrain /> Huấn Luyện Viên AI</div>
+                                            {isAiLoading && <div className="w-4 h-4 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>}
+                                        </div>
+                                        <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
+                                            {activePhonemeIndex !== null ? (
+                                                <div className="mb-6 animate-fade-in">
+                                                    <div className="text-[8px] font-black text-indigo-500 uppercase tracking-widest mb-3">Kỹ thuật âm tiết đơn</div>
+                                                    <p className="text-base text-slate-950 font-black leading-relaxed bg-white p-4 rounded-2xl border border-indigo-100 shadow-sm">{getPhonemeInfo(selectedPhoneme).desc}</p>
+                                                    <button onClick={() => setActivePhonemeIndex(null)} className="mt-4 text-[9px] font-black text-indigo-600 uppercase hover:underline italic">← Quay lại mẹo tổng quát</button>
+                                                </div>
+                                            ) : (
+                                                aiCoachGuide ? (
+                                                    <div className="mb-6 animate-fade-in text-slate-950">
+                                                        <div className="text-[8px] font-black text-indigo-500 uppercase tracking-widest mb-3">Mẹo phát âm tổng quát</div>
+                                                        <pre className="text-sm font-black leading-relaxed whitespace-pre-wrap font-sans bg-white p-4 rounded-2xl border border-indigo-100 shadow-sm">{aiCoachGuide}</pre>
+                                                    </div>
+                                                ) : (
+                                                    <div className="mb-6">
+                                                        <div className="text-[8px] font-black text-slate-500 uppercase mb-3">Hướng dẫn phát âm</div>
+                                                        <p className="text-base text-slate-950 font-black leading-relaxed bg-white p-4 rounded-2xl border border-indigo-100 shadow-sm">{getPhonemeInfo(selectedPhoneme).desc}</p>
+                                                        {!apiKey && <p className="text-[9px] text-red-500 font-bold mt-4 bg-red-50 p-2 rounded-lg border border-red-100 italic">Dán mã API Key cá nhân để kích hoạt AI hướng dẫn chi tiết.</p>}
+                                                    </div>
+                                                )
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col min-h-0 bg-white p-5 rounded-[2.5rem] border border-slate-300 shadow-sm overflow-hidden">
+                                        <div className="text-slate-950 text-[10px] font-black uppercase tracking-widest mb-4 border-b border-slate-300 pb-3 flex justify-between">Chẩn Đoán Từ AI {isListening && <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-lg"></div>}</div>
+                                        <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar space-y-2">
+                                            {speechResult && (<div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 border-l-4 border-l-indigo-800 shadow-sm mb-2"><div className="text-[7px] font-black text-slate-500 uppercase mb-1.5 tracking-widest">Máy nhận được</div><div className="text-base font-black text-slate-950 italic">"{speechResult}"</div></div>)}
+                                            {feedback && feedback.type === 'success' && (
+                                                <div className="p-4 rounded-2xl border shadow-sm animate-fade-in mb-2 bg-green-50 border-green-300 text-green-950">
+                                                    <div className="font-black text-[10px] uppercase mb-1.5">{feedback.message}</div>
+                                                    <div className="text-[11px] font-black opacity-90 leading-normal">{feedback.suggestion}</div>
+                                                </div>
+                                            )}
+                                            <div className="space-y-1">
+                                                {detailedFeedback.map((fb, idx) => (
+                                                    <div key={idx} className="bg-red-50 border border-red-100 p-2 rounded-lg text-[10px] text-red-950 font-black flex items-center gap-2 animate-fade-in shadow-sm"><div className="bg-red-700 text-white w-4 h-4 flex items-center justify-center rounded-full text-[9px] shrink-0 font-black">!</div><span className="flex-1">{fb.msg}</span></div>
+                                                ))}
+                                            </div>
+                                            {!speechResult && !feedback && (<div className="h-full flex flex-col items-center justify-center text-slate-400 py-16 opacity-50"><IconMic /><p className="text-[9px] font-black uppercase mt-4 text-slate-950 text-center tracking-[0.3em]">Chờ bạn phát âm...</p></div>)}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Tạo shortcut chỉ vào file với các đường dẫn đến trình duyệt, file html cùng các tuỳ chỉnh tương tự như dưới đây :
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --allow-file-access-from-files --use-fake-ui-for-media-stream file:///D:/English/PTE79+/Function%20Words/Function%20Words%20Mastery.html
+
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files --use-fake-ui-for-media-stream "file:///D:/English/PTE79+/Academic/HocTiengAnh.html"
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --allow-file-access-from-files --use-fake-ui-for-media-stream "file:///D:/English/PTE79+/Academic/HocTiengAnh.html"

@@ -1,0 +1,3989 @@
+[
+  {
+    "keyword": "for instance",
+    "logic_type": "Illustration",
+    "grammar_pos": "Unknown",
+    "topic_context": "for instance, many European cities have efficient public transport",
+    "paraphrase": "as an example, numerous urban centers in Europe boast effective transit systems",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "to illustrate this point",
+    "logic_type": "Illustration",
+    "grammar_pos": "Unknown",
+    "topic_context": "to illustrate this point, consider the success of renewable energy in Germany",
+    "paraphrase": "as a demonstration, examine the achievements of green power in Germany",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "a prime example is",
+    "logic_type": "Illustration",
+    "grammar_pos": "Unknown",
+    "topic_context": "a prime example is the widespread use of smartphones",
+    "paraphrase": "a standout instance is the ubiquitous adoption of mobile devices",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "take the case of",
+    "logic_type": "Illustration",
+    "grammar_pos": "Unknown",
+    "topic_context": "take the case of Singapore's water management system",
+    "paraphrase": "consider the example of how Singapore handles its water resources",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "consider [something]",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "consider the impact of social media on teenagers",
+    "paraphrase": "reflect on the influence of online platforms on adolescents",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this can be seen in",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "this can be seen in rising life expectancy rates",
+    "paraphrase": "this is apparent in increasing average lifespans",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "as shown by",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "as shown by recent studies, exercise improves mental health",
+    "paraphrase": "as evidenced by current research, physical activity enhances psychological well-being",
+    "tags": [
+      "Society",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "according to [source]",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "according to a UN report, poverty is decreasing",
+    "paraphrase": "based on a United Nations publication, impoverishment is declining",
+    "tags": [
+      "Society",
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "research conducted by",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "research conducted by Harvard University confirms this",
+    "paraphrase": "studies performed at Harvard University validate this finding",
+    "tags": [
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "a study by [institution] found that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "a study by the World Bank found a strong correlation",
+    "paraphrase": "an investigation by the World Bank discovered a significant link",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "statistics reveal that",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "statistics reveal that internet usage has skyrocketed",
+    "paraphrase": "data indicates that online engagement has soared",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "data suggests that",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "data suggests that early education is crucial",
+    "paraphrase": "figures imply that schooling at a young age is vital",
+    "tags": [
+      "Technology",
+      "Society",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "it is reported that",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "it is reported that air quality is deteriorating",
+    "paraphrase": "there are accounts that atmospheric conditions are worsening",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "experts believe that",
+    "logic_type": "Evidence",
+    "grammar_pos": "Unknown",
+    "topic_context": "experts believe that climate change is accelerating",
+    "paraphrase": "specialists maintain that global warming is speeding up",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this demonstrates that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "this demonstrates that community involvement works",
+    "paraphrase": "this proves that participatory approaches are effective",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this proves that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "this proves that investment in infrastructure pays off",
+    "paraphrase": "this confirms that spending on public works yields returns",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this underscores the importance of",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "this underscores the importance of international cooperation",
+    "paraphrase": "this highlights the critical nature of global collaboration",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this highlights",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "this highlights the need for stricter regulations",
+    "paraphrase": "this emphasizes the requirement for tighter controls",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "therefore, it is clear that",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "therefore, it is clear that action is needed",
+    "paraphrase": "thus, it is evident that measures must be taken",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "thus, we can conclude that",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "thus, we can conclude that the policy is effective",
+    "paraphrase": "hence, it can be deduced that the strategy works",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in summary, this paragraph has shown",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in summary, this paragraph has shown the economic benefits",
+    "paraphrase": "to summarize, this section has demonstrated the financial advantages",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "to sum up",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "to sum up, the advantages are significant",
+    "paraphrase": "in conclusion, the benefits are considerable",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in short",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in short, technology is transformative",
+    "paraphrase": "briefly stated, tech is revolutionary",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "ultimately",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "ultimately, the goal is to improve lives",
+    "paraphrase": "in the final analysis, the aim is to enhance living standards",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "as a result of these points",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "as a result of these points, the argument is compelling",
+    "paraphrase": "due to these reasons, the case is persuasive",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "given these arguments",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "given these arguments, support for the initiative is justified",
+    "paraphrase": "considering these points, backing for the project is reasonable",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "having established that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "having established that the need exists, we can propose solutions",
+    "paraphrase": "since the necessity has been confirmed, remedies can be suggested",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this logically leads to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "this logically leads to the next point about implementation",
+    "paraphrase": "this naturally brings us to the subsequent issue of execution",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "consequently, the next step is",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "consequently, the next step is to allocate resources",
+    "paraphrase": "accordingly, the following action is to distribute funds",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "more importantly",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "more importantly, it ensures long-term sustainability",
+    "paraphrase": "of greater significance, it guarantees enduring viability",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "above all",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "above all, human welfare must be prioritized",
+    "paraphrase": "most importantly, the well-being of people should come first",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "it is also worth noting that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "it is also worth noting that costs have decreased",
+    "paraphrase": "it should also be mentioned that expenses have dropped",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "another aspect to consider is",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "another aspect to consider is cultural sensitivity",
+    "paraphrase": "a further factor to contemplate is awareness of cultural differences",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "equally important is",
+    "logic_type": "Comparison",
+    "grammar_pos": "Unknown",
+    "topic_context": "equally important is the role of education",
+    "paraphrase": "just as crucial is the function of schooling",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in the same vein",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in the same vein, artistic expression should be encouraged",
+    "paraphrase": "similarly, creative output ought to be fostered",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "likewise",
+    "logic_type": "Comparison",
+    "grammar_pos": "Unknown",
+    "topic_context": "likewise, conservation efforts are essential",
+    "paraphrase": "in a similar manner, preservation initiatives are key",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "similarly",
+    "logic_type": "Comparison",
+    "grammar_pos": "Unknown",
+    "topic_context": "similarly, digital literacy is becoming necessary",
+    "paraphrase": "in like fashion, competency with technology is turning imperative",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "by the same token",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "by the same token, privacy rights must be protected",
+    "paraphrase": "for the same reason, the right to confidentiality should be upheld",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "conversely",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "conversely, excessive control can stifle innovation",
+    "paraphrase": "on the flip side, too much regulation can hinder creativity",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "on the contrary",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "on the contrary, some evidence points to ineffectiveness",
+    "paraphrase": "in contrast, certain data indicates a lack of efficacy",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in comparison",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in comparison, the previous method was slower",
+    "paraphrase": "by comparison, the earlier technique was less efficient",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "whereas",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "whereas urban areas are densely populated, rural regions are not",
+    "paraphrase": "while cities have high population density, countryside locations do not",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "despite the fact that",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "despite the fact that it is popular, it may not be ideal",
+    "paraphrase": "notwithstanding its popularity, it might not be optimal",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "notwithstanding",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "notwithstanding the challenges, progress is possible",
+    "paraphrase": "despite the obstacles, advancement can occur",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "granted that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "granted that the initial cost is high, long-term savings are greater",
+    "paraphrase": "admittedly, the upfront expense is substantial, but future economies are larger",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "natural environment",
+    "paraphrase": "untouched nature",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "working environment",
+    "paraphrase": "workplace",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "environmental",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "environmental issue",
+    "paraphrase": "ecological problem",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "environmental protection",
+    "paraphrase": "nature conservation",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "pollute",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "pollute the air",
+    "paraphrase": "contaminate the air",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "pollute rivers",
+    "paraphrase": "taint rivers",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "pollution",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "air pollution",
+    "paraphrase": "atmospheric contamination",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "water pollution",
+    "paraphrase": "water contamination",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "reduce pollution",
+    "paraphrase": "cut contamination",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "pollutant",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "harmful pollutant",
+    "paraphrase": "dangerous contaminant",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "climate",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "climate change",
+    "paraphrase": "global warming",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "harsh climate",
+    "paraphrase": "severe weather patterns",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "climatic",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "climatic conditions",
+    "paraphrase": "weather conditions",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "emission",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "carbon emissions",
+    "paraphrase": "carbon dioxide output",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "reduce emissions",
+    "paraphrase": "cut output",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "emission standards",
+    "paraphrase": "output regulations",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "emit",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "emit greenhouse gases",
+    "paraphrase": "release greenhouse gases",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "global warming",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "combat global warming",
+    "paraphrase": "fight global heating",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "cause of global warming",
+    "paraphrase": "reason for planetary heating",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "greenhouse effect",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "enhanced greenhouse effect",
+    "paraphrase": "intensified heat-trapping effect",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "deforestation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "rapid deforestation",
+    "paraphrase": "fast forest clearance",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "cause deforestation",
+    "paraphrase": "lead to forest loss",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "biodiversity",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "loss of biodiversity",
+    "paraphrase": "decline in species variety",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "rich biodiversity",
+    "paraphrase": "abundant variety of life",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "ecosystem",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "fragile ecosystem",
+    "paraphrase": "delicate ecological system",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "marine ecosystem",
+    "paraphrase": "oceanic ecological system",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "habitat",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "natural habitat",
+    "paraphrase": "native environment",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "destroy habitat",
+    "paraphrase": "ruin living environment",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "wildlife habitat",
+    "paraphrase": "animal dwelling place",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "endangered",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "endangered species",
+    "paraphrase": "species at risk of extinction",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "critically endangered",
+    "paraphrase": "at extreme risk",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "extinction",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "face extinction",
+    "paraphrase": "face dying out",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "mass extinction",
+    "paraphrase": "widespread dying out",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "resource",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "natural resources",
+    "paraphrase": "raw materials from nature",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "finite resources",
+    "paraphrase": "limited supplies",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "exploit resources",
+    "paraphrase": "use up resources (often overuse)",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "sustainable",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "sustainable development",
+    "paraphrase": "development that doesn't harm the future",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "sustainable energy",
+    "paraphrase": "renewable energy",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "sustainability",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "environmental sustainability",
+    "paraphrase": "long-term ecological balance",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "renewable",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "renewable energy",
+    "paraphrase": "energy from infinite sources (sun, wind)",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "renewable resources",
+    "paraphrase": "resources that replenish",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "waste",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "industrial waste",
+    "paraphrase": "factory byproducts",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "electronic waste",
+    "paraphrase": "e-waste",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "waste disposal",
+    "paraphrase": "rubbish removal",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "waste",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "waste resources",
+    "paraphrase": "squander resources",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "conservation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "wildlife conservation",
+    "paraphrase": "animal protection",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "energy conservation",
+    "paraphrase": "saving energy",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "conserve",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "conserve water",
+    "paraphrase": "save water",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "recycle",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "recycle paper",
+    "paraphrase": "reprocess paper",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "recycling",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "promote recycling",
+    "paraphrase": "encourage reprocessing",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "recycling bin",
+    "paraphrase": "bin for reprocessable items",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "contaminate",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "contaminate soil",
+    "paraphrase": "pollute soil",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "contamination",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "soil contamination",
+    "paraphrase": "soil pollution",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "toxic",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "toxic waste",
+    "paraphrase": "poisonous waste",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "toxic chemicals",
+    "paraphrase": "poisonous chemicals",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "ozone layer",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "deplete the ozone layer",
+    "paraphrase": "thin the ozone layer",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "ozone hole",
+    "paraphrase": "hole in the ozone layer",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "digital technology",
+    "paraphrase": "computer-based tech",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "adopt new technology",
+    "paraphrase": "embrace new tech",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "technological",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "technological advancement",
+    "paraphrase": "tech progress",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "technological revolution",
+    "paraphrase": "tech upheaval",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "digital",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "digital age",
+    "paraphrase": "computer era",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "digital device",
+    "paraphrase": "electronic gadget",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "go digital",
+    "paraphrase": "become electronic",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "innovation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "technological innovation",
+    "paraphrase": "tech breakthrough",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "drive innovation",
+    "paraphrase": "propel new ideas",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "innovative",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "innovative solution",
+    "paraphrase": "groundbreaking solution",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "automate",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "automate processes",
+    "paraphrase": "make processes automatic",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "automation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "industrial automation",
+    "paraphrase": "factory robotization",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "artificial intelligence",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "develop artificial intelligence",
+    "paraphrase": "create AI",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "AI-powered tool",
+    "paraphrase": "tool driven by artificial intelligence",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "algorithm",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "complex algorithm",
+    "paraphrase": "complicated set of rules",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "social media algorithm",
+    "paraphrase": "platform's sorting formula",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "data",
+    "logic_type": "Evidence",
+    "grammar_pos": "Noun",
+    "topic_context": "collect data",
+    "paraphrase": "gather information",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "big data",
+    "paraphrase": "massive datasets",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "data analysis",
+    "paraphrase": "information scrutiny",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "privacy",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "invade privacy",
+    "paraphrase": "breach personal space",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "privacy concerns",
+    "paraphrase": "worries about personal data",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "data privacy",
+    "paraphrase": "information confidentiality",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "cybersecurity",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "cybersecurity threat",
+    "paraphrase": "digital security risk",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "enhance cybersecurity",
+    "paraphrase": "strengthen digital defenses",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "hack",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "hack a system",
+    "paraphrase": "breach a system",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "hacker",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "ethical hacker",
+    "paraphrase": "white-hat hacker",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "cyber hacker",
+    "paraphrase": "digital intruder",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "virus",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "computer virus",
+    "paraphrase": "malicious software",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "spread a virus",
+    "paraphrase": "disseminate malware",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "network",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "social network",
+    "paraphrase": "online community platform",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "global network",
+    "paraphrase": "worldwide web",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "network",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "network professionally",
+    "paraphrase": "make professional connections",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "connectivity",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "high-speed connectivity",
+    "paraphrase": "fast internet connection",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "global connectivity",
+    "paraphrase": "worldwide interconnection",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "media",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "social media",
+    "paraphrase": "online platforms",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "mainstream media",
+    "paraphrase": "traditional news outlets",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "digital media",
+    "paraphrase": "online content",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "communicate",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "communicate instantly",
+    "paraphrase": "convey messages immediately",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "communication",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "effective communication",
+    "paraphrase": "successful exchange of ideas",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "communication skills",
+    "paraphrase": "interpersonal skills",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "interact",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "interact online",
+    "paraphrase": "engage on the internet",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "interaction",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "human-computer interaction",
+    "paraphrase": "person-machine engagement",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "social interaction",
+    "paraphrase": "personal engagement",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "virtual",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "virtual reality",
+    "paraphrase": "simulated environment",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "virtual meeting",
+    "paraphrase": "online meeting",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "online (adj/adv)",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "online platform",
+    "paraphrase": "internet-based platform",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "(adv) shop online",
+    "paraphrase": "purchase via the internet",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "offline (adj/adv)",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "offline mode",
+    "paraphrase": "not connected to internet",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "(adv) go offline",
+    "paraphrase": "disconnect from the internet",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "upload",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "upload a file",
+    "paraphrase": "transfer a file to a server",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "download",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "download content",
+    "paraphrase": "retrieve content from the internet",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "stream",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "stream video",
+    "paraphrase": "transmit video live",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "music streaming",
+    "paraphrase": "listening to music online in real-time",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "interface",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "user interface",
+    "paraphrase": "point of human-computer interaction",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "intuitive interface",
+    "paraphrase": "easy-to-understand interface",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "platform",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "online platform",
+    "paraphrase": "internet-based service",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "social media platform",
+    "paraphrase": "social networking site",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "gadget",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "electronic gadget",
+    "paraphrase": "tech device",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "latest gadget",
+    "paraphrase": "newest device",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "both... and...",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "it affects both individuals and society as a whole",
+    "paraphrase": "it impacts people at a personal level and the broader community",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "whether... or...",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "whether by design or by accident, the outcome is the same",
+    "paraphrase": "regardless of intention, the result is identical",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "on the one hand... on the other hand",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "on the one hand it offers freedom, on the other it requires responsibility",
+    "paraphrase": "from one perspective it provides liberty, from another it demands accountability",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in contrast to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in contrast to popular belief, the data shows a decline",
+    "paraphrase": "contrary to widespread opinion, the figures indicate a decrease",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "as opposed to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "as opposed to passive consumption, active creation is encouraged",
+    "paraphrase": "unlike passive intake, proactive generation is promoted",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "whereas",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "whereas previous methods were slow, new techniques are rapid",
+    "paraphrase": "while earlier approaches were sluggish, contemporary procedures are swift",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "while it may be true that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "while it may be true that costs are high, benefits are higher",
+    "paraphrase": "although expenses are indeed substantial, the advantages are greater",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "admittedly",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "admittedly, the transition period is difficult",
+    "paraphrase": "it must be conceded that the shift phase is challenging",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "nevertheless",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "nevertheless, the long-term gains justify the effort",
+    "paraphrase": "nonetheless, the future rewards validate the exertion",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "nonetheless",
+    "logic_type": "Contrast",
+    "grammar_pos": "Unknown",
+    "topic_context": "nonetheless, progress continues unabated",
+    "paraphrase": "despite this, advancement proceeds without hindrance",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "that said",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "that said, precautions must be taken",
+    "paraphrase": "having acknowledged that, safeguards are necessary",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "having said that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "having said that, we cannot ignore the risks",
+    "paraphrase": "with that in mind, the dangers cannot be overlooked",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "with this in mind",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "with this in mind, a cautious approach is advised",
+    "paraphrase": "bearing this consideration, a prudent strategy is recommended",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in light of this",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in light of this, policy adjustments are necessary",
+    "paraphrase": "considering this, modifications to regulations are required",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "given that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "given that resources are finite, conservation is key",
+    "paraphrase": "since supplies are limited, preservation is crucial",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in view of the fact that",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in view of the fact that demand is growing, supply must increase",
+    "paraphrase": "considering the reality of rising demand, production must expand",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "as a consequence of",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "as a consequence of urbanization, green spaces are shrinking",
+    "paraphrase": "as a result of city expansion, natural areas are diminishing",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "as a result of",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "as a result of technological advances, communication is instant",
+    "paraphrase": "due to tech progress, interaction is immediate",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "consequently",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "consequently, traditional skills are being lost",
+    "paraphrase": "as a result, heritage abilities are fading",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "accordingly",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "accordingly, measures have been implemented",
+    "paraphrase": "therefore, actions have been put in place",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "hence",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "hence, the need for reform is urgent",
+    "paraphrase": "thus, the requirement for change is pressing",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "thus",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "thus, a new paradigm has emerged",
+    "paraphrase": "consequently, a fresh model has arisen",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "thereby",
+    "logic_type": "Result",
+    "grammar_pos": "Unknown",
+    "topic_context": "thereby increasing efficiency and reducing waste",
+    "paraphrase": "in that way enhancing productivity and minimizing excess",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in order to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in order to achieve this goal, collaboration is essential",
+    "paraphrase": "to accomplish this objective, cooperation is fundamental",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "so as to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "so as to mitigate risks, a thorough analysis was conducted",
+    "paraphrase": "with the aim of reducing dangers, a comprehensive study was performed",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "with the aim of",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "with the aim of promoting equality, laws were passed",
+    "paraphrase": "with the objective of fostering fairness, legislation was enacted",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "for the purpose of",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "for the purpose of this discussion, we will focus on economics",
+    "paraphrase": "for the sake of this conversation, we will concentrate on financial aspects",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in terms of",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in terms of environmental impact, the project is sound",
+    "paraphrase": "regarding ecological effect, the initiative is solid",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "with regard to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "with regard to social implications, more study is needed",
+    "paraphrase": "concerning societal consequences, further research is required",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "as far as [something] is concerned",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "as far as cost-effectiveness is concerned, the evidence is clear",
+    "paraphrase": "regarding economic efficiency, the proof is unambiguous",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "when it comes to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "when it comes to innovation, small firms often lead",
+    "paraphrase": "in the area of new ideas, smaller companies frequently excel",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in the case of",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in the case of renewable energy, costs have fallen",
+    "paraphrase": "for the example of sustainable power, prices have dropped",
+    "tags": [
+      "Environment",
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "with respect to",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "with respect to cultural diversity, policies should be inclusive",
+    "paraphrase": "in relation to cultural variety, approaches ought to be welcoming",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "similarly",
+    "logic_type": "Comparison",
+    "grammar_pos": "Unknown",
+    "topic_context": "similarly, advancements in medicine have extended lifespans",
+    "paraphrase": "likewise, progress in healthcare has prolonged life expectancy",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "likewise",
+    "logic_type": "Comparison",
+    "grammar_pos": "Unknown",
+    "topic_context": "likewise, educational reforms have improved outcomes",
+    "paraphrase": "in a similar fashion, changes to schooling have enhanced results",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in the same way",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "in the same way, economic policies influence growth",
+    "paraphrase": "equally, financial strategies affect expansion",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "equally",
+    "logic_type": "Comparison",
+    "grammar_pos": "Unknown",
+    "topic_context": "equally important is the preservation of traditions",
+    "paraphrase": "just as crucial is the maintenance of customs",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "by the same token",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "by the same token, individual efforts contribute to collective success",
+    "paraphrase": "for the same reason, personal endeavors add to communal achievement",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "furthermore",
+    "logic_type": "Addition",
+    "grammar_pos": "Unknown",
+    "topic_context": "furthermore, international treaties provide a framework",
+    "paraphrase": "moreover, global agreements offer a structure",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "moreover",
+    "logic_type": "Addition",
+    "grammar_pos": "Unknown",
+    "topic_context": "moreover, public support is crucial for implementation",
+    "paraphrase": "in addition, societal backing is vital for execution",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in addition",
+    "logic_type": "Addition",
+    "grammar_pos": "Unknown",
+    "topic_context": "in addition to economic factors, social aspects must be considered",
+    "paraphrase": "besides financial elements, communal dimensions need to be taken into account",
+    "tags": [
+      "Society",
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "additionally",
+    "logic_type": "Addition",
+    "grammar_pos": "Unknown",
+    "topic_context": "additionally, technological tools can facilitate the process",
+    "paraphrase": "further, tech instruments can streamline the procedure",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "coupled with",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "coupled with rising demand, this creates a challenge",
+    "paraphrase": "combined with increasing need, this presents a difficulty",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "negative impact",
+    "paraphrase": "adverse effect",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "assess the impact",
+    "paraphrase": "evaluate the effect",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "impact",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "impact wildlife",
+    "paraphrase": "affect wildlife",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "disaster",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "natural disaster",
+    "paraphrase": "act-of-god catastrophe",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "environmental disaster",
+    "paraphrase": "ecological catastrophe",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "man-made disaster",
+    "paraphrase": "human-caused catastrophe",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "drought",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "severe drought",
+    "paraphrase": "extreme dry period",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "prolonged drought",
+    "paraphrase": "long-lasting dry spell",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "flood",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "devastating flood",
+    "paraphrase": "catastrophic inundation",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "flash flood",
+    "paraphrase": "sudden inundation",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "flood",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "flood an area",
+    "paraphrase": "inundate an area",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "famine",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "widespread famine",
+    "paraphrase": "large-scale starvation",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "carbon footprint",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "reduce carbon footprint",
+    "paraphrase": "lower one's carbon output",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "large carbon footprint",
+    "paraphrase": "significant carbon output",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "renewable",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "renewable sources",
+    "paraphrase": "sustainable sources",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "renewable technology",
+    "paraphrase": "clean energy technology",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "solar",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "solar energy",
+    "paraphrase": "energy from the sun",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "solar panel",
+    "paraphrase": "sunlight-capturing panel",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "wind",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "wind energy",
+    "paraphrase": "energy from the wind",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "wind turbine",
+    "paraphrase": "wind-power generator",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "conservation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "nature conservation",
+    "paraphrase": "preservation of nature",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "conservation effort",
+    "paraphrase": "preservation attempt",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "preserve",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "preserve forests",
+    "paraphrase": "keep forests intact",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "preserve biodiversity",
+    "paraphrase": "maintain species variety",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "preservation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "heritage preservation",
+    "paraphrase": "keeping heritage safe",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "mitigate",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "mitigate effects",
+    "paraphrase": "lessen effects",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "mitigation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "climate change mitigation",
+    "paraphrase": "global warming reduction",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "adapt",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "adapt to changes",
+    "paraphrase": "adjust to changes",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "adaptation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "climate adaptation",
+    "paraphrase": "adjustment to new climate",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "degradation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "environmental degradation",
+    "paraphrase": "ecological decline",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "land degradation",
+    "paraphrase": "land deterioration",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "degrade",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "degrade the soil",
+    "paraphrase": "deteriorate the soil",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "activist",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "environmental activist",
+    "paraphrase": "eco-warrior",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "climate activist",
+    "paraphrase": "global warming campaigner",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "activism",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "grassroots activism",
+    "paraphrase": "community-level campaigning",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "campaign",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "awareness campaign",
+    "paraphrase": "publicity drive",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "launch a campaign",
+    "paraphrase": "start a drive",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "campaign",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "campaign for change",
+    "paraphrase": "lobby for change",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "lobby",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "lobby the government",
+    "paraphrase": "pressure the government",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "lobbying",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "corporate lobbying",
+    "paraphrase": "business pressure on government",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "regulation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "environmental regulation",
+    "paraphrase": "ecological rule",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "strict regulation",
+    "paraphrase": "tight rule",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "regulate",
+    "logic_type": "General",
+    "grammar_pos": "Verb",
+    "topic_context": "regulate emissions",
+    "paraphrase": "control emissions by law",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "treaty",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "international treaty",
+    "paraphrase": "global agreement",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "sign a treaty",
+    "paraphrase": "put one's name to an agreement",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "summit",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "climate summit",
+    "paraphrase": "global warming conference",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "world summit",
+    "paraphrase": "international conference",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "eco-friendly",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "eco-friendly product",
+    "paraphrase": "environmentally friendly product",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "eco-friendly lifestyle",
+    "paraphrase": "green lifestyle",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "green",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "green energy",
+    "paraphrase": "clean energy",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "green policies",
+    "paraphrase": "environmental policies",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "disposable",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "disposable plastic",
+    "paraphrase": "single-use plastic",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "disposable culture",
+    "paraphrase": "throwaway culture",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "biodegradable",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "biodegradable material",
+    "paraphrase": "material that decomposes naturally",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "reforestation",
+    "logic_type": "General",
+    "grammar_pos": "Noun",
+    "topic_context": "large-scale reforestation",
+    "paraphrase": "mass tree planting",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "carbon-neutral",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "carbon-neutral goal",
+    "paraphrase": "net-zero carbon goal",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "",
+    "logic_type": "General",
+    "grammar_pos": "Adjective",
+    "topic_context": "strive to be carbon-neutral",
+    "paraphrase": "aim for net-zero emissions",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "nature",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "appreciate nature, connect with nature, forces of nature",
+    "paraphrase": "beautiful nature, untouched nature, wild nature",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "pollution",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "reduce pollution, air pollution, cause pollution",
+    "paraphrase": "environmental pollution, toxic pollution, plastic pollution",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "climate",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "climate change, study the climate, stable climate",
+    "paraphrase": "global climate, harsh climate, temperate climate",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "warming",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "global warming, contribute to warming, fight warming",
+    "paraphrase": "rapid warming, unprecedented warming",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "emission",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "carbon emissions, reduce emissions, vehicle emissions",
+    "paraphrase": "harmful emissions, greenhouse gas emissions",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "waste",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "produce waste, manage waste, electronic waste",
+    "paraphrase": "household waste, toxic waste, organic waste",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "recycling",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "promote recycling, recycling bin, recycling rate",
+    "paraphrase": "curbside recycling, effective recycling",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "sustainability",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "achieve sustainability, environmental sustainability, long-term sustainability",
+    "paraphrase": "true sustainability, economic sustainability",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "conservation",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "wildlife conservation, energy conservation, conservation efforts",
+    "paraphrase": "nature conservation, marine conservation",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "energy",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "renewable energy, save energy, clean energy",
+    "paraphrase": "solar energy, wind energy, green energy",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "resource",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "natural resources, finite resources, allocate resources",
+    "paraphrase": "precious resources, scarce resources, water resources",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "water",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "clean water, conserve water, water scarcity",
+    "paraphrase": "fresh water, drinking water, polluted water",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "air",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "clean air, air quality, fresh air",
+    "paraphrase": "polluted air, mountain air, stale air",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "land",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "use of land, protect the land, agricultural land",
+    "paraphrase": "arable land, protected land, degraded land",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "forest",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "preserve forests, rainforest, deforestation",
+    "paraphrase": "ancient forest, dense forest, native forest",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "ocean",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "protect the ocean, ocean currents, ocean life",
+    "paraphrase": "vast ocean, deep ocean, polluted ocean",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "river",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "pollute rivers, river system, cross the river",
+    "paraphrase": "mighty river, clean river, muddy river",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "beach",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "clean the beach, visit the beach, beach erosion",
+    "paraphrase": "sandy beach, popular beach, secluded beach",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "park",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "national park, visit the park, city park",
+    "paraphrase": "urban park, beautiful park, well-maintained park",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "wildlife",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "protect wildlife, observe wildlife, threaten wildlife",
+    "paraphrase": "native wildlife, abundant wildlife, marine wildlife",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "species",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "endangered species, native species, introduce species",
+    "paraphrase": "rare species, plant species, animal species",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "biodiversity",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "maintain biodiversity, loss of biodiversity, rich biodiversity",
+    "paraphrase": "global biodiversity, local biodiversity",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "ecosystem",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "healthy ecosystem, fragile ecosystem, marine ecosystem",
+    "paraphrase": "complex ecosystem, natural ecosystem",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "habitat",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "destroy habitat, natural habitat, restore habitat",
+    "paraphrase": "wildlife habitat, critical habitat, suitable habitat",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "extinction",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "face extinction, mass extinction, prevent extinction",
+    "paraphrase": "species extinction, local extinction",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "plastic",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "single-use plastic, plastic waste, ban plastic",
+    "paraphrase": "excessive plastic, microplastic",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "chemical",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "toxic chemicals, use chemicals, chemical spill",
+    "paraphrase": "hazardous chemicals, industrial chemicals",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "fertilizer",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "use fertilizer, chemical fertilizer, organic fertilizer",
+    "paraphrase": "artificial fertilizer, excess fertilizer",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "pesticide",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "apply pesticides, harmful pesticides, reduce pesticides",
+    "paraphrase": "agricultural pesticides, toxic pesticides",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "agriculture",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "sustainable agriculture, modern agriculture, support agriculture",
+    "paraphrase": "industrial agriculture, organic agriculture",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "farming",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "farming practices, family farming, intensive farming",
+    "paraphrase": "traditional farming, ethical farming",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "fishery",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "manage fisheries, sustainable fishery, commercial fishery",
+    "paraphrase": "local fishery, overfished fishery",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "mining",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "coal mining, mining industry, mining site",
+    "paraphrase": "open-cut mining, destructive mining",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "logging",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "illegal logging, logging industry, stop logging",
+    "paraphrase": "clear-cut logging, unsustainable logging",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "urbanization",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "rapid urbanization, effects of urbanization",
+    "paraphrase": "uncontrolled urbanization, planned urbanization",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "development",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "economic development, sustainable development, urban development",
+    "paraphrase": "responsible development, housing development",
+    "tags": [
+      "Environment",
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "growth",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "population growth, economic growth, unlimited growth",
+    "paraphrase": "exponential growth, smart growth",
+    "tags": [
+      "Society",
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "footprint",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "carbon footprint, ecological footprint, reduce your footprint",
+    "paraphrase": "large footprint, environmental footprint",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "green",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "go green, green initiatives, green spaces",
+    "paraphrase": "environmentally green, lush green",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "eco-friendly",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "eco-friendly products, eco-friendly practices",
+    "paraphrase": "truly eco-friendly, marketed as eco-friendly",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "renewable",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "renewable sources, renewable technology",
+    "paraphrase": "truly renewable, commercially renewable",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "solar",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "solar power, solar panel, solar energy",
+    "paraphrase": "residential solar, large-scale solar",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "wind",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "wind energy, wind farm, wind turbine",
+    "paraphrase": "offshore wind, consistent wind",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "hydro",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "hydro power, hydroelectricity, hydro scheme",
+    "paraphrase": "large hydro, small-scale hydro",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "reusable",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "reusable bags, reusable containers",
+    "paraphrase": "durable reusable, convenient reusable",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "disposable",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "disposable items, disposable culture",
+    "paraphrase": "single-use disposable, wasteful disposable",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "biodegradable",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "biodegradable materials, biodegradable packaging",
+    "paraphrase": "fully biodegradable, certified biodegradable",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "compost",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "home compost, compost bin, compost waste",
+    "paraphrase": "rich compost, organic compost",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "ozone",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "ozone layer, ozone depletion, ozone hole",
+    "paraphrase": "protective ozone, thinning ozone",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "weather",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "extreme weather, weather patterns, forecast the weather",
+    "paraphrase": "severe weather, unpredictable weather",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "disaster",
+    "logic_type": "General",
+    "grammar_pos": "Unknown",
+    "topic_context": "natural disaster, environmental disaster, prevent disasters",
+    "paraphrase": "major disaster, frequent disasters",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "for instance",
+    "logic_type": "Illustration",
+    "grammar_pos": "Linker",
+    "topic_context": "for instance, consider the case of Japan's bullet trains",
+    "paraphrase": "as an instance, take the example of Japan's high-speed rail",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "such as",
+    "logic_type": "Illustration",
+    "grammar_pos": "Linker",
+    "topic_context": "countries such as Sweden and Denmark lead in sustainability",
+    "paraphrase": "nations like Sweden and Denmark are front-runners in eco-friendliness",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "like",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "languages like Mandarin and Spanish are widely spoken",
+    "paraphrase": "tongues such as Mandarin and Spanish have many speakers",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "including",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "many factors, including cost and availability, matter",
+    "paraphrase": "numerous elements, encompassing price and access, are important",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "to illustrate",
+    "logic_type": "Illustration",
+    "grammar_pos": "Linker",
+    "topic_context": "to illustrate the point, let's look at a graph",
+    "paraphrase": "to demonstrate the idea, we will examine a chart",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "a case in point is",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "a case in point is the rapid growth of e-commerce",
+    "paraphrase": "a relevant example is the swift expansion of online shopping",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "take [something]",
+    "logic_type": "Illustration",
+    "grammar_pos": "Linker",
+    "topic_context": "take the human brain, it's incredibly complex",
+    "paraphrase": "consider the human mind, it is remarkably intricate",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "specifically",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "specifically, I'm talking about carbon emissions",
+    "paraphrase": "in particular, I refer to greenhouse gas output",
+    "tags": [
+      "Environment"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in other words",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "in other words, it's a zero-sum game",
+    "paraphrase": "that is to say, one's gain is another's loss",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "that is",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "that is, the process cannot be reversed",
+    "paraphrase": "namely, the procedure is irreversible",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "namely",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "two main types, namely primary and secondary",
+    "paraphrase": "two principal categories, specifically primary and secondary",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "which means",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "it's a finite resource, which means it will run out",
+    "paraphrase": "it is a limited supply, implying it will be exhausted",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this implies that",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "this implies a need for alternative solutions",
+    "paraphrase": "this suggests a requirement for different answers",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "put simply",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "put simply, supply must meet demand",
+    "paraphrase": "stated simply, production must satisfy need",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "to put it another way",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "to put it another way, efficiency is key",
+    "paraphrase": "expressing it differently, productivity is crucial",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "essentially",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "essentially, we're discussing human rights",
+    "paraphrase": "fundamentally, we are talking about basic freedoms",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "at its core",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "at its core, the issue is about fairness",
+    "paraphrase": "fundamentally, the problem concerns justice",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "what I mean by that is",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "what I mean is that context matters",
+    "paraphrase": "my intention is to say that circumstances are important",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "let me explain",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "let me explain how the system works",
+    "paraphrase": "allow me to clarify the functioning of the mechanism",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "here's how it works",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "here's how it works: data is collected first",
+    "paraphrase": "this is the process: information is gathered initially",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "the process involves",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "the process involves three distinct steps",
+    "paraphrase": "the procedure encompasses three separate stages",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "first... then... finally",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "first, data is collected; then it's analyzed; finally, conclusions are drawn",
+    "paraphrase": "initially, information is gathered; subsequently it is examined; in the end, inferences are made",
+    "tags": [
+      "Technology",
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "step one",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "step one is identification of the problem",
+    "paraphrase": "the first phase is recognizing the issue",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "the next stage is",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "the next stage is development of a hypothesis",
+    "paraphrase": "the following phase is formulation of a theory",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "after that",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "after that, testing takes place",
+    "paraphrase": "subsequently, experimentation occurs",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this leads to",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "this leads to the final stage: implementation",
+    "paraphrase": "this results in the last step: putting into practice",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "so, to define it",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "so, to define it, 'sustainability' means meeting current needs without harming the future",
+    "paraphrase": "therefore, to explain the term, 'long-term viability' signifies fulfilling present requirements without damaging tomorrow",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "by definition",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "by definition, a 'pandemic' is a worldwide outbreak",
+    "paraphrase": "according to its definition, a 'global epidemic' is an international spread",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "what we call",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "what we call 'the digital divide' refers to unequal access",
+    "paraphrase": "the phenomenon termed 'the technology gap' indicates disparate availability",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "this is known as",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "this is known as 'the butterfly effect'",
+    "paraphrase": "this is referred to as 'the concept of small causes having large effects'",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "the term for this is",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "the term for this is 'cognitive dissonance'",
+    "paraphrase": "the expression for this is 'mental conflict'",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "it refers to",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "it refers to the gap between rich and poor",
+    "paraphrase": "it indicates the disparity between wealthy and impoverished",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "in technical terms",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "in technical terms, it's a 'positive feedback loop'",
+    "paraphrase": "using specialized language, it is a 'self-reinforcing cycle'",
+    "tags": [
+      "Technology"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "colloquially",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "colloquially, people say 'think outside the box'",
+    "paraphrase": "informally, individuals advise 'be creative'",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "officially",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "officially, it's classified as a developing nation",
+    "paraphrase": "formally, it is categorized as an industrializing country",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "legally speaking",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "legally speaking, they are considered minors",
+    "paraphrase": "from a legal perspective, they are regarded as underage",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "from a scientific standpoint",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "from a scientific standpoint, the evidence is conclusive",
+    "paraphrase": "viewed scientifically, the proof is definitive",
+    "tags": [
+      "Science"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "economically",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "economically, it makes sense",
+    "paraphrase": "from a financial viewpoint, it is logical",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "socially",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "socially, it has had a profound impact",
+    "paraphrase": "in terms of society, it has created a deep effect",
+    "tags": [
+      "Society"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "culturally",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "culturally, there are significant differences",
+    "paraphrase": "regarding culture, substantial variations exist",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "historically",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "historically, this region was a trade hub",
+    "paraphrase": "in the past, this area served as a commercial center",
+    "tags": [
+      "Economics"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "geographically",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "geographically, it's a very diverse country",
+    "paraphrase": "in terms of physical features, it is a varied nation",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "statistically",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "statistically, the chances are very low",
+    "paraphrase": "according to data, the probability is minimal",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "typically",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "typically, this process takes two weeks",
+    "paraphrase": "usually, this procedure requires fourteen days",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "generally",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "generally, people prefer convenience",
+    "paraphrase": "in general, individuals favor ease",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "usually",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "usually, we see an increase in summer",
+    "paraphrase": "normally, an uptick is observed during summer",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "often",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "often, the simplest solution is the best",
+    "paraphrase": "frequently, the most straightforward answer is optimal",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "rarely",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "rarely do we see such rapid change",
+    "paraphrase": "seldom is such quick transformation witnessed",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  },
+  {
+    "keyword": "almost never",
+    "logic_type": "General",
+    "grammar_pos": "Linker",
+    "topic_context": "it almost never happens spontaneously",
+    "paraphrase": "it scarcely ever occurs on its own",
+    "tags": [
+      "General"
+    ],
+    "source_ref": null
+  }
+]

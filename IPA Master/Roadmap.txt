@@ -1,0 +1,24 @@
+CÁC GỢI Ý PHÁT TRIỂN TIẾP (FUTURE ROADMAP)
+Nếu bạn muốn phát triển ứng dụng này xa hơn bản prototype hiện tại, hãy cân nhắc các tính năng sau:
+
+Chế độ "Shadowing" nâng cao:
+
+Cho phép người dùng upload file âm thanh gốc (MP3).
+
+Hệ thống tách sóng âm và cho người dùng ghi âm đè lên (Overdub) để so khớp độ trôi chảy (fluency) chứ không chỉ là phát âm từ đơn.
+
+Cải thiện Engine nhận dạng (STT):
+
+Hiện tại webkitSpeechRecognition phụ thuộc vào browser (Chrome).
+
+Nâng cấp: Sử dụng OpenAI Whisper API (qua server backend) để nhận dạng giọng nói chính xác hơn nhiều, đặc biệt với giọng của người không bản xứ (accent).
+
+Gamification (Game hóa):
+
+Thêm hệ thống XP, Streak (chuỗi ngày học).
+
+Leaderboard (Bảng xếp hạng).
+
+Backend lưu trữ:
+
+Cần một database (Firebase/Supabase) để lưu lịch sử các từ người dùng hay sai (Mispronounced words) để tạo bài tập ôn luyện cá nhân hóa (Spaced Repetition).

@@ -761,7 +761,10 @@
 
             const handleSubmit = (e) => {
                 e.preventDefault();
-                if (input.trim().toLowerCase() === word.word.toLowerCase()) { stop(); onComplete(showAnswer ? false : true, false); }
+                if (showAnswer || isCorrect) { stop(); setTimeout(() => onComplete(true, false, 'next', false), 1000); }
+                    else if (input.trim().toLowerCase() === word.word.toLowerCase()) { stop(); onComplete(true, false, 'next', attempts > 0); }
+                    else if (input.trim().length >= word.word.length * 0.5) {
+                        setShowAnswer(true); onComplete(false, true, 'retry', false);
                 else { setError(true); setShowAnswer(true); startLoop(); setTimeout(() => setError(false), 500); }
             };
 
@@ -835,7 +838,7 @@
             const handleRetry = useCallback(() => {
                 setAttempts(prev => {
                     const next = prev + 1;
-                    if (next >= MAX_VOICE_ATTEMPTS) { mic.abortRecording(); setTimeout(() => onComplete(false, false), 1500); }
+                    if (next >= MAX_VOICE_ATTEMPTS) { mic.abortRecording(); setTimeout(() => onComplete(false, false, 'next', true), 1500); }
                     return next;
                 });
             }, [onComplete, mic]);
@@ -858,7 +861,7 @@
                 if (setPreviousTranscript) setPreviousTranscript({ text: spokenText, target: word.word, step: stepLabel, passed });
 
                 if (passed) {
-                    setMatchStatus('match'); mic.abortRecording(); setTimeout(() => onComplete(true, false), 1500);
+                    setMatchStatus('match'); mic.abortRecording(); setTimeout(() => onComplete(true, false, 'next', attempts > 0), 1500);
                 } else {
                     setMatchStatus('no-match'); mic.abortRecording(); handleRetry();
                 }
@@ -928,7 +931,7 @@
             );
         }
 
-        function MeaningVNStep({ word, wordsList, onComplete, stepLabel, silentMode, isHard, sttConfig, micStrictness, previousTranscript, setPreviousTranscript }) {
+        function MeaningVNStep({ word, wordsList, onComplete, stepLabel, silentMode, isHard, sttConfig, micStrictness, previousTranscript, setPreviousTranscript, voices, selectedVoiceURI, audioRate }) {
             const hasCompletedRef = useRef(false);
             const [inputMode, setInputMode] = useState(silentMode ? 'mcq' : 'voice');
             const [transcript, setTranscript] = useState('');
@@ -968,13 +971,13 @@
                 if (isExactMatch || maxSim >= threshold) {
                     hasCompletedRef.current = true;
                     setMatchStatus('match'); if (setPreviousTranscript) setPreviousTranscript(null);
-                    setTimeout(() => onComplete(true, false), 1200);
+                    setTimeout(() => onComplete(true, false, 'next', false), 1200);
                 } else if (hasOverlap || maxSim >= 0.2) {
                     setMatchStatus('partial'); if (setPreviousTranscript) setPreviousTranscript(spokenText);
                     setTimeout(() => setInputMode('mcq'), 1200);
                 } else {
                     setMatchStatus('fail'); setInputMode('failed'); if (setPreviousTranscript) setPreviousTranscript(spokenText);
-                    setTimeout(() => onComplete(false, true), 3000);
+                    setTimeout(() => onComplete(false, false, 'next', true), 3000);
                 }
             }, [word.meaningVN, onComplete, micStrictness, setPreviousTranscript]);
 
@@ -1003,7 +1006,7 @@
                 setIsCorrect(correct);
                 if (correct) {
                     hasCompletedRef.current = true;
-                    setTimeout(() => onComplete(true, false), 500);
+                    setTimeout(() => onComplete(true, false, 'next', false), 500);
                 } else setTimeout(() => { setIsCorrect(null); setSelected(null); }, 500);
             }, [word.meaningVN, onComplete, isCorrect]);
 
@@ -1011,7 +1014,7 @@
                 if (hasCompletedRef.current) return;
                 mic.abortRecording();
                 setMatchStatus('fail'); setInputMode('failed');
-                setTimeout(() => onComplete(false, true), 2000);
+                setTimeout(() => onComplete(false, false, 'next', true), 2000);
             }, [onComplete, mic]);
 
             useEffect(() => {
@@ -1128,7 +1131,7 @@
                         setShowHint(true);
                         setSpeechError("Chưa chuẩn!");
                         mic.abortRecording();
-                        setTimeout(() => { stopAudio(); onComplete(false, false); }, 1500);
+                        setTimeout(() => { stopAudio(); onComplete(false, false, 'next', true); }, 1500);
                     }
                 }, 100);
 
@@ -1166,11 +1169,11 @@
                     if (resolvedHard) setHardResolved(true);
                     setMatchStatus('match'); setIsTestFinished(true); setFinalResult(true); setShowHint(true);
                     mic.abortRecording(); startLoop();
-                    setTimeout(() => { stopAudio(); onComplete(true, false, resolvedHard ? 'clearHard' : 'next'); }, 2000);
+                    setTimeout(() => { stopAudio(); onComplete(true, false, resolvedHard ? 'clearHard' : 'next', attempts > 0); }, 2000);
                 } else {
                     setMatchStatus('no-match'); mic.abortRecording(); setShowHint(true); handleRetry();
                 }
-            }, [word.word, stepLabel, startLoop, handleRetry, onComplete, stopAudio, mic, micStrictness, setPreviousTranscript, isHard]);
+            }, [word.word, stepLabel, startLoop, handleRetry, onComplete, stopAudio, mic, micStrictness, setPreviousTranscript, isHard, attempts]);
 
             useEffect(() => { latestCheckMatch.current = checkMatch; }, [checkMatch]);
 
@@ -1184,8 +1187,8 @@
             const handleNextStep = useCallback(() => {
                 if (hasCompletedRef.current) return;
                 hasCompletedRef.current = true;
-                stopAudio(); onComplete(finalResult, false);
-            }, [stopAudio, onComplete, finalResult]);
+                stopAudio(); onComplete(finalResult, false, 'next', attempts > 0);
+            }, [stopAudio, onComplete, finalResult, attempts]);
 
             useEffect(() => {
                 const handleKeyDown = (e) => {
@@ -1260,7 +1263,7 @@
             const handleMeaningSelect = useCallback((option, index) => {
                 if (isCorrect) return;
                 setSelected(index); const correct = (option === word.synonyms); setIsCorrect(correct);
-                if (correct) setTimeout(() => onComplete(true, false), 500);
+                if (correct) setTimeout(() => onComplete(true, false, 'next', false), 500);
                 else setTimeout(() => { setIsCorrect(null); setSelected(null); }, 500);
             }, [word.synonyms, onComplete, isCorrect]);
 
@@ -1332,7 +1335,7 @@
             const handleMeaningSelect = useCallback((option, index) => {
                 if (isCorrect) return;
                 setSelected(index); const correct = (option === word.meaningVN); setIsCorrect(correct);
-                if (correct) setTimeout(() => onComplete(true, hasFailed), 500);
+                if (correct) setTimeout(() => onComplete(true, hasFailed, 'next', hasFailed), 500);
                 else { setHasFailed(true); setTimeout(() => { setIsCorrect(null); setSelected(null); }, 500); }
             }, [word.meaningVN, onComplete, hasFailed, isCorrect]);
 
@@ -1455,11 +1458,11 @@
                 if (passed) {
                     setMatchStatus('match'); setIsTestFinished(true); setFinalResult(true); setShowHint(true);
                     mic.abortRecording(); startLoop();
-                    setTimeout(() => { stopAudio(); onComplete(true, false); }, 2500);
+                    setTimeout(() => { stopAudio(); onComplete(true, false, 'next', attempts > 0); }, 2500);
                 } else {
                     setMatchStatus('no-match'); mic.abortRecording(); setShowHint(true); handleRetry();
                 }
-            }, [word.word, word.synonyms, stepLabel, startLoop, micStrictness, handleRetry, mic, stopAudio, onComplete, setPreviousTranscript]);
+            }, [word.word, word.synonyms, stepLabel, startLoop, micStrictness, handleRetry, mic, stopAudio, onComplete, setPreviousTranscript, attempts]);
 
             useEffect(() => { latestCheckMatch.current = checkMatch; }, [checkMatch]);
 
@@ -1472,7 +1475,7 @@
                 else { setMatchStatus('idle'); setTranscript(''); setSpeechError(null); mic.startRecording(); }
             }, [isTestFinished, matchStatus, mic, stopAudio]);
 
-            const handleNextStep = useCallback(() => { stopAudio(); onComplete(finalResult, false); }, [stopAudio, onComplete, finalResult]);
+            const handleNextStep = useCallback(() => { stopAudio(); onComplete(finalResult, false, 'next', attempts > 0); }, [stopAudio, onComplete, finalResult, attempts]);
 
             useEffect(() => {
                 const handleKeyDown = (e) => {
@@ -2316,7 +2319,7 @@
                 }
             };
 
-            const handleStepComplete = (isPass, isHard = false, action = 'next') => {
+            const handleStepComplete = (isPass, isHard = false, action = 'next', struggling = false) => {
                 const now = Date.now();
                 if (now - lastCompleteTimeRef.current < 800) return;
                 lastCompleteTimeRef.current = now;
@@ -2326,7 +2329,7 @@
                         advanceQueueEntry();
                         return;
                     }
-                    finishCard(Boolean(isPass) && !isHard, action);
+                    finishCard(Boolean(isPass) && !isHard, action, struggling);
                     return;
                 }
 
@@ -2335,10 +2338,10 @@
 
                 let nextStepIndex = currentStep + 1;
                 if (nextStepIndex < activeSteps.length) setCurrentStep(nextStepIndex);
-                else finishCard(!step2FailedRef.current && !currentCardIsHard.current);
+                else finishCard(!step2FailedRef.current && !currentCardIsHard.current, action, struggling);
             };
 
-            const finishCard = (isSuccess, action = 'next') => {
+            const finishCard = (isSuccess, action = 'next', struggling = false) => {
                 const now = Date.now();
                 sessionAccuracyRef.current.total += 1;
                 if (isSuccess) sessionAccuracyRef.current.success += 1;

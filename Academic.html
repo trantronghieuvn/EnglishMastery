@@ -1872,6 +1872,7 @@
             const [inboxZero, setInboxZero] = useState(false);
 
             const step2FailedRef = useRef(false);
+            const batchFailuresRef = useRef({});
             const currentCardIsHard = useRef(false);
             const sessionAccuracyRef = useRef({ total: 0, success: 0 });
 
@@ -2044,7 +2045,9 @@
             const showNotification = (msg, type) => { setNotification({ msg, type }); setTimeout(() => setNotification(null), 3000); };
 
             const generateQueue = () => {
-                const now = Date.now(); const srs = progress.srsData || {}; sessionAccuracyRef.current = { total: 0, success: 0 };
+                const now = Date.now(); const srs = progress.srsData || {}; 
+                sessionAccuracyRef.current = { total: 0, success: 0 };
+                batchFailuresRef.current = {}; // Reset batch failures tracking
                 let bridgeList = []; let overdueList = []; let newList = []; let hardList = [];
 
                 words.forEach(w => {
@@ -2341,11 +2344,18 @@
                 else finishCard(!step2FailedRef.current && !currentCardIsHard.current, action, struggling);
             };
 
-            const finishCard = (isSuccess, action = 'next', struggling = false) => {
+            const finishCard = (isPass, action = 'next', struggling = false) => {
                 const now = Date.now();
+                // Track if this word failed in any step
+                if (!isPass) batchFailuresRef.current[activeWord.id] = true;
+                // isFinalSuccess means: passed AND never failed any step
+                const isFinalSuccess = Boolean(isPass) && !batchFailuresRef.current[activeWord.id];
+                
                 sessionAccuracyRef.current.total += 1;
-                if (isSuccess) sessionAccuracyRef.current.success += 1;
+                if (isFinalSuccess) sessionAccuracyRef.current.success += 1;
                 setHasUnsavedChanges(true);
+                
+                const isSuccess = isFinalSuccess;
 
                 setProgress(prev => {
                     const newSrs = { ...prev.srsData };
